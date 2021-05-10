@@ -1,0 +1,39 @@
+$CLOCK;
+*
+def Aa;
+  clock_early = 2021y098d23h52m00s: 2107.147 usec : 2021y098d23h52m00s : 0.019e-12;
+enddef;
+*
+def Ax;
+  clock_early = 2021y098d23h52m00s: 0 usec: 2021y098d23h52m00s : 0;
+enddef;
+*
+def Gl;
+  clock_early = 2021y098d23h52m00s: 0 usec: 2021y098d23h52m00s : 0;
+enddef;
+*
+def Kt;
+  clock_early = 2021y098d23h52m00s: 0 usec: 2021y098d23h52m00s : 0;
+enddef;
+*
+def Mm; * JCMT
+  clock_early = 2021y098d23h52m00s: 0 usec: 2021y098d23h52m00s : 0;
+enddef;
+*
+def Mg; * SMT
+  clock_early = 2021y098d23h52m00s: 0 usec: 2021y098d23h52m00s : 0;
+enddef;
+*
+def Nn; * NOEMA
+  clock_early = 2021y098d23h52m00s: 0 usec: 2021y098d23h52m00s : 0;
+enddef;
+*
+def Pv;
+  clock_early = 2021y098d23h52m00s: 0 usec: 2021y098d23h52m00s : 0;
+enddef;
+*
+def Sz;
+  clock_early = 2021y098d23h52m00s: 0 usec: 2021y098d23h52m00s : 0;
+enddef;
+*
+
