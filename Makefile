@@ -8,6 +8,10 @@ default:
 preqrequisites:
 	. scripts/create_vex_EOPs.sh
 	. scripts/extract_vex_portions.sh
+	./scripts/noema-vex-defs.py --lo1 221.100 --lo2 7.744 -r 1 > templates/230G/band1/freqs_NOEMA.vex
+	./scripts/noema-vex-defs.py --lo1 221.100 --lo2 7.744 -r 3 > templates/230G/band4/freqs_NOEMA.vex
+	./scripts/noema-vex-defs.py --lo1 221.100 --lo2 7.744 -r 1,2 > templates/230G/band2/freqs_NOEMA.vex
+	./scripts/noema-vex-defs.py --lo1 221.100 --lo2 7.744 -r 3,4 > templates/230G/band3/freqs_NOEMA.vex
 
 ####################################################################################
 ## Build and install full correlation v2d vex config sets
@@ -45,8 +49,8 @@ EHT_2021_345GHz_b4: e21f19_b4
 b1: EHT_2021_230GHz_b1 EHT_2021_345GHz_b1
 
 e21b09_b1:
-	./tvex2vex.py -I./templates/230G/band1/ -I./templates/common/ base/e21b09.vext out/e21b09-$(REL)-b1.vex.obs
-	./tvex2vex.py -I./templates/230G/band1/ -I./templates/common/ base/e21b09.v2dt out/e21b09-$(REL)-b1.v2d
+	./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21b09.vext out/e21b09-$(REL)-b1.vex.obs
+	./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21b09.v2dt out/e21b09-$(REL)-b1.v2d
 	sed -i "s/vexfilename/e21b09-${REL}-b1.vex.obs/g" out/e21b09-$(REL)-b1.v2d
 
 e21e13_b1:
