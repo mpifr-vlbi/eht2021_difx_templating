@@ -1,0 +1,12 @@
+$IF;
+*
+def LO_NOMINAL;
+     if_def = &IF_RCP : A : R : 221100.000000 MHz : U : 0 MHz : 0 Hz;
+     if_def = &IF_LCP : B : L : 221100.000000 MHz : U : 0 MHz : 0 Hz;
+enddef;
+*
+def LO_APEX;
+     if_def = &IF_RCP : A : R : 221103.000015 MHz : U : 0 MHz : 0 Hz;
+     if_def = &IF_LCP : B : L : 221103.000015 MHz : U : 0 MHz : 0 Hz;
+enddef;
+*------------------------------------------------------------------------------

@@ -1,0 +1,7 @@
+$TRACKS;
+*
+def VDIF8032;   track_frame_format = VDIF/8032/2;    enddef;
+def VDIF8224;   track_frame_format = VDIF/8224/2;    enddef;
+def VDIFILACED; track_frame_format = INTERLACEDVDIF; enddef;
+*------------------------------------------------------------------------------
+
