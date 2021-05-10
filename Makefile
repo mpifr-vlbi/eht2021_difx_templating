@@ -6,7 +6,8 @@ include Makefile.inc
 default:
 
 preqrequisites:
-	make -C ./templates/common_sections/ all
+	. scripts/create_vex_EOPs.sh
+	. scripts/extract_vex_portions.sh
 
 ####################################################################################
 ## Build and install full correlation v2d vex config sets
