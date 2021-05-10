@@ -1,0 +1,43 @@
+VEX_rev = 1.5;
+*    SCHED vers: Development version 11.5. Started Apr. 2
+*    VEX/SCHED:  1.5.87
+*    Other versions: Sched:  11.5  Plot: 1.06  JPL-ephem: 1.01
+*------------------------------------------------------------------------------
+$GLOBAL;
+     ref $EXPER = e21b09;
+*                                                      +------------+
+*                         PI revision number:          |    4.0000  |
+*                                                      +------------+
+*    mode:       R2DBE
+*------------------------------------------------------------------------------
+$EXPER;
+     exper_num = 1234;
+     exper_name = e21b09;
+     exper_description = "ALMA+EHT VLBI April 2021";
+     PI_name = "EHTC";
+     PI_email = not@an.address;
+*    address:   The Event Horizon Telescope Collaboration
+*               Global
+*    year, doy: 2021,  98
+*    date     : Thu  8 Apr 2021
+*    MJD      : 59312
+     exper_nominal_start=2021y098d23h52m00s;
+     exper_nominal_stop=2021y099d15h23m00s;
+     target_correlator = difx;
+enddef;
+*------------------------------------------------------------------------------
+** include <clocksInitial.vex>
+** include <mode_proc_das.vex>
+** include <stations.vex>
+** include <freqs.vex>
+** include <bbc.vex>
+** include <if.vex>
+** include <phasecal.vex>
+** include <tracks.vex>
+*------------------------------------------------------------------------------
+** include <sources_e21b09.vex>
+** include <sched_e21b09.vex>
+** include <eop_e21b09.vex>
+** loaddata <clocks_e21b09.dat>
+*------------------------------------------------------------------------------
+

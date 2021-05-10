@@ -1,0 +1,13 @@
+vex = vexfilename
+
+#include <globals.v2d>
+
+#include <zooms.v2d>
+
+#include <antennas.v2d>
+#include <datastreams.v2d>
+
+#include <setup.v2d>
+
+#include <notes_e21b07.v2d>
+

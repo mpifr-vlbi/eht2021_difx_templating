@@ -1,0 +1,334 @@
+$SCHED;
+* schedule section for experiment e21f19  
+* ALMA+EHT VLBI April 2021 345 GHz                                        
+scan No0001;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+* intent = "ALMA:SCHEDBLOCK_STARTER:b7mar20"
+* intent = "ALMA:PROJECT_FIRST_SCAN:b7mar20"
+     start=2021y109d01h13m00s; mode=1mmlcp; source=3C279;
+*              :data_good:data_stop:goto_foot: pass:  wrap :driv:tape at
+     station=Nn:    0 sec:  240 sec:    0.000 GB:   :       : 1;
+     station=Pv:    0 sec:  240 sec:    0.000 GB:   :       : 1;
+     station=Aa:    0 sec:  240 sec:    0.000 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec:    0.000 GB:   :       : 1;
+endscan;
+scan No0002;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d01h24m00s; mode=1mmlcp; source=3C273;
+     station=Nn:    0 sec:  240 sec:  246.153 GB:   :       : 1;
+     station=Pv:    0 sec:  240 sec:  246.153 GB:   :       : 1;
+     station=Aa:    0 sec:  240 sec:  246.153 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec:  246.153 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec:    0.000 GB:   :       : 1;
+endscan;
+scan No0003;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d01h29m00s; mode=1mmlcp; source=M87;
+     station=Nn:    0 sec:  240 sec:  492.306 GB:   :       : 1;
+     station=Pv:    0 sec:  240 sec:  492.306 GB:   :       : 1;
+     station=Aa:    0 sec:  240 sec:  492.306 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec:  492.306 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec:  246.153 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec:    0.000 GB:   :       : 1;
+endscan;
+scan No0004;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d01h40m00s; mode=1mmlcp; source=3C279;
+     station=Nn:    0 sec:  240 sec:  738.460 GB:   :       : 1;
+     station=Pv:    0 sec:  240 sec:  738.460 GB:   :       : 1;
+     station=Aa:    0 sec:  240 sec:  738.460 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec:  738.460 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec:  492.306 GB:   :       : 1;
+endscan;
+scan No0005;
+*     Note a COMMENT was inserted during scheduling: 
+*       apsmode = fast-abs
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d01h45m00s; mode=1mmlcp; source=3C279;
+     station=Nn:    0 sec:  240 sec:  984.613 GB:   :       : 1;
+     station=Pv:    0 sec:  240 sec:  984.613 GB:   :       : 1;
+     station=Aa:    0 sec:  240 sec:  984.613 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec:  984.613 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec:  738.460 GB:   :       : 1;
+endscan;
+scan No0006;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d01h57m00s; mode=1mmlcp; source=J1058+0133;
+     station=Nn:    0 sec:  240 sec: 1230.766 GB:   :       : 1;
+     station=Pv:    0 sec:  240 sec: 1230.766 GB:   :       : 1;
+     station=Aa:    0 sec:  240 sec: 1230.766 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 1230.766 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec:  984.613 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec:  246.153 GB:   :       : 1;
+endscan;
+scan No0007;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d02h04m00s; mode=1mmlcp; source=J1146+3958;
+     station=Nn:    0 sec:  240 sec: 1476.919 GB:   :       : 1;
+     station=Pv:    0 sec:  240 sec: 1476.919 GB:   :       : 1;
+     station=Aa:    0 sec:  240 sec: 1476.919 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 1476.919 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 1230.766 GB:   :       : 1;
+     station=Mg:  151 sec:  240 sec:  492.306 GB:   :       : 1;
+endscan;
+scan No0008;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+* intent = "ALMA:SCHEDBLOCK_STARTER:b7mar20"
+     start=2021y109d02h19m00s; mode=1mmlcp; source=3C279;
+     station=Nn:    0 sec:  240 sec: 1723.073 GB:   :       : 1;
+     station=Pv:    0 sec:  240 sec: 1723.073 GB:   :       : 1;
+     station=Aa:    0 sec:  240 sec: 1723.073 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 1723.073 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 1476.919 GB:   :       : 1;
+endscan;
+scan No0009;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d02h30m00s; mode=1mmlcp; source=3C273;
+     station=Nn:    0 sec:  240 sec: 1969.226 GB:   :       : 1;
+     station=Pv:    0 sec:  240 sec: 1969.226 GB:   :       : 1;
+     station=Aa:    0 sec:  240 sec: 1969.226 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 1969.226 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 1723.073 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec:  738.460 GB:   :       : 1;
+endscan;
+scan No0010;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d02h35m00s; mode=1mmlcp; source=M87;
+*              :data_good:data_stop:goto_foot: pass:  wrap :driv:tape at
+     station=Nn:    0 sec:  240 sec: 2215.379 GB:   :       : 1;
+     station=Pv:    0 sec:  240 sec: 2215.379 GB:   :       : 1;
+     station=Aa:    0 sec:  240 sec: 2215.379 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 2215.379 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 1969.226 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec:  984.613 GB:   :       : 1;
+endscan;
+scan No0011;
+*     Note a COMMENT was inserted during scheduling: 
+*       apsmode = fast-abs
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d02h46m00s; mode=1mmlcp; source=3C279;
+     station=Nn:    0 sec:  240 sec: 2461.532 GB:   :       : 1;
+     station=Pv:    0 sec:  240 sec: 2461.532 GB:   :       : 1;
+     station=Aa:    0 sec:  240 sec: 2461.532 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 2461.532 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 2215.379 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec: 1230.766 GB:   :       : 1;
+endscan;
+scan No0012;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d02h51m00s; mode=1mmlcp; source=3C279;
+     station=Nn:    0 sec:  240 sec: 2707.686 GB:   :       : 1;
+     station=Pv:    0 sec:  240 sec: 2707.686 GB:   :       : 1;
+     station=Aa:    0 sec:  240 sec: 2707.686 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 2707.686 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 2461.532 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec: 1476.919 GB:   :       : 1;
+endscan;
+scan No0013;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d03h01m00s; mode=1mmlcp; source=J1146+3958;
+     station=Nn:    0 sec:  240 sec: 2953.839 GB:   :       : 1;
+     station=Pv:    0 sec:  240 sec: 2953.839 GB:   :       : 1;
+     station=Aa:    0 sec:  240 sec: 2953.839 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 2953.839 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 2707.686 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec: 1723.073 GB:   :       : 1;
+endscan;
+scan No0014;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+* intent = "ALMA:SCHEDBLOCK_STARTER:b7mar20"
+     start=2021y109d03h16m00s; mode=1mmlcp; source=3C279;
+     station=Nn:    0 sec:  240 sec: 3199.992 GB:   :       : 1;
+     station=Pv:    0 sec:  240 sec: 3199.992 GB:   :       : 1;
+     station=Aa:    0 sec:  240 sec: 3199.992 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 3199.992 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 2953.839 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec: 1969.226 GB:   :       : 1;
+endscan;
+scan No0015;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d03h28m00s; mode=1mmlcp; source=J1512-0905;
+     station=Nn:    0 sec:  240 sec: 3446.146 GB:   :       : 1;
+     station=Pv:    0 sec:  240 sec: 3446.146 GB:   :       : 1;
+     station=Aa:    0 sec:  240 sec: 3446.146 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 3446.146 GB:   :       : 1;
+endscan;
+scan No0016;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d03h40m00s; mode=1mmlcp; source=3C273;
+     station=Nn:    0 sec:  240 sec: 3692.299 GB:   :       : 1;
+     station=Pv:    0 sec:  240 sec: 3692.299 GB:   :       : 1;
+     station=Aa:    0 sec:  240 sec: 3692.299 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 3692.299 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 3199.992 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec: 2215.379 GB:   :       : 1;
+endscan;
+scan No0017;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d03h51m00s; mode=1mmlcp; source=3C279;
+     station=Pv:    0 sec:  240 sec: 3938.452 GB:   :       : 1;
+     station=Aa:    0 sec:  240 sec: 3938.452 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 3938.452 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 3446.146 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec: 2461.532 GB:   :       : 1;
+endscan;
+scan No0018;
+*     Note a COMMENT was inserted during scheduling: 
+*       apsmode = fast-abs
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d03h56m00s; mode=1mmlcp; source=3C279;
+*              :data_good:data_stop:goto_foot: pass:  wrap :driv:tape at
+     station=Pv:    0 sec:  240 sec: 4184.605 GB:   :       : 1;
+     station=Aa:    0 sec:  240 sec: 4184.605 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 4184.605 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 3692.299 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec: 2707.686 GB:   :       : 1;
+endscan;
+scan No0019;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d04h03m00s; mode=1mmlcp; source=M87;
+     station=Nn:    0 sec:  240 sec: 3938.452 GB:   :       : 1;
+     station=Pv:    0 sec:  240 sec: 4430.759 GB:   :       : 1;
+     station=Aa:    0 sec:  240 sec: 4430.759 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 4430.759 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 3938.452 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec: 2953.839 GB:   :       : 1;
+     station=Sw:    0 sec:  240 sec:    0.000 GB:   :       : 1;
+     station=Mm:    0 sec:  240 sec:    0.000 GB:   :       : 1;
+endscan;
+scan No0020;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+* intent = "ALMA:SCHEDBLOCK_STARTER:b7mar20"
+     start=2021y109d04h18m00s; mode=1mmlcp; source=J1058+0133;
+     station=Aa:    0 sec:  240 sec: 4676.912 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 4676.912 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 4184.605 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec: 3199.992 GB:   :       : 1;
+     station=Sw:    0 sec:  240 sec:  246.153 GB:   :       : 1;
+     station=Mm:    0 sec:  240 sec:  246.153 GB:   :       : 1;
+endscan;
+scan No0021;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d04h27m00s; mode=1mmlcp; source=3C273;
+     station=Aa:    0 sec:  240 sec: 4923.065 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 4923.065 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 4430.759 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec: 3446.146 GB:   :       : 1;
+     station=Sw:    0 sec:  240 sec:  492.306 GB:   :       : 1;
+     station=Mm:    0 sec:  240 sec:  492.306 GB:   :       : 1;
+endscan;
+scan No0022;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d04h34m00s; mode=1mmlcp; source=M87;
+     station=Pv:    0 sec:  240 sec: 4676.912 GB:   :       : 1;
+     station=Aa:    0 sec:  240 sec: 5169.219 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 5169.219 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 4676.912 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec: 3692.299 GB:   :       : 1;
+     station=Sw:    0 sec:  240 sec:  738.460 GB:   :       : 1;
+     station=Mm:    0 sec:  240 sec:  738.460 GB:   :       : 1;
+endscan;
+scan No0023;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d04h45m00s; mode=1mmlcp; source=3C279;
+     station=Aa:    0 sec:  240 sec: 5415.372 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 5415.372 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 4923.065 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec: 3938.452 GB:   :       : 1;
+     station=Sw:    0 sec:  240 sec:  984.613 GB:   :       : 1;
+     station=Mm:    0 sec:  240 sec:  984.613 GB:   :       : 1;
+endscan;
+scan No0024;
+*     Note a COMMENT was inserted during scheduling: 
+*       apsmode = fast-abs
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d04h50m00s; mode=1mmlcp; source=3C279;
+     station=Aa:    0 sec:  240 sec: 5661.525 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 5661.525 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 5169.219 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec: 4184.605 GB:   :       : 1;
+     station=Sw:    0 sec:  240 sec: 1230.766 GB:   :       : 1;
+     station=Mm:    0 sec:  240 sec: 1230.766 GB:   :       : 1;
+endscan;
+scan No0025;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d04h59m00s; mode=1mmlcp; source=3C273;
+     station=Aa:    0 sec:  240 sec: 5907.679 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 5907.679 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 5415.372 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec: 4430.759 GB:   :       : 1;
+     station=Sw:    0 sec:  240 sec: 1476.919 GB:   :       : 1;
+     station=Mm:    0 sec:  240 sec: 1476.919 GB:   :       : 1;
+endscan;
+scan No0026;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d05h06m00s; mode=1mmlcp; source=3C279;
+*              :data_good:data_stop:goto_foot: pass:  wrap :driv:tape at
+     station=Aa:    0 sec:  240 sec: 6153.832 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 6153.832 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 5661.525 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec: 4676.912 GB:   :       : 1;
+     station=Sw:    0 sec:  240 sec: 1723.073 GB:   :       : 1;
+     station=Mm:    0 sec:  240 sec: 1723.073 GB:   :       : 1;
+endscan;
+scan No0027;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+* intent = "ALMA:SCHEDBLOCK_STARTER:b7mar20"
+     start=2021y109d05h21m00s; mode=1mmlcp; source=3C273;
+     station=Aa:    0 sec:  240 sec: 6399.985 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 6399.985 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 5907.679 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec: 4923.065 GB:   :       : 1;
+     station=Sw:    0 sec:  240 sec: 1969.226 GB:   :       : 1;
+     station=Mm:    0 sec:  240 sec: 1969.226 GB:   :       : 1;
+endscan;
+scan No0028;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d05h28m00s; mode=1mmlcp; source=M87;
+     station=Aa:    0 sec:  240 sec: 6646.139 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 6646.139 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 6153.832 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec: 5169.219 GB:   :       : 1;
+     station=Sw:    0 sec:  240 sec: 2215.379 GB:   :       : 1;
+     station=Mm:    0 sec:  240 sec: 2215.379 GB:   :       : 1;
+endscan;
+scan No0029;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d05h38m00s; mode=1mmlcp; source=J1058+0133;
+     station=Aa:    0 sec:  240 sec: 6892.292 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 6892.292 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 6399.985 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec: 5415.372 GB:   :       : 1;
+     station=Sw:    0 sec:  240 sec: 2461.532 GB:   :       : 1;
+     station=Mm:    0 sec:  240 sec: 2461.532 GB:   :       : 1;
+endscan;
+scan No0030;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d05h48m00s; mode=1mmlcp; source=3C273;
+     station=Aa:    0 sec:  240 sec: 7138.445 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 7138.445 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 6646.139 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec: 5661.525 GB:   :       : 1;
+     station=Sw:    0 sec:  240 sec: 2707.686 GB:   :       : 1;
+     station=Mm:    0 sec:  240 sec: 2707.686 GB:   :       : 1;
+endscan;
+scan No0031;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+     start=2021y109d05h55m00s; mode=1mmlcp; source=3C279;
+     station=Aa:    0 sec:  240 sec: 7384.599 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 7384.599 GB:   :       : 1;
+     station=Gl:    0 sec:  240 sec: 6892.292 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec: 5907.679 GB:   :       : 1;
+     station=Sw:    0 sec:  240 sec: 2953.839 GB:   :       : 1;
+     station=Mm:    0 sec:  240 sec: 2953.839 GB:   :       : 1;
+endscan;
+scan No0032;
+* intent = "ALMA:AUTOPHASE_DETERMINE"
+* intent = "ALMA:PROJECT_FINAL_SCAN:b7mar20"
+     start=2021y109d06h04m00s; mode=1mmlcp; source=J1337-1257;
+     station=Aa:    0 sec:  240 sec: 7630.752 GB:   :       : 1;
+     station=Ax:    0 sec:  240 sec: 7630.752 GB:   :       : 1;
+     station=Mg:    0 sec:  240 sec: 6153.832 GB:   :       : 1;
+     station=Sw:    0 sec:  240 sec: 3199.992 GB:   :       : 1;
+     station=Mm:    0 sec:  240 sec: 3199.992 GB:   :       : 1;
+endscan;
