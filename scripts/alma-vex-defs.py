@@ -18,7 +18,7 @@ __author__ = "Jan Wagner (MPIfR)"
 __version__ = "1.0.0"
 
 ALMA_PFB_BANDWIDTH_MHZ = 62.5
-ALMA_PFB_CHANNEL_DELTA_MHZ = 58.59375
+ALMA_PFB_CHANNEL_DELTA_MHZ = 58.59375  # = 62.5 * 15/16
 
 
 def parse_args(args: []):
@@ -27,9 +27,9 @@ def parse_args(args: []):
 
 	parser = argparse.ArgumentParser(description=__doc__, add_help=True, formatter_class=argparse.RawDescriptionHelpFormatter)
 	parser.add_argument('--version', action='version', version='%(prog)s ' + __version__)
-	parser.add_argument('-f', '--lo1', dest='lo1', metavar='GHz', default='213.100', help='frequency of 1st LO (EHT 213.100; default: %(default)s)')
+	parser.add_argument('-f', '--lo1', dest='lo1', metavar='GHz', default='221.100', help='frequency of 1st LO (EHT 221.100; default: %(default)s)')
 	parser.add_argument('-F', '--lo2', dest='lo2', metavar='GHz', default='1.875', help='frequency of 2nd LO (default: %(default)s)')
-	parser.add_argument('-r', dest='recorders', default='1,2,3,4', help='list of recorder ID numbers (default: %(default)s), for GMVA2021 use 5')
+	parser.add_argument('-r', dest='recorders', default='1,2,3,4', help='list of recorder ID numbers (default: %(default)s)')
 	parser.add_argument('--if', '-i', dest='do_vex_if', action='store_true', help='also output VEX $IF section')
 	parser.add_argument('--bbc', '-b', dest='do_vex_bbc', action='store_true', help='also output VEX $BBC section')
 	# todo? : parser.add_argument('--v2d', '-v', dest='do_v2d', action='store_true', help='also output v2d ANTENNA, DATASTREAM sections')
@@ -94,7 +94,7 @@ class ALMAVexFreqGenerator:
 		self.nvexchannels = 0
 
 
-	def __generate_block(self, netUsb=True, subbands=range(32)):
+	def __generate_block(self, pfb_center_GHz, netUsb=True, subbands=range(32)):
 		'''
 		fxUsb: True if net upper sideband USB
 		subbands: PFB subband indices for which to compute the VEX channel frequencies
@@ -105,7 +105,7 @@ class ALMAVexFreqGenerator:
 			lo_sign = -1
 			label = 'L'
 
-		refFreq_MHz = 1e3*self.lo1_GHz - lo_sign*(1e3*(self.lo2_GHz/2) + (self.bw_MHz/32))
+		refFreq_MHz = 1e3*pfb_center_GHz - lo_sign*(1e3*(self.lo2_GHz/2) + (self.bw_MHz/32))
 
 		channels = []
 		for subband in subbands:
@@ -124,10 +124,10 @@ class ALMAVexFreqGenerator:
 			print('%schan_def = &B: %.6f MHz : %1s : %.2f MHz : &CH%02d : &BBC%02d : &NoCal; * %s' % (self.indent, freq_MHz, sideband, self.bw_MHz, chNr, bbc, bandlabel))
 
 
-	def generate(self, lo1_GHz, lo2_GHz=7740.0, recorders=[1,2,3,4]):
+	def generate(self, lo1_GHz, lo2_GHz=1.875, recorders=[1,2,3,4]):
 
-		def subblock(usb, subbands, polzn):
-			channelblock = self.__generate_block(netUsb=usb, subbands=subbands)
+		def subblock(pfb_center_GHz, usb, subbands, polzn):
+			channelblock = self.__generate_block(pfb_center_GHz, netUsb=usb, subbands=subbands)
 			for idx,(freq_MHz,sideband) in enumerate(channelblock):
 				bandlabel = self.bandlabels.lookUp(freq_MHz*1e-3,sideband)
 				bandlabel += ' ' + polzn
@@ -142,38 +142,31 @@ class ALMAVexFreqGenerator:
 
 		if 1 in recorders:
 
-			print('%s* Recorder 1, slots 1+2, LSB-Inner, X-pol, subbands 0-31' % (self.indent))
-			subblock(False, range(32), 'X')
-			print('%s* Recorder 1, slots 3+4, LSB-Inner, Y-pol, subbands 0-31' % (self.indent))
-			subblock(False, range(32), 'Y')
+			print('%s* Recorder 1, slots 1+2, LSB around LO1-8 GHz, X-pol, subbands 0-31' % (self.indent))
+			subblock(lo1_GHz - 8.0, False, range(32), 'X')
+			print('%s* Recorder 1, slots 3+4, LSB around LO1-8 GHz, Y-pol, subbands 0-31' % (self.indent))
+			subblock(lo1_GHz - 8.0, False, range(32), 'Y')
 
 		if 2 in recorders:
 
-			print('%s* Recorder 1, slots 1+2, LSB-Inner, X-pol, subbands 0-31' % (self.indent))
-			subblock(False, range(32), 'X')
-			print('%s* Recorder 1, slots 3+4, LSB-Inner, Y-pol, subbands 0-31' % (self.indent))
-			subblock(False, range(32), 'Y')
+			print('%s* Recorder 2, slots 1+2, LSB around LO1-6 GHz, X-pol, subbands 0-31' % (self.indent))
+			subblock(lo1_GHz - 6.0, False, range(32), 'X')
+			print('%s* Recorder 2, slots 3+4, LSB around LO1-6 GHz, Y-pol, subbands 0-31' % (self.indent))
+			subblock(lo1_GHz - 6.0, False, range(32), 'Y')
 
 		if 3 in recorders:
 
-			print('%s* Recorder 1, slots 1+2, LSB-Inner, X-pol, subbands 0-31' % (self.indent))
-			subblock(False, range(32), 'X')
-			print('%s* Recorder 1, slots 3+4, LSB-Inner, Y-pol, subbands 0-31' % (self.indent))
-			subblock(False, range(32), 'Y')
+			print('%s* Recorder 3, slots 1+2, USB around LO1 + 6 GHz, X-pol, subbands 0-31' % (self.indent))
+			subblock(lo1_GHz + 6.0, True, range(32), 'X')
+			print('%s* Recorder 3, slots 3+4, USB around LO1 + 6 GHz, Y-pol, subbands 0-31' % (self.indent))
+			subblock(lo1_GHz + 6.0, True, range(32), 'Y')
 
 		if 4 in recorders:
 
-			print('%s* Recorder 1, slots 1+2, LSB-Inner, X-pol, subbands 0-31' % (self.indent))
-			subblock(False, range(32), 'X')
-			print('%s* Recorder 1, slots 3+4, LSB-Inner, Y-pol, subbands 0-31' % (self.indent))
-			subblock(False, range(32), 'Y')
-
-		if 5 in recorders:
-
-			print('%s* Recorder 1, slots 1+2, LSB-Inner, X-pol, subbands 0-31' % (self.indent))
-			subblock(False, range(32), 'X')
-			print('%s* Recorder 1, slots 3+4, LSB-Inner, Y-pol, subbands 0-31' % (self.indent))
-			subblock(False, range(32), 'Y')
+			print('%s* Recorder 4, slots 1+2, USB around LO1 + 8 GHz, X-pol, subbands 0-31' % (self.indent))
+			subblock(lo1_GHz + 8.0, True, range(32), 'Y')
+			print('%s* Recorder 4, slots 3+4, USB around LO1 + 8 GHz, Y-pol, subbands 0-31' % (self.indent))
+			subblock(lo1_GHz + 8.0, True, range(32), 'Y')
 
 		print('enddef;')
 
