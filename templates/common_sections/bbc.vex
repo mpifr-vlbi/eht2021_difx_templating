@@ -2,4 +2,9 @@ def COMMON_BBC;
      BBC_assign = &BBC01 : 1 : &IF_RCP;
      BBC_assign = &BBC02 : 2 : &IF_LCP;
 enddef;
+*
+def BBC_ALMA;
+    BBC_assign = &BBC01 :  1 : &IF_X;
+    BBC_assign = &BBC02 :  1 : &IF_Y;
+enddef;
 *------------------------------------------------------------------------------
