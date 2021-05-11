@@ -1,0 +1,8 @@
+dataBufferFactor = 24
+visBufferLength = 40
+startSeries = 1000
+exhaustiveAutocorrs = True
+minSubarray = 2
+singleScan = True
+singleSetup = True
+
