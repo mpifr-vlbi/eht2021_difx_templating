@@ -1,0 +1,50 @@
+SETUP outputBands {
+  numBufferedFFTs = 20
+  tInt = 0.400
+  subintNS =  3200000
+  FFTSpecRes = 0.015625
+  outputSpecRes = 0.5
+  xmacLength = 0
+  strideLength = 0
+  guardNS = 2000
+
+  # outputSpecRes = 0.0625 # fringe search, ~1000 ch over 58 MHz
+  # outputSpecRes = 0.0156250 # fringe search, ~4000 ch over 58 MHz
+
+  addOutputBand = freq@228162.796875/bw@58.0
+  addOutputBand = freq@228221.390625/bw@58.0
+  addOutputBand = freq@228279.984375/bw@58.0
+  addOutputBand = freq@228338.578125/bw@58.0
+  addOutputBand = freq@228397.171875/bw@58.0
+  addOutputBand = freq@228455.765625/bw@58.0
+  addOutputBand = freq@228514.359375/bw@58.0
+  addOutputBand = freq@228572.953125/bw@58.0
+  addOutputBand = freq@228631.546875/bw@58.0
+  addOutputBand = freq@228690.140625/bw@58.0
+  addOutputBand = freq@228748.734375/bw@58.0
+  addOutputBand = freq@228807.328125/bw@58.0
+  addOutputBand = freq@228865.921875/bw@58.0
+  addOutputBand = freq@228924.515625/bw@58.0
+  addOutputBand = freq@228983.109375/bw@58.0
+  addOutputBand = freq@229041.703125/bw@58.0
+  addOutputBand = freq@229100.296875/bw@58.0
+  addOutputBand = freq@229158.890625/bw@58.0
+  addOutputBand = freq@229217.484375/bw@58.0
+  addOutputBand = freq@229276.078125/bw@58.0
+  addOutputBand = freq@229334.671875/bw@58.0
+  addOutputBand = freq@229393.265625/bw@58.0
+  addOutputBand = freq@229451.859375/bw@58.0
+  addOutputBand = freq@229510.453125/bw@58.0
+  addOutputBand = freq@229569.046875/bw@58.0
+  addOutputBand = freq@229627.640625/bw@58.0
+  addOutputBand = freq@229686.234375/bw@58.0
+  addOutputBand = freq@229744.828125/bw@58.0
+  addOutputBand = freq@229803.421875/bw@58.0
+  addOutputBand = freq@229862.015625/bw@58.0
+  addOutputBand = freq@229920.609375/bw@58.0
+  addOutputBand = freq@229979.203125/bw@58.0
+}
+
+RULE defaultRule {
+  setup = outputBands
+}
