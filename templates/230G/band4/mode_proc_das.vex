@@ -1,0 +1,48 @@
+*------------------------------------------------------------------------------
+$MODE;
+*
+def mode;
+     ref $PROCEDURES = Proc_01;
+     ref $IF = IF_NOMINAL:Nn:Pv:Gl:Ax:Sz:Kt:Mg:Sw:Mm;
+     ref $IF = IF_APEX:Ax;
+     ref $IF = IF_ALMA:Aa;
+     ref $BBC = COMMON_BBC:Pv:Gl:Ax:Sz:Kt:Mg:Sw:Mm:Nn;
+     ref $BBC = COMMON_ALMA:Aa;
+     ref $FREQ = FREQ_COMMON:Pv:Gl:Sz:Kt:Mg:Sw:Mm;
+     ref $FREQ = FREQ_AX:Ax;
+     ref $FREQ = FREQ_AA:Aa;
+     ref $FREQ = FREQ_Nn:Nn;
+     ref $TRACKS = VDIF.8224:Pv:Gl:Ax:Sz:Kt:Mg:Sw:Mm;
+     ref $TRACKS = VDIF.8032:Aa;
+     ref $TRACKS = VDIFILACED:Nn;
+     ref $ROLL = NoRoll:Nn:Pv:Gl:Ax:Aa:Sz:Kt:Mg:Sw:Mm;
+     ref $PHASE_CAL_DETECT = NoDetect:Nn:Pv:Gl:Ax:Aa:Sz:Kt:Mg:Sw:Mm;
+enddef;
+*------------------------------------------------------------------------------
+$PROCEDURES;
+*
+def Proc_01;
+     procedure_name_prefix =  "01";
+     tape_change =  420 sec;
+     headstack_motion =    6 sec;
+     new_source_command =    5 sec;
+     new_tape_setup =   20 sec;
+     setup_always = on :  20 sec;
+     parity_check = off : 100 sec;
+     tape_prepass = off : 600 sec;
+     preob_cal  = on :  10 sec : preob;
+     midob_cal  = on :  15 sec : midob;
+     postob_cal = on :   0 sec : postob;
+enddef;
+*------------------------------------------------------------------------------
+$DAS;
+*
+def 2NONE<;
+     record_transport_type = Mark6;
+     electronics_rack_type = none;
+     number_drives = 2;
+     headstack = 1 :            : 0 ;
+     headstack = 2 :            : 1 ;
+     tape_motion = adaptive : 0 min: 0 min: 10 sec;
+enddef;
+*------------------------------------------------------------------------------
