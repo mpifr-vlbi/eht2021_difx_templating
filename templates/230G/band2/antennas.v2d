@@ -38,7 +38,8 @@ ANTENNA Mm { # JCMT
 }
 
 ANTENNA Nn {
-  datastreams = Nn_rec2ds12,Nn_rec2ds34
+  datastreams = Nn_rec2slot12,Nn_rec2slot34  # e21n07, e21b09
+  # datastreams = Nn_rec2slot1,Nn_rec2slot2,Nn_rec2slot3,Nn_rec2slot4 # possibly like this for e21a13 and later
   zoom = zooms58
 }
 
