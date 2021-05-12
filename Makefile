@@ -9,6 +9,7 @@ preqrequisites:
 	. scripts/create_vex_EOPs.sh
 	. scripts/extract_vex_portions.sh
 	. scripts/make_initial_clocks.sh
+	. scripts/make_initial_notes.sh
 	./scripts/noema-vex-defs.py --lo1 221.100 --lo2 7.744 -r 1   > templates/230G/band1/freqs_NOEMA.vex
 	./scripts/noema-vex-defs.py --lo1 221.100 --lo2 7.744 -r 1,2 > templates/230G/band2/freqs_NOEMA.vex
 	./scripts/noema-vex-defs.py --lo1 221.100 --lo2 7.744 -r 3,4 > templates/230G/band3/freqs_NOEMA.vex
