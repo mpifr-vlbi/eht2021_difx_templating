@@ -79,6 +79,9 @@ e21f19_b1:
 b2: EHT_2021_230GHz_b2 EHT_2021_345GHz_b2
 
 e21b09_b2:
+	./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21b09.vext out/e21b09-$(REL)-b1.vex.obs
+	./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21b09.v2dt out/e21b09-$(REL)-b1.v2d
+	sed -i "s/vexfilename/e21b09-${REL}-b1.vex.obs/g" out/e21b09-$(REL)-b1.v2d
 
 e21e13_b2:
 
@@ -99,6 +102,9 @@ e21f19_b2:
 b3: EHT_2021_230GHz_b3 EHT_2021_345GHz_b3
 
 e21b09_b3:
+	./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21b09.vext out/e21b09-$(REL)-b1.vex.obs
+	./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21b09.v2dt out/e21b09-$(REL)-b1.v2d
+	sed -i "s/vexfilename/e21b09-${REL}-b1.vex.obs/g" out/e21b09-$(REL)-b1.v2d
 
 e21e13_b3:
 
@@ -119,6 +125,9 @@ e21f19_b3:
 b4: EHT_2021_230GHz_b4 EHT_2021_345GHz_b4
 
 e21b09_b4:
+	./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21b09.vext out/e21b09-$(REL)-b1.vex.obs
+	./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21b09.v2dt out/e21b09-$(REL)-b1.v2d
+	sed -i "s/vexfilename/e21b09-${REL}-b1.vex.obs/g" out/e21b09-$(REL)-b1.v2d
 
 e21e13_b4:
 
