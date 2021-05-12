@@ -18,6 +18,7 @@ preqrequisites:
 	./scripts/alma-vex-defs.py --lo1 221.100 -r 2 > templates/230G/band2/freqs_ALMA.vex
 	./scripts/alma-vex-defs.py --lo1 221.100 -r 3 > templates/230G/band3/freqs_ALMA.vex
 	./scripts/alma-vex-defs.py --lo1 221.100 -r 4 > templates/230G/band4/freqs_ALMA.vex
+	mkdir -p out
 
 ####################################################################################
 ## Build and install full correlation v2d vex config sets
