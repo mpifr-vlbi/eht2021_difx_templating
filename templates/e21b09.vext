@@ -26,18 +26,25 @@ $EXPER;
      target_correlator = difx;
 enddef;
 *------------------------------------------------------------------------------
-** include <clocksInitial.vex>
+** include <clocks_initial.vex>
+** include <clocks_SMA.vex>
 ** include <mode_proc_das.vex>
 ** include <stations.vex>
-** include <freqs.vex>
-** include <bbc.vex>
-** include <if.vex>
-** include <phasecal.vex>
+** include <antennas.vex>
+** include <sites_consistent.vex>
+** include <sites_NOEMA_e21b09.vex>
 ** include <tracks.vex>
+** include <if.vex>
+** include <bbc.vex>
+** include <freqs.vex>
+** include <freqs_NOEMA.vex>
+** include <freqs_ALMA.vex>
+** include <phasecal.vex>
+** include <tape.vex>
 *------------------------------------------------------------------------------
 ** include <sources_e21b09.vex>
 ** include <sched_e21b09.vex>
+*------------------------------------------------------------------------------
 ** include <eop_e21b09.vex>
 ** loaddata <clocks_e21b09.dat>
 *------------------------------------------------------------------------------
-
