@@ -49,6 +49,10 @@ EHT_2021_345GHz_b4: e21f19_b4
 # install: install_b1 install_b4
 # diff: diff_b1 diff_b4
 
+install:
+	@echo "TODO: install not yet implemented"
+	@echo "For now, 'cd out' and manually copy v2d+vex to your respective DiFX job directories"
+
 ####################################################################################
 ## EHT 2021 -- Band 1
 ####################################################################################
