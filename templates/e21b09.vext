@@ -11,13 +11,12 @@ $GLOBAL;
 *    mode:       R2DBE
 *------------------------------------------------------------------------------
 $EXPER;
+def e21b09;
      exper_num = 1234;
      exper_name = e21b09;
      exper_description = "ALMA+EHT VLBI April 2021";
      PI_name = "EHTC";
      PI_email = not@an.address;
-*    address:   The Event Horizon Telescope Collaboration
-*               Global
 *    year, doy: 2021,  98
 *    date     : Thu  8 Apr 2021
 *    MJD      : 59312
