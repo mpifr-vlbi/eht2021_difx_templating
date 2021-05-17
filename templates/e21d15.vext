@@ -1,0 +1,49 @@
+VEX_rev = 1.5;
+*    SCHED vers: Development version 11.5. Started Apr. 2
+*    VEX/SCHED:  1.5.87
+*    Other versions: Sched:  11.5  Plot: 1.06  JPL-ephem: 1.01
+*------------------------------------------------------------------------------
+$GLOBAL;
+     ref $EXPER = e21d15;
+*                                                      +------------+
+*                         PI revision number:          |    6.0000  |
+*                                                      +------------+
+*    mode:       R2DBE
+*------------------------------------------------------------------------------
+$EXPER;
+def e21d15;
+     exper_num = 1234;
+     exper_name = e21d15;
+     exper_description = "ALMA+EHT VLBI April 2021";
+     PI_name = "EHTC";
+     PI_email = not@an.address;
+*    year, doy: 2021, 104
+*    date     : Wed 14 Apr 2021
+*    MJD      : 59318
+     exper_nominal_start=2021y104d23h29m00s;
+     exper_nominal_stop=2021y105d15h42m00s;
+     target_correlator = difx;
+enddef;
+*------------------------------------------------------------------------------
+** include <clocks_initial.vex>
+** include <clocks_SMA.vex>
+** include <mode_proc_das.vex>
+** include <stations.vex>
+** include <antennas.vex>
+** include <sites_consistent.vex>
+** include <sites_NOEMA_e21d15.vex>
+** include <tracks.vex>
+** include <if.vex>
+** include <bbc.vex>
+** include <freqs.vex>
+** include <freqs_NOEMA.vex>
+** include <freqs_ALMA.vex>
+** include <phasecal.vex>
+** include <tape.vex>
+*------------------------------------------------------------------------------
+** include <sources_e21d15.vex>
+** include <sched_e21d15.vex>
+*------------------------------------------------------------------------------
+** include <eop_e21d15.vex>
+** loaddata <clocks_e21d15.dat>
+*------------------------------------------------------------------------------
