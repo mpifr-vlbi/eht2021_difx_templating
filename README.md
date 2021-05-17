@@ -6,6 +6,7 @@ Usage:
 ```
 git clone https://github.com/mpifr-vlbi/eht2021_difx_templating.git
 cd eht2021_difx_templating
+git checkout master   # later: checkout of a specific tag rather than 'master'
 make preqrequisites
 make all
 make install
