@@ -1,3 +1,5 @@
+$BBC;
+*
 def COMMON_BBC;
      BBC_assign = &BBC01 : 1 : &IF_RCP;
      BBC_assign = &BBC02 : 2 : &IF_LCP;
