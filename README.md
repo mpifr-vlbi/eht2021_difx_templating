@@ -13,6 +13,7 @@ make install
 ```
 
 TODO:
+- [ ] Generate file lists
 - [ ] New branch for developments, 'main' only for releases
 - [ ] 'Make' two sets of setups: outputband v2d configs, normal zoom band v2d configs, shared VEX
 
