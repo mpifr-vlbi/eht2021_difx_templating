@@ -1,4 +1,8 @@
-# Known Data Issues
+# Known Data Issues - Detected at Correlator
+
+The below data issues were found during the preparatory work for DiFX correlation,
+or during the post-correlation inspections. Ideally these are "new" reported issues
+that are not explained by the observing logs of each station.
 
 ## Pico Veleta
 
