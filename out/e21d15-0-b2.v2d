@@ -1,0 +1,170 @@
+#==================================================================
+# Track e21d15 band 2
+# Notes: ...
+#==================================================================
+
+vex = e21d15-0-b2.vex.obs
+
+dataBufferFactor = 24
+visBufferLength = 40
+startSeries = 1000
+exhaustiveAutocorrs = True
+minSubarray = 1
+singleScan = True
+singleSetup = True
+# maxReadSize = 67108864
+
+
+#==================================================================
+# ANTENNA DATA
+#==================================================================
+
+ANTENNA Aa {
+  datastreams = Aa_ds12,Aa_ds34
+  zoom = zooms58
+  ## Band 1
+  # loOffsets = -0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05
+  ## Band 2
+  loOffsets = -0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05
+  ## Band 3
+  # loOffsets = +0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05
+  ## Band 4
+  # loOffsets = +0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05
+}
+
+ANTENNA Ax {
+  datastreams = Ax_ds12,Ax_ds34
+  zoom = zooms58
+  loOffsets = +15.022,+15.022
+}
+
+ANTENNA Gl {
+  datastreams = Glt_ds12,Glt_ds34
+  zoom = zooms58
+}
+
+ANTENNA Kt {
+  datastreams = Kt_ds12,Kt_ds34
+  zoom = zooms58
+}
+
+ANTENNA Mg { # SMT
+  datastreams = Smt_ds12,Smt_ds34
+  zoom = zooms58
+}
+
+ANTENNA Mm { # JCMT
+  datastreams = Jcmt_ds12,Jcmt_ds34
+  zoom = zooms58
+}
+
+ANTENNA Nn {
+  datastreams = Nn_rec2slot12,Nn_rec2slot34  # e21n07, e21b09
+  # datastreams = Nn_rec2slot1,Nn_rec2slot2,Nn_rec2slot3,Nn_rec2slot4 # possibly like this for e21a13 and later
+  zoom = zooms58
+}
+
+ANTENNA Pv {
+  datastreams = Pv_ds12,Pv_ds34
+  zoom = zooms58
+}
+
+ANTENNA Sw { # SMA APHIDS
+  datastreams = SmaAphids_ds12,SmaAphids_ds34
+  zoom = zooms58
+  deltaClock = 0 # SMA extra offsets
+}
+
+ANTENNA Sz { # SPT
+  datastreams = Spt_ds12,Spt_ds34
+  zoom = zooms58
+}
+DATASTREAM Aa_ds12 { filelist = ehtc2021_ALMA_set1_b2.12.filelist }
+DATASTREAM Aa_ds34 { filelist = ehtc2021_ALMA_set1_b2.34.filelist }
+DATASTREAM Ax_ds12 { filelist = ehtc2021_APEX_set1_b2.12.filelist }
+DATASTREAM Ax_ds34 { filelist = ehtc2021_APEX_set1_b2.34.filelist }
+DATASTREAM Glt_ds12 { filelist = ehtc2021_GLT_set1_b2.12.filelist }
+DATASTREAM Glt_ds34 { filelist = ehtc2021_GLT_set1_b2.34.filelist }
+DATASTREAM Jcmt_ds12 { filelist = ehtc2021_JCMT_set1_b14.12.filelist-beegfs } # "b2 & b3 DSB"
+DATASTREAM Jcmt_ds34 { filelist = ehtc2021_JCMT_set1_b14.34.filelist-beegfs }
+DATASTREAM Kt_ds12 { filelist = ehtc2021_KT_set1_b2.12.filelist }
+DATASTREAM Kt_ds34 { filelist = ehtc2021_KT_set1_b2.34.filelist }
+DATASTREAM Spt_ds12 { filelist = ehtc2021_SPT_set1_b2.12.filelist }
+DATASTREAM Spt_ds34 { filelist = ehtc2021_SPT_set1_b2.34.filelist }
+DATASTREAM Pv_ds12 { filelist = ehtc2021_Pico_set1_b2.12.filelist }
+DATASTREAM Pv_ds34 { filelist = ehtc2021_Pico_set1_b2.34.filelist }
+DATASTREAM SmaAphids_ds12 { filelist = ehtc2021_SMA_b2.12.filelist }
+DATASTREAM SmaAphids_ds34 { filelist = ehtc2021_SMA_b2.34.filelist }
+DATASTREAM Smt_ds12 { filelist = ehtc2021_SMT_b2.12.filelist }
+DATASTREAM Smt_ds34 { filelist = ehtc2021_SMT_b2.34.filelist }
+DATASTREAM Nn_rec2slot12 {
+  filelist = ehtc2021_pNOEMA_set1_rec2.12.filelist
+  format = INTERLACEDVDIF/8:9:10:11:4:5:6:7/8224/2
+}
+DATASTREAM Nn_rec2slot34 {
+  filelist = ehtc2021_pNOEMA_set1_rec2.34.filelist
+  format = INTERLACEDVDIF/4:5:6:7:8:9:10:11/8224/2
+}
+
+
+#==================================================================
+# CORRELATION CONFIG
+#==================================================================
+
+# $ehtc/alma-vex-defs.py -rzoom -f215100.0 -sL -w58.0
+ZOOM zooms58 {
+      # 32 zoom bands in [214162.500000,216037.500000] 1 zm/ch mv 0 res 0
+      # center 215100.000000, nInt x 0.000160000000000 s 0.000160000000000 s
+      # 18560 ch/HOPS 20000 ch/ALMA 655360 ch/R2DBE Res 0.003125000000000 MHz
+      addZoomFreq = freq@215979.203125/bw@58.0/noparent@true  #< 216037.203125
+      addZoomFreq = freq@215920.609375/bw@58.0/noparent@true  #< 215978.609375
+      addZoomFreq = freq@215862.015625/bw@58.0/noparent@true  #< 215920.015625
+      addZoomFreq = freq@215803.421875/bw@58.0/noparent@true  #< 215861.421875
+      addZoomFreq = freq@215744.828125/bw@58.0/noparent@true  #< 215802.828125
+      addZoomFreq = freq@215686.234375/bw@58.0/noparent@true  #< 215744.234375
+      addZoomFreq = freq@215627.640625/bw@58.0/noparent@true  #< 215685.640625
+      addZoomFreq = freq@215569.046875/bw@58.0/noparent@true  #< 215627.046875
+      addZoomFreq = freq@215510.453125/bw@58.0/noparent@true  #< 215568.453125
+      addZoomFreq = freq@215451.859375/bw@58.0/noparent@true  #< 215509.859375
+      addZoomFreq = freq@215393.265625/bw@58.0/noparent@true  #< 215451.265625
+      addZoomFreq = freq@215334.671875/bw@58.0/noparent@true  #< 215392.671875
+      addZoomFreq = freq@215276.078125/bw@58.0/noparent@true  #< 215334.078125
+      addZoomFreq = freq@215217.484375/bw@58.0/noparent@true  #< 215275.484375
+      addZoomFreq = freq@215158.890625/bw@58.0/noparent@true  #< 215216.890625
+      addZoomFreq = freq@215100.296875/bw@58.0/noparent@true  #< 215158.296875
+      addZoomFreq = freq@215041.703125/bw@58.0/noparent@true  #< 215099.703125
+      addZoomFreq = freq@214983.109375/bw@58.0/noparent@true  #< 215041.109375
+      addZoomFreq = freq@214924.515625/bw@58.0/noparent@true  #< 214982.515625
+      addZoomFreq = freq@214865.921875/bw@58.0/noparent@true  #< 214923.921875
+      addZoomFreq = freq@214807.328125/bw@58.0/noparent@true  #< 214865.328125
+      addZoomFreq = freq@214748.734375/bw@58.0/noparent@true  #< 214806.734375
+      addZoomFreq = freq@214690.140625/bw@58.0/noparent@true  #< 214748.140625
+      addZoomFreq = freq@214631.546875/bw@58.0/noparent@true  #< 214689.546875
+      addZoomFreq = freq@214572.953125/bw@58.0/noparent@true  #< 214630.953125
+      addZoomFreq = freq@214514.359375/bw@58.0/noparent@true  #< 214572.359375
+      addZoomFreq = freq@214455.765625/bw@58.0/noparent@true  #< 214513.765625
+      addZoomFreq = freq@214397.171875/bw@58.0/noparent@true  #< 214455.171875
+      addZoomFreq = freq@214338.578125/bw@58.0/noparent@true  #< 214396.578125
+      addZoomFreq = freq@214279.984375/bw@58.0/noparent@true  #< 214337.984375
+      addZoomFreq = freq@214221.390625/bw@58.0/noparent@true  #< 214279.390625
+      addZoomFreq = freq@214162.796875/bw@58.0/noparent@true  #< 214220.796875
+}
+
+SETUP MHz58 {
+  numBufferedFFTs = 20
+  tInt = 0.400
+  subintNS =  3200000
+  FFTSpecRes = 0.015625
+  outputSpecRes = 0.5
+  xmacLength = 0
+  strideLength = 0
+  guardNS = 2000
+
+  # outputSpecRes = 0.0625 # fringe search, ~1000 ch over 58 MHz
+  # outputSpecRes = 0.0156250 # fringe search, ~4000 ch over 58 MHz
+}
+
+RULE defaultRule {
+  setup = MHz58
+}
+
