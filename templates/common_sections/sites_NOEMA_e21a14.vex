@@ -3,7 +3,6 @@ def NOEMA;
      site_name = NOEMA;
      site_ID = Nn;
      * Expt    Pad  Position for pad according to 2010burepos.pl
-     * Expt    Pad  Position for pad according to 2010burepos.pl
      * e21n07  W05  4523996.400 m: 468003.700 m: 4460308.000 m;
      * e21b09  N09  4523948.290 m: 468035.507 m: 4460364.945 m;
      * e21e13  N09  4523948.290 m: 468035.507 m: 4460364.945 m;
