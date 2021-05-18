@@ -21,3 +21,7 @@ pv_b3:
 pv_b4: # SAO%0046 SAO%0018, SAO%0047 SAO%0049 ; Bonn mark6-10
 	$(call mk6dir2filelist,mark6-10,12,SAO%0046,ehtc2021_Pico_set1_b4.12.filelist)
 	$(call mk6dir2filelist,mark6-10,34,SAO%0047,ehtc2021_Pico_set1_b4.34.filelist)
+
+buglist:
+	# All scans that have unexpected time stamps
+	grep -v " 59" ehtc2021_*.filelist
