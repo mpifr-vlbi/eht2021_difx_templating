@@ -1,7 +1,7 @@
 
 include Makefile.inc
 
-default:
+default: all
 
 preqrequisites:
 	. scripts/create_vex_EOPs.sh
@@ -46,12 +46,9 @@ EHT_2021_345GHz_b3: e21f19_b3
 
 EHT_2021_345GHz_b4: e21f19_b4
 
-# install: install_b1 install_b4
-# diff: diff_b1 diff_b4
+install: install_b1 install_b2 install_b3 install_b4
 
-install:
-	@echo "TODO: install not yet implemented"
-	@echo "For now, 'cd out' and manually copy v2d+vex to your respective DiFX job directories"
+# diff: diff_b1 diff_b4
 
 ####################################################################################
 ## EHT 2021 -- Band 1
@@ -90,6 +87,15 @@ e21e18_b1:
 	@ sed -i "s/vexfilename/e21e18-${REL}-b1.vex.obs/g" out/e21e18-$(REL)-b1.v2d
 
 e21f19_b1:
+	@ touch out/e21f19-$(REL)-b1.v2d
+	@ touch out/e21f19-$(REL)-b1.vex.obs
+	@echo "Generated blank v2d and vex.obs for e21f19 b1. ToDo: 345G templates!"
+
+install_b1:
+	for exptname in e21b09 e21e13 e21a14 e21d15 e21a17 e21e18 e21f19; do \
+		mkdir -p $(EXPROOT)/$${exptname}/$(REV)/b1/ ; \
+		cp -av out/$${exptname}-${REL}-b1.{v2d,vex.obs} $(EXPROOT)/$${exptname}/$(REV)/b1/ ; \
+	done
 
 ####################################################################################
 ## EHT 2021 -- Band 2
@@ -128,6 +134,15 @@ e21e18_b2:
 	@ sed -i "s/vexfilename/e21e18-${REL}-b2.vex.obs/g" out/e21e18-$(REL)-b2.v2d
 
 e21f19_b2:
+	@ touch out/e21f19-$(REL)-b2.v2d
+	@ touch out/e21f19-$(REL)-b2.vex.obs
+	@echo "Generated blank v2d and vex.obs for e21f19 b2. ToDo: 345G templates!"
+
+install_b2:
+	for exptname in e21b09 e21e13 e21a14 e21d15 e21a17 e21e18 e21f19; do \
+		mkdir -p $(EXPROOT)/$${exptname}/$(REV)/b2/ ; \
+		cp -av out/$${exptname}-${REL}-b2.{v2d,vex.obs} $(EXPROOT)/$${exptname}/$(REV)/b2/ ; \
+	done
 
 ####################################################################################
 ## EHT 2021 -- Band 3
@@ -166,6 +181,15 @@ e21e18_b3:
 	@ sed -i "s/vexfilename/e21e18-${REL}-b3.vex.obs/g" out/e21e18-$(REL)-b3.v2d
 
 e21f19_b3:
+	@ touch out/e21f19-$(REL)-b3.v2d
+	@ touch out/e21f19-$(REL)-b3.vex.obs
+	@echo "Generated blank v2d and vex.obs for e21f19 b3. ToDo: 345G templates!"
+
+install_b3:
+	for exptname in e21b09 e21e13 e21a14 e21d15 e21a17 e21e18 e21f19; do \
+		mkdir -p $(EXPROOT)/$${exptname}/$(REV)/b3/ ; \
+		cp -av out/$${exptname}-${REL}-b3.{v2d,vex.obs} $(EXPROOT)/$${exptname}/$(REV)/b3/ ; \
+	done
 
 ####################################################################################
 ## EHT 2021 -- Band 4
@@ -204,3 +228,12 @@ e21e18_b4:
 	@ sed -i "s/vexfilename/e21e18-${REL}-b4.vex.obs/g" out/e21e18-$(REL)-b4.v2d
 
 e21f19_b4:
+	@ touch out/e21f19-$(REL)-b4.v2d
+	@ touch out/e21f19-$(REL)-b4.vex.obs
+	@echo "Generated blank v2d and vex.obs for e21f19 b4. ToDo: 345G templates!"
+
+install_b4:
+	for exptname in e21b09 e21e13 e21a14 e21d15 e21a17 e21e18 e21f19; do \
+		mkdir -p $(EXPROOT)/$${exptname}/$(REV)/b4/ ; \
+		cp -av out/$${exptname}-${REL}-b4.{v2d,vex.obs} $(EXPROOT)/$${exptname}/$(REV)/b4/ ; \
+	done
