@@ -199,7 +199,7 @@ def populateData(lines, includepaths):
     # Process the loaddata files
     for file in loadFiles:
 
-        print file
+        # print ('Loading %s' % (file))
         data = []
         with open(file, 'r') as df:
             data = df.readlines()
