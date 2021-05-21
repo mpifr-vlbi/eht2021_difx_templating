@@ -16,6 +16,11 @@ function extract_vex_sections() {
 	# Get all of SCHED block until end of file
 	sed -n "/\$SCHED;/,/^<eof>/p" $1 > $OUTDIR/sched_$vexname
 
+	# Rename the NoXXXX scans into doy-hhmm
+	tmpfile=$(mktemp /tmp/extract_vex_portions.XXXXXX)
+	awk -f scanmod.awk $OUTDIR/sched_$vexname > $tmpfile
+	mv $tmpfile $OUTDIR/sched_$vexname
+
 	# Get all of SOURCE block until FREQ block
 	sed -n "/\$SOURCE;/,/\$FREQ;/p" $1 > $OUTDIR/sources_$vexname
 	sed -i '$ d' $OUTDIR/sources_$vexname  # remove trailing $FREQ; line
