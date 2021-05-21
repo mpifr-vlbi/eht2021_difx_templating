@@ -7,3 +7,7 @@ REL  := 0
 
 # Name of site; used for ./filelists_<SITE>/
 SITE := mpifr
+
+# Top-level directory for Correlator output, any experiment
+EXPROOT := /Exps/
+
