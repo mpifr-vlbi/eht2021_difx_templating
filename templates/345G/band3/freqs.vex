@@ -1,0 +1,8 @@
+$FREQ;
+*
+def FREQ_COMMON;
+     sample_rate =  4096.000 Ms/sec;
+     chan_def = &B:348600.000 MHz : L :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
+     chan_def = &B:348600.000 MHz : L :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
+enddef;
+*
