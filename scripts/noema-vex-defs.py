@@ -59,10 +59,14 @@ class EHTBandLabels:
 
 	def __init__(self):
 		self.bands = [
-			BandLabel('b1',212.053,214.100),
+			BandLabel('b1',212.052,214.100),
 			BandLabel('b2',214.100,216.148),
 			BandLabel('b3',226.052,228.100),
-			BandLabel('b4',228.100,230.148)
+			BandLabel('b4',228.100,230.148),
+			BandLabel('b1_0.8mm',334.552,336.600),
+			BandLabel('b2_0.8mm',336.600,338.648),
+			BandLabel('b3_0.8mm',346.552,348.600),
+			BandLabel('b4_0.8mm',348.600,350.648)
 		]
 
 	def lookUp(self, freq_GHz, sideband='U'):
