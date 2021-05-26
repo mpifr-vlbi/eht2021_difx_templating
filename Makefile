@@ -144,9 +144,9 @@ e21e18_b2:
 	@ sed -i "s/vexfilename/e21e18-${REL}-b2.vex.obs/g" out/e21e18-$(REL)-b2.v2d
 
 e21f19_b2:
-	@ touch out/e21f19-$(REL)-b2.v2d
-	@ touch out/e21f19-$(REL)-b2.vex.obs
-	@echo "Generated blank v2d and vex.obs for e21f19 b2. ToDo: 345G templates!"
+	@ ./tvex2vex.py -I./templates/345G/band2/ -I./templates/common_sections/ templates/e21f19.vext out/e21f19-$(REL)-b2.vex.obs
+	@ ./tvex2vex.py -I./templates/345G/band2/ -I./templates/common_sections/ templates/e21f19.v2dt out/e21f19-$(REL)-b2.v2d
+	@ sed -i "s/vexfilename/e21f19-${REL}-b2.vex.obs/g" out/e21f19-$(REL)-b2.v2d
 
 install_b2:
 	for exptname in e21b09 e21e13 e21a14 e21d15 e21a17 e21e18 e21f19; do \
@@ -191,9 +191,9 @@ e21e18_b3:
 	@ sed -i "s/vexfilename/e21e18-${REL}-b3.vex.obs/g" out/e21e18-$(REL)-b3.v2d
 
 e21f19_b3:
-	@ touch out/e21f19-$(REL)-b3.v2d
-	@ touch out/e21f19-$(REL)-b3.vex.obs
-	@echo "Generated blank v2d and vex.obs for e21f19 b3. ToDo: 345G templates!"
+	@ ./tvex2vex.py -I./templates/345G/band3/ -I./templates/common_sections/ templates/e21f19.vext out/e21f19-$(REL)-b3.vex.obs
+	@ ./tvex2vex.py -I./templates/345G/band3/ -I./templates/common_sections/ templates/e21f19.v2dt out/e21f19-$(REL)-b3.v2d
+	@ sed -i "s/vexfilename/e21f19-${REL}-b3.vex.obs/g" out/e21f19-$(REL)-b3.v2d
 
 install_b3:
 	for exptname in e21b09 e21e13 e21a14 e21d15 e21a17 e21e18 e21f19; do \
@@ -238,9 +238,9 @@ e21e18_b4:
 	@ sed -i "s/vexfilename/e21e18-${REL}-b4.vex.obs/g" out/e21e18-$(REL)-b4.v2d
 
 e21f19_b4:
-	@ touch out/e21f19-$(REL)-b4.v2d
-	@ touch out/e21f19-$(REL)-b4.vex.obs
-	@echo "Generated blank v2d and vex.obs for e21f19 b4. ToDo: 345G templates!"
+	@ ./tvex2vex.py -I./templates/345G/band4/ -I./templates/common_sections/ templates/e21f19.vext out/e21f19-$(REL)-b4.vex.obs
+	@ ./tvex2vex.py -I./templates/345G/band4/ -I./templates/common_sections/ templates/e21f19.v2dt out/e21f19-$(REL)-b4.v2d
+	@ sed -i "s/vexfilename/e21f19-${REL}-b4.vex.obs/g" out/e21f19-$(REL)-b4.v2d
 
 install_b4:
 	for exptname in e21b09 e21e13 e21a14 e21d15 e21a17 e21e18 e21f19; do \
