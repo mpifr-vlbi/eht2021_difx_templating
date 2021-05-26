@@ -2,7 +2,13 @@ $FREQ;
 *
 def FREQ_COMMON;
      sample_rate =  4096.000 Ms/sec;
-     chan_def = &B:348600.000 MHz : L :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
-     chan_def = &B:348600.000 MHz : L :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
+     chan_def = &B:348600.000 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
+     chan_def = &B:348600.000 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
+enddef;
+*
+def FREQ_DBBC3_PV;
+     sample_rate =  4096.000 Ms/sec;
+     chan_def = &B:350648.000 MHz : L :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
+     chan_def = &B:350648.000 MHz : L :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
 enddef;
 *
