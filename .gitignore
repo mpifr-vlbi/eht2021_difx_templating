@@ -3,6 +3,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# DiFX
+*.input
+*.calc
+*.flag
+*.joblist
+*.nodata
+
 # C extensions
 *.so
 
