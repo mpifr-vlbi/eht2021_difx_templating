@@ -88,8 +88,9 @@ def 1mmlcp;
      ref $IF = IF_ALMA:Aa;
      ref $BBC = BBC_COMMON:Pv:Gl:Ax:Sz:Kt:Mg:Sw:Mm:Nn;
      ref $BBC = BBC_ALMA:Aa;
-     ref $FREQ = FREQ_COMMON:Pv:Gl:Sz:Kt:Mg:Sw:Mm;
-     ref $FREQ = FREQ_AX:Ax;
+     ref $FREQ = FREQ_COMMON:Gl:Sz:Kt:Mg:Sw:Mm;
+     ref $FREQ = FREQ_DBBC3_AX:Ax;
+     ref $FREQ = FREQ_DBBC3_PV:Pv;
      ref $FREQ = FREQ_AA:Aa;
      ref $FREQ = FREQ_Nn:Nn;
      ref $TRACKS = VDIF8224:Pv:Gl:Ax:Sz:Kt:Mg:Sw:Mm;
@@ -419,10 +420,16 @@ def FREQ_COMMON;
      chan_def = &B:214100.000 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
 enddef;
 *
-def FREQ_AX;
+def FREQ_DBBC3_AX;
      sample_rate =  4096.000 Ms/sec;
-     chan_def = &B:216051.0 MHz : L :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
-     chan_def = &B:216051.0 MHz : L :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
+     chan_def = &B:216151.0 MHz : L :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
+     chan_def = &B:216151.0 MHz : L :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
+enddef;
+*
+def FREQ_DBBC3_PV;
+     sample_rate =  4096.000 Ms/sec;
+     chan_def = &B:216148.0 MHz : L :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
+     chan_def = &B:216148.0 MHz : L :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
 enddef;
 *
 def FREQ_Nn; * derived for on lo1=221.100 lo2=7.744 GHz
