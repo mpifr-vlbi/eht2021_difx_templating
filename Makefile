@@ -3,13 +3,15 @@ include Makefile.inc
 
 default: all
 
-preqrequisites:
+prerequisites:
+	mkdir -p out
 	. scripts/create_vex_EOPs.sh
 	. scripts/extract_vex_portions.sh
 	. scripts/make_initial_clocks.sh
 	. scripts/make_initial_notes.sh
 	# ./scripts/noema-vex-defs.py --lo1 221.100 --lo2 7.744 -r 1,2 > templates/230G/band2/freqs_NOEMA.vex # commented out after decision 5/2021 to ignore the 4x64 MHz overlap of b2 into recorder1
 	# ./scripts/noema-vex-defs.py --lo1 221.100 --lo2 7.744 -r 3,4 > templates/230G/band3/freqs_NOEMA.vex
+	## 230G
 	./scripts/noema-vex-defs.py --lo1 221.100 --lo2 7.744 -r 1   > templates/230G/band1/freqs_NOEMA.vex
 	./scripts/noema-vex-defs.py --lo1 221.100 --lo2 7.744 -r 2   > templates/230G/band2/freqs_NOEMA.vex
 	./scripts/noema-vex-defs.py --lo1 221.100 --lo2 7.744 -r 4   > templates/230G/band3/freqs_NOEMA.vex
@@ -18,7 +20,15 @@ preqrequisites:
 	./scripts/alma-vex-defs.py --lo1 221.100 -r 2 > templates/230G/band2/freqs_ALMA.vex
 	./scripts/alma-vex-defs.py --lo1 221.100 -r 3 > templates/230G/band3/freqs_ALMA.vex
 	./scripts/alma-vex-defs.py --lo1 221.100 -r 4 > templates/230G/band4/freqs_ALMA.vex
-	mkdir -p out
+	## 345G
+	./scripts/noema-vex-defs.py --lo1 342.600 --lo2 7.744 -r 1   > templates/345G/band1/freqs_NOEMA.vex
+	./scripts/noema-vex-defs.py --lo1 342.600 --lo2 7.744 -r 2   > templates/345G/band2/freqs_NOEMA.vex
+	./scripts/noema-vex-defs.py --lo1 342.600 --lo2 7.744 -r 4   > templates/345G/band3/freqs_NOEMA.vex
+	./scripts/noema-vex-defs.py --lo1 342.600 --lo2 7.744 -r 3   > templates/345G/band4/freqs_NOEMA.vex
+	./scripts/alma-vex-defs.py --lo1 342.600 -r 1 > templates/345G/band1/freqs_ALMA.vex
+	./scripts/alma-vex-defs.py --lo1 342.600 -r 2 > templates/345G/band2/freqs_ALMA.vex
+	./scripts/alma-vex-defs.py --lo1 342.600 -r 3 > templates/345G/band3/freqs_ALMA.vex
+	./scripts/alma-vex-defs.py --lo1 342.600 -r 4 > templates/345G/band4/freqs_ALMA.vex
 
 ####################################################################################
 ## Build and install full correlation v2d vex config sets
