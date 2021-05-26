@@ -25,7 +25,7 @@ prerequisites:
 	./scripts/noema-vex-defs.py --lo1 342.600 --lo2 7.744 -r 2   > templates/345G/band2/freqs_NOEMA.vex
 	./scripts/noema-vex-defs.py --lo1 342.600 --lo2 7.744 -r 4   > templates/345G/band3/freqs_NOEMA.vex
 	./scripts/noema-vex-defs.py --lo1 342.600 --lo2 7.744 -r 3   > templates/345G/band4/freqs_NOEMA.vex
-	./scripts/alma-vex-defs.py --lo1 342.600 -r 1 > templates/345G/band1/freqs_ALMA.vex
+	./scripts/alma-vex-defs.py --lo1 342.600 -r 1 > templates/345G/band1/freqs_ALMA.vex	## TODO: what's the correct lo1 to use? and lo2?
 	./scripts/alma-vex-defs.py --lo1 342.600 -r 2 > templates/345G/band2/freqs_ALMA.vex
 	./scripts/alma-vex-defs.py --lo1 342.600 -r 3 > templates/345G/band3/freqs_ALMA.vex
 	./scripts/alma-vex-defs.py --lo1 342.600 -r 4 > templates/345G/band4/freqs_ALMA.vex
@@ -97,9 +97,9 @@ e21e18_b1:
 	@ sed -i "s/vexfilename/e21e18-${REL}-b1.vex.obs/g" out/e21e18-$(REL)-b1.v2d
 
 e21f19_b1:
-	@ touch out/e21f19-$(REL)-b1.v2d
-	@ touch out/e21f19-$(REL)-b1.vex.obs
-	@echo "Generated blank v2d and vex.obs for e21f19 b1. ToDo: 345G templates!"
+	@ ./tvex2vex.py -I./templates/345G/band1/ -I./templates/common_sections/ templates/e21f19.vext out/e21f19-$(REL)-b1.vex.obs
+	@ ./tvex2vex.py -I./templates/345G/band1/ -I./templates/common_sections/ templates/e21f19.v2dt out/e21f19-$(REL)-b1.v2d
+	@ sed -i "s/vexfilename/e21f19-${REL}-b1.vex.obs/g" out/e21f19-$(REL)-b1.v2d
 
 install_b1:
 	for exptname in e21b09 e21e13 e21a14 e21d15 e21a17 e21e18 e21f19; do \
