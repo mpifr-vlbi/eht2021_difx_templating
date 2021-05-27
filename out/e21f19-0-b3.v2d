@@ -59,7 +59,7 @@ ANTENNA Mm { # JCMT
 }
 
 ANTENNA Nn {
-  datastreams = Nn_rec1slot1,Nn_rec1slot2,Nn_rec1slot3,Nn_rec1slot4
+  datastreams = Nn_rec3slot1,Nn_rec3slot2,Nn_rec3slot3,Nn_rec3slot4
   zoom = zooms58
 }
 
@@ -96,21 +96,21 @@ DATASTREAM SmaAphids_ds12 { filelist = ehtc2021_SMA_b3.12.filelist }
 DATASTREAM SmaAphids_ds34 { filelist = ehtc2021_SMA_b3.34.filelist }
 DATASTREAM Smt_ds12 { filelist = ehtc2021_SMT_b3.12.filelist }
 DATASTREAM Smt_ds34 { filelist = ehtc2021_SMT_b3.34.filelist }
-DATASTREAM Nn_rec1slot1 {
-  filelist = ehtc2021_pNOEMA_set1_rec1.1.filelist
+DATASTREAM Nn_rec3slot1 {
+  filelist = ehtc2021_pNOEMA_set1_rec3.1.filelist
+  format = INTERLACEDVDIF/4:5:6:7/8224/2
+}
+DATASTREAM Nn_rec3slot2 {
+  filelist = ehtc2021_pNOEMA_set1_rec3.2.filelist
   format = INTERLACEDVDIF/0:1:2:3/8224/2
 }
-DATASTREAM Nn_rec1slot2 {
-  filelist = ehtc2021_pNOEMA_set1_rec1.2.filelist
+DATASTREAM Nn_rec3slot3 {
+  filelist = ehtc2021_pNOEMA_set1_rec3.3.filelist
   format = INTERLACEDVDIF/0:1:2:3/8224/2
 }
-DATASTREAM Nn_rec1slot3 {
-  filelist = ehtc2021_pNOEMA_set1_rec1.3.filelist
-  format = INTERLACEDVDIF/0:1:2:3/8224/2
-}
-DATASTREAM Nn_rec1slot4 {
-  filelist = ehtc2021_pNOEMA_set1_rec1.4.filelist
-  format = INTERLACEDVDIF/0:1:2:3/8224/2
+DATASTREAM Nn_rec3slot4 {
+  filelist = ehtc2021_pNOEMA_set1_rec3.4.filelist
+  format = INTERLACEDVDIF/4:5:6:7/8224/2
 }
 
 
