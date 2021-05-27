@@ -25,10 +25,12 @@ prerequisites:
 	./scripts/noema-vex-defs.py -c "4-8" --lo1 342.600 --lo2 7.744 -r 2   > templates/345G/band2/freqs_NOEMA.vex
 	./scripts/noema-vex-defs.py -c "4-8" --lo1 342.600 --lo2 7.744 -r 4   > templates/345G/band3/freqs_NOEMA.vex
 	./scripts/noema-vex-defs.py -c "4-8" --lo1 342.600 --lo2 7.744 -r 3   > templates/345G/band4/freqs_NOEMA.vex
-	./scripts/alma-vex-defs.py --lo1 342.600 -r 1 > templates/345G/band1/freqs_ALMA.vex	## TODO: what's the correct lo1 to use? and lo2?
-	./scripts/alma-vex-defs.py --lo1 342.600 -r 2 > templates/345G/band2/freqs_ALMA.vex
-	./scripts/alma-vex-defs.py --lo1 342.600 -r 3 > templates/345G/band3/freqs_ALMA.vex
-	./scripts/alma-vex-defs.py --lo1 342.600 -r 4 > templates/345G/band4/freqs_ALMA.vex
+	## ALMA 345G: $ehtc/alma-vex-defs.py would be more direct but chan_defs not useable as-is, vs ./scripts/alma-vex-defs.py usable but not 4-8/5-9 aware plus b2 offset trickyness
+	./scripts/alma-vex-defs.py --lo1 343.600 -r 1 > templates/345G/band1/freqs_ALMA.vex # equiv. to $ehtc/alma-vex-defs.py -f335600.00000 -w58.0 -sL -ralma
+	./scripts/alma-vex-defs.py --lo1 343.600 -r 2 > templates/345G/band2/freqs_ALMA_alt.vex # equiv. to $ehtc/alma-vex-defs.py -f337600.00000 -w58.0 -sL -ralma
+	./scripts/alma-vex-defs.py --lo1 343.54140625 -r 2 > templates/345G/band2/freqs_ALMA.vex # equiv. to $ehtc/alma-vex-defs.py -f337541.40625 -w58.0 -sL -ralma; shifted 58.59375 MHz
+	./scripts/alma-vex-defs.py --lo1 341.600 -r 3 > templates/345G/band3/freqs_ALMA.vex # equiv. to $ehtc/alma-vex-defs.py -f347600.00000 -w58.0 -sU -ralma
+	./scripts/alma-vex-defs.py --lo1 341.600 -r 4 > templates/345G/band4/freqs_ALMA.vex # equiv. to $ehtc/alma-vex-defs.py -f349600.00000 -w58.0 -sU -ralma
 
 ####################################################################################
 ## Build and install full correlation v2d vex config sets
