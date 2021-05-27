@@ -1,40 +1,40 @@
-# $ehtc/alma-vex-defs.py -rzoom -f213100.0 -sL -w58.0 ## TODO 345G
+# $ehtc/alma-vex-defs.py -rzoom -f335600.0 -sL -w58.0 ## TODO verify if correct for ALMA 345G
 ZOOM zooms58 {
-      # 32 zoom bands in [212162.500000,214037.500000] 1 zm/ch mv 0 res 0
-      # center 213100.000000, nInt x 0.000160000000000 s 0.000160000000000 s
+      # 32 zoom bands in [334662.500000,336537.500000] 1 zm/ch mv 0 res 0
+      # center 335600.000000, nInt x 0.000160000000000 s 0.000160000000000 s
       # 18560 ch/HOPS 20000 ch/ALMA 655360 ch/R2DBE Res 0.003125000000000 MHz
-      addZoomFreq = freq@213979.203125/bw@58.0/noparent@true  #< 214037.203125
-      addZoomFreq = freq@213920.609375/bw@58.0/noparent@true  #< 213978.609375
-      addZoomFreq = freq@213862.015625/bw@58.0/noparent@true  #< 213920.015625
-      addZoomFreq = freq@213803.421875/bw@58.0/noparent@true  #< 213861.421875
-      addZoomFreq = freq@213744.828125/bw@58.0/noparent@true  #< 213802.828125
-      addZoomFreq = freq@213686.234375/bw@58.0/noparent@true  #< 213744.234375
-      addZoomFreq = freq@213627.640625/bw@58.0/noparent@true  #< 213685.640625
-      addZoomFreq = freq@213569.046875/bw@58.0/noparent@true  #< 213627.046875
-      addZoomFreq = freq@213510.453125/bw@58.0/noparent@true  #< 213568.453125
-      addZoomFreq = freq@213451.859375/bw@58.0/noparent@true  #< 213509.859375
-      addZoomFreq = freq@213393.265625/bw@58.0/noparent@true  #< 213451.265625
-      addZoomFreq = freq@213334.671875/bw@58.0/noparent@true  #< 213392.671875
-      addZoomFreq = freq@213276.078125/bw@58.0/noparent@true  #< 213334.078125
-      addZoomFreq = freq@213217.484375/bw@58.0/noparent@true  #< 213275.484375
-      addZoomFreq = freq@213158.890625/bw@58.0/noparent@true  #< 213216.890625
-      addZoomFreq = freq@213100.296875/bw@58.0/noparent@true  #< 213158.296875
-      addZoomFreq = freq@213041.703125/bw@58.0/noparent@true  #< 213099.703125
-      addZoomFreq = freq@212983.109375/bw@58.0/noparent@true  #< 213041.109375
-      addZoomFreq = freq@212924.515625/bw@58.0/noparent@true  #< 212982.515625
-      addZoomFreq = freq@212865.921875/bw@58.0/noparent@true  #< 212923.921875
-      addZoomFreq = freq@212807.328125/bw@58.0/noparent@true  #< 212865.328125
-      addZoomFreq = freq@212748.734375/bw@58.0/noparent@true  #< 212806.734375
-      addZoomFreq = freq@212690.140625/bw@58.0/noparent@true  #< 212748.140625
-      addZoomFreq = freq@212631.546875/bw@58.0/noparent@true  #< 212689.546875
-      addZoomFreq = freq@212572.953125/bw@58.0/noparent@true  #< 212630.953125
-      addZoomFreq = freq@212514.359375/bw@58.0/noparent@true  #< 212572.359375
-      addZoomFreq = freq@212455.765625/bw@58.0/noparent@true  #< 212513.765625
-      addZoomFreq = freq@212397.171875/bw@58.0/noparent@true  #< 212455.171875
-      addZoomFreq = freq@212338.578125/bw@58.0/noparent@true  #< 212396.578125
-      addZoomFreq = freq@212279.984375/bw@58.0/noparent@true  #< 212337.984375
-      addZoomFreq = freq@212221.390625/bw@58.0/noparent@true  #< 212279.390625
-      addZoomFreq = freq@212162.796875/bw@58.0/noparent@true  #< 212220.796875
+      addZoomFreq = freq@336479.203125/bw@58.0/noparent@true  #< 336537.203125
+      addZoomFreq = freq@336420.609375/bw@58.0/noparent@true  #< 336478.609375
+      addZoomFreq = freq@336362.015625/bw@58.0/noparent@true  #< 336420.015625
+      addZoomFreq = freq@336303.421875/bw@58.0/noparent@true  #< 336361.421875
+      addZoomFreq = freq@336244.828125/bw@58.0/noparent@true  #< 336302.828125
+      addZoomFreq = freq@336186.234375/bw@58.0/noparent@true  #< 336244.234375
+      addZoomFreq = freq@336127.640625/bw@58.0/noparent@true  #< 336185.640625
+      addZoomFreq = freq@336069.046875/bw@58.0/noparent@true  #< 336127.046875
+      addZoomFreq = freq@336010.453125/bw@58.0/noparent@true  #< 336068.453125
+      addZoomFreq = freq@335951.859375/bw@58.0/noparent@true  #< 336009.859375
+      addZoomFreq = freq@335893.265625/bw@58.0/noparent@true  #< 335951.265625
+      addZoomFreq = freq@335834.671875/bw@58.0/noparent@true  #< 335892.671875
+      addZoomFreq = freq@335776.078125/bw@58.0/noparent@true  #< 335834.078125
+      addZoomFreq = freq@335717.484375/bw@58.0/noparent@true  #< 335775.484375
+      addZoomFreq = freq@335658.890625/bw@58.0/noparent@true  #< 335716.890625
+      addZoomFreq = freq@335600.296875/bw@58.0/noparent@true  #< 335658.296875
+      addZoomFreq = freq@335541.703125/bw@58.0/noparent@true  #< 335599.703125
+      addZoomFreq = freq@335483.109375/bw@58.0/noparent@true  #< 335541.109375
+      addZoomFreq = freq@335424.515625/bw@58.0/noparent@true  #< 335482.515625
+      addZoomFreq = freq@335365.921875/bw@58.0/noparent@true  #< 335423.921875
+      addZoomFreq = freq@335307.328125/bw@58.0/noparent@true  #< 335365.328125
+      addZoomFreq = freq@335248.734375/bw@58.0/noparent@true  #< 335306.734375
+      addZoomFreq = freq@335190.140625/bw@58.0/noparent@true  #< 335248.140625
+      addZoomFreq = freq@335131.546875/bw@58.0/noparent@true  #< 335189.546875
+      addZoomFreq = freq@335072.953125/bw@58.0/noparent@true  #< 335130.953125
+      addZoomFreq = freq@335014.359375/bw@58.0/noparent@true  #< 335072.359375
+      addZoomFreq = freq@334955.765625/bw@58.0/noparent@true  #< 335013.765625
+      addZoomFreq = freq@334897.171875/bw@58.0/noparent@true  #< 334955.171875
+      addZoomFreq = freq@334838.578125/bw@58.0/noparent@true  #< 334896.578125
+      addZoomFreq = freq@334779.984375/bw@58.0/noparent@true  #< 334837.984375
+      addZoomFreq = freq@334721.390625/bw@58.0/noparent@true  #< 334779.390625
+      addZoomFreq = freq@334662.796875/bw@58.0/noparent@true  #< 334720.796875
 }
 
 ZOOM zooms62
