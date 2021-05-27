@@ -21,10 +21,10 @@ prerequisites:
 	./scripts/alma-vex-defs.py --lo1 221.100 -r 3 > templates/230G/band3/freqs_ALMA.vex
 	./scripts/alma-vex-defs.py --lo1 221.100 -r 4 > templates/230G/band4/freqs_ALMA.vex
 	## 345G
-	./scripts/noema-vex-defs.py --lo1 342.600 --lo2 7.744 -r 1   > templates/345G/band1/freqs_NOEMA.vex
-	./scripts/noema-vex-defs.py --lo1 342.600 --lo2 7.744 -r 2   > templates/345G/band2/freqs_NOEMA.vex
-	./scripts/noema-vex-defs.py --lo1 342.600 --lo2 7.744 -r 4   > templates/345G/band3/freqs_NOEMA.vex
-	./scripts/noema-vex-defs.py --lo1 342.600 --lo2 7.744 -r 3   > templates/345G/band4/freqs_NOEMA.vex
+	./scripts/noema-vex-defs.py -c "4-8" --lo1 342.600 --lo2 7.744 -r 1   > templates/345G/band1/freqs_NOEMA.vex
+	./scripts/noema-vex-defs.py -c "4-8" --lo1 342.600 --lo2 7.744 -r 2   > templates/345G/band2/freqs_NOEMA.vex
+	./scripts/noema-vex-defs.py -c "4-8" --lo1 342.600 --lo2 7.744 -r 4   > templates/345G/band3/freqs_NOEMA.vex
+	./scripts/noema-vex-defs.py -c "4-8" --lo1 342.600 --lo2 7.744 -r 3   > templates/345G/band4/freqs_NOEMA.vex
 	./scripts/alma-vex-defs.py --lo1 342.600 -r 1 > templates/345G/band1/freqs_ALMA.vex	## TODO: what's the correct lo1 to use? and lo2?
 	./scripts/alma-vex-defs.py --lo1 342.600 -r 2 > templates/345G/band2/freqs_ALMA.vex
 	./scripts/alma-vex-defs.py --lo1 342.600 -r 3 > templates/345G/band3/freqs_ALMA.vex
