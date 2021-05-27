@@ -426,6 +426,74 @@ enddef;
 *
 def FREQ_Nn; * derived for on lo1=342.600 lo2=7.744 GHz
    sample_rate = 128.0 Ms/sec;  * (2bits/sample)
+   * Recorder 3, slot 1, USB-Lower/Inner PolyFiX 7 SFP+ 1, RCP, subbands 16-31
+   chan_def = &B: 349352.00 MHz : L : 64.00 MHz : &CH01 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349288.00 MHz : L : 64.00 MHz : &CH02 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349224.00 MHz : L : 64.00 MHz : &CH03 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349160.00 MHz : L : 64.00 MHz : &CH04 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349096.00 MHz : L : 64.00 MHz : &CH05 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349032.00 MHz : L : 64.00 MHz : &CH06 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 348968.00 MHz : L : 64.00 MHz : &CH07 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 348904.00 MHz : L : 64.00 MHz : &CH08 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 348840.00 MHz : L : 64.00 MHz : &CH09 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 348776.00 MHz : L : 64.00 MHz : &CH10 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 348712.00 MHz : L : 64.00 MHz : &CH11 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 348648.00 MHz : L : 64.00 MHz : &CH12 : &BBC01 : &NoCal; * b3_0.8mm,b4_0.8mm
+   chan_def = &B: 348584.00 MHz : L : 64.00 MHz : &CH13 : &BBC01 : &NoCal; * b3_0.8mm
+   chan_def = &B: 348520.00 MHz : L : 64.00 MHz : &CH14 : &BBC01 : &NoCal; * b3_0.8mm
+   chan_def = &B: 348456.00 MHz : L : 64.00 MHz : &CH15 : &BBC01 : &NoCal; * b3_0.8mm
+   chan_def = &B: 348392.00 MHz : L : 64.00 MHz : &CH16 : &BBC01 : &NoCal; * b3_0.8mm
+   * Recorder 3, slot 2, USB-Lower/Inner PolyFiX 7 SFP+ 0, RCP, subbands 0-15
+   chan_def = &B: 350376.00 MHz : L : 64.00 MHz : &CH17 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 350312.00 MHz : L : 64.00 MHz : &CH18 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 350248.00 MHz : L : 64.00 MHz : &CH19 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 350184.00 MHz : L : 64.00 MHz : &CH20 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 350120.00 MHz : L : 64.00 MHz : &CH21 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 350056.00 MHz : L : 64.00 MHz : &CH22 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349992.00 MHz : L : 64.00 MHz : &CH23 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349928.00 MHz : L : 64.00 MHz : &CH24 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349864.00 MHz : L : 64.00 MHz : &CH25 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349800.00 MHz : L : 64.00 MHz : &CH26 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349736.00 MHz : L : 64.00 MHz : &CH27 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349672.00 MHz : L : 64.00 MHz : &CH28 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349608.00 MHz : L : 64.00 MHz : &CH29 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349544.00 MHz : L : 64.00 MHz : &CH30 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349480.00 MHz : L : 64.00 MHz : &CH31 : &BBC01 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349416.00 MHz : L : 64.00 MHz : &CH32 : &BBC01 : &NoCal; * b4_0.8mm
+   * Recorder 3, slot 3, USB-Lower/Inner PolyFiX 3 SFP+ 0, LCP, subbands 0-15
+   chan_def = &B: 350376.00 MHz : L : 64.00 MHz : &CH33 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 350312.00 MHz : L : 64.00 MHz : &CH34 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 350248.00 MHz : L : 64.00 MHz : &CH35 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 350184.00 MHz : L : 64.00 MHz : &CH36 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 350120.00 MHz : L : 64.00 MHz : &CH37 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 350056.00 MHz : L : 64.00 MHz : &CH38 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349992.00 MHz : L : 64.00 MHz : &CH39 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349928.00 MHz : L : 64.00 MHz : &CH40 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349864.00 MHz : L : 64.00 MHz : &CH41 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349800.00 MHz : L : 64.00 MHz : &CH42 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349736.00 MHz : L : 64.00 MHz : &CH43 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349672.00 MHz : L : 64.00 MHz : &CH44 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349608.00 MHz : L : 64.00 MHz : &CH45 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349544.00 MHz : L : 64.00 MHz : &CH46 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349480.00 MHz : L : 64.00 MHz : &CH47 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349416.00 MHz : L : 64.00 MHz : &CH48 : &BBC02 : &NoCal; * b4_0.8mm
+   * Recorder 3, slot 4, USB-Lower/Inner PolyFiX 3 SFP+ 1, LCP, subbands 16-31
+   chan_def = &B: 349352.00 MHz : L : 64.00 MHz : &CH49 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349288.00 MHz : L : 64.00 MHz : &CH50 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349224.00 MHz : L : 64.00 MHz : &CH51 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349160.00 MHz : L : 64.00 MHz : &CH52 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349096.00 MHz : L : 64.00 MHz : &CH53 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 349032.00 MHz : L : 64.00 MHz : &CH54 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 348968.00 MHz : L : 64.00 MHz : &CH55 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 348904.00 MHz : L : 64.00 MHz : &CH56 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 348840.00 MHz : L : 64.00 MHz : &CH57 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 348776.00 MHz : L : 64.00 MHz : &CH58 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 348712.00 MHz : L : 64.00 MHz : &CH59 : &BBC02 : &NoCal; * b4_0.8mm
+   chan_def = &B: 348648.00 MHz : L : 64.00 MHz : &CH60 : &BBC02 : &NoCal; * b3_0.8mm,b4_0.8mm
+   chan_def = &B: 348584.00 MHz : L : 64.00 MHz : &CH61 : &BBC02 : &NoCal; * b3_0.8mm
+   chan_def = &B: 348520.00 MHz : L : 64.00 MHz : &CH62 : &BBC02 : &NoCal; * b3_0.8mm
+   chan_def = &B: 348456.00 MHz : L : 64.00 MHz : &CH63 : &BBC02 : &NoCal; * b3_0.8mm
+   chan_def = &B: 348392.00 MHz : L : 64.00 MHz : &CH64 : &BBC02 : &NoCal; * b3_0.8mm
 enddef;
 def FREQ_AA; * derived for on lo1=342.600 lo2=1.875 GHz
    sample_rate = 125.0 Ms/sec;  * (2bits/sample)
