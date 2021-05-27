@@ -40,6 +40,23 @@ ZOOM zooms58 {
 ZOOM zooms62
 {
   # Nn rec1 slot1
+  addZoomFreq = freq@335848.0/bw@62.0/noparent@true
+  addZoomFreq = freq@335912.0/bw@62.0/noparent@true
+  addZoomFreq = freq@335976.0/bw@62.0/noparent@true
+  addZoomFreq = freq@336040.0/bw@62.0/noparent@true
+  addZoomFreq = freq@336104.0/bw@62.0/noparent@true
+  addZoomFreq = freq@336168.0/bw@62.0/noparent@true
+  addZoomFreq = freq@336232.0/bw@62.0/noparent@true
+  addZoomFreq = freq@336296.0/bw@62.0/noparent@true
+  addZoomFreq = freq@336360.0/bw@62.0/noparent@true
+  addZoomFreq = freq@336424.0/bw@62.0/noparent@true
+  addZoomFreq = freq@336488.0/bw@62.0/noparent@true
+  addZoomFreq = freq@336552.0/bw@62.0/noparent@true
+  addZoomFreq = freq@336616.0/bw@62.0/noparent@true
+  addZoomFreq = freq@336680.0/bw@62.0/noparent@true
+  addZoomFreq = freq@336744.0/bw@62.0/noparent@true
+  addZoomFreq = freq@336808.0/bw@62.0/noparent@true
+  # Nn rec1 slot2
   addZoomFreq = freq@334824.0/bw@62.0/noparent@true
   addZoomFreq = freq@334888.0/bw@62.0/noparent@true
   addZoomFreq = freq@334952.0/bw@62.0/noparent@true
@@ -56,22 +73,4 @@ ZOOM zooms62
   addZoomFreq = freq@335656.0/bw@62.0/noparent@true
   addZoomFreq = freq@335720.0/bw@62.0/noparent@true
   addZoomFreq = freq@335784.0/bw@62.0/noparent@true
-  # Nn rec1 slot2
-  addZoomFreq = freq@334824.0/bw@62.0/noparent@true
-  addZoomFreq = freq@334760.0/bw@62.0/noparent@true
-  addZoomFreq = freq@334696.0/bw@62.0/noparent@true
-  addZoomFreq = freq@334632.0/bw@62.0/noparent@true
-  addZoomFreq = freq@334568.0/bw@62.0/noparent@true
-  addZoomFreq = freq@334504.0/bw@62.0/noparent@true
-  addZoomFreq = freq@334440.0/bw@62.0/noparent@true
-  addZoomFreq = freq@334376.0/bw@62.0/noparent@true
-  addZoomFreq = freq@334312.0/bw@62.0/noparent@true
-  addZoomFreq = freq@334248.0/bw@62.0/noparent@true
-  addZoomFreq = freq@334184.0/bw@62.0/noparent@true
-  addZoomFreq = freq@334120.0/bw@62.0/noparent@true
-  addZoomFreq = freq@334056.0/bw@62.0/noparent@true
-  addZoomFreq = freq@333992.0/bw@62.0/noparent@true
-  addZoomFreq = freq@333928.0/bw@62.0/noparent@true
-  # fake for redundant channel pair Ch01 Ch17
-  addZoomFreq = freq@333864.0/bw@62.0/noparent@true
 }
