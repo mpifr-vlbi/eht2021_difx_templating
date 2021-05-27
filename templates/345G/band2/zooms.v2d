@@ -1,4 +1,5 @@
-# $ehtc/alma-vex-defs.py -rzoom -f337600.0 -sL -w58.0 ## TODO verify if correct for ALMA 345G
+# below: $ehtc/alma-vex-defs.py -rzoom -f337600.0 -sL -w58.0 ## TODO verify if correct for ALMA 345G
+# alternately: $ehtc/alma-vex-defs.py -rzoom -f337541.40625 -sL -w58.0 
 ZOOM zooms58 {
       # 32 zoom bands in [336662.500000,338537.500000] 1 zm/ch mv 0 res 0
       # center 337600.000000, nInt x 0.000160000000000 s 0.000160000000000 s
