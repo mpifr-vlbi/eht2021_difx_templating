@@ -14,9 +14,8 @@ make install
 ```
 
 TODO:
-- [ ] Generate file lists
+- [ ] Generate file lists for all bands and stations
 - [ ] New branch for developments, 'main' only for releases
-- [ ] Make the 345G configs
 - [ ] 'Make' three sets of setups: outputband v2d configs, normal zoom band v2d configs with ALMA sans NOEMA, normal zoom band v2d config swith NOEMA sans ALMA, all three share same VEX
 
 Detailed notes are on the EHT wiki (https://eht-wiki.haystack.mit.edu/Event_Horizon_Telescope_Home/Observing/2021_April/Correlation and other pages).
