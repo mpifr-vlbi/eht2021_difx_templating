@@ -199,7 +199,7 @@ ZOOM zooms62
   addZoomFreq = freq@349416.0/bw@62.0/noparent@true
 }
 
-SETUP MHz58 {
+SETUP zoomSetup {
   numBufferedFFTs = 20
   tInt = 0.400
   subintNS =  3200000
@@ -214,6 +214,6 @@ SETUP MHz58 {
 }
 
 RULE defaultRule {
-  setup = MHz58
+  setup = zoomSetup
 }
 

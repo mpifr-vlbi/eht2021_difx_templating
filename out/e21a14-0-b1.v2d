@@ -1,6 +1,10 @@
 #==================================================================
 # Track e21a14 band 1
-# Notes: ...
+# Notes:
+#  ...
+#
+# Coarse clock offsets determined via
+#   Pico - scan 103-2340 Nn-Pv
 #==================================================================
 
 vex = e21a14-0-b1.vex.obs
@@ -197,7 +201,7 @@ ZOOM zooms62
 }
 
 
-SETUP MHz58 {
+SETUP zoomSetup {
   numBufferedFFTs = 20
   tInt = 0.400
   subintNS =  3200000
@@ -212,6 +216,6 @@ SETUP MHz58 {
 }
 
 RULE defaultRule {
-  setup = MHz58
+  setup = zoomSetup
 }
 
