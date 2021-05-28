@@ -420,6 +420,7 @@ enddef;
 *
 def FREQ_DBBC3_PV;
      sample_rate =  4096.000 Ms/sec;
+     * 1st LO 343.6 GHz (vs EHT 342.6 GHz) to permit use of "IF 5-9" filters of EHT 230 GHz
      chan_def = &B:338648.000 MHz : L :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
      chan_def = &B:338648.000 MHz : L :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
 enddef;

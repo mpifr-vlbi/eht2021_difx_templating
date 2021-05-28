@@ -1,3 +1,5 @@
+antennas = Aa,Gl,Kt,Mg,Mm,Nn,Sw,Sz   # Pv:no data
+
 ANTENNA Aa {
   datastreams = Aa_ds12,Aa_ds34
   zoom = zooms58

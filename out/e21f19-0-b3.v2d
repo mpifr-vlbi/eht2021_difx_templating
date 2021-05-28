@@ -1,6 +1,9 @@
 #==================================================================
 # Track e21f19 band 3
-# Notes: ...
+# Notes:
+#  - Pico has 5-9G (rather than 4-8G) IF filters and shifted 1st LO by +1 GHz,
+#    hence Pico b1 b2 are fine, b3 is absent, and b4 is covered by
+#    the 5-9G IF "b3"-equivalent data found on recorder3
 #==================================================================
 
 vex = e21f19-0-b3.vex.obs
@@ -18,6 +21,8 @@ singleSetup = True
 #==================================================================
 # ANTENNA DATA
 #==================================================================
+
+antennas = Aa,Gl,Kt,Mg,Mm,Nn,Sw,Sz   # Pv:no data
 
 ANTENNA Aa {
   datastreams = Aa_ds12,Aa_ds34

@@ -10,8 +10,8 @@ DATASTREAM Kt_ds12 { filelist = ehtc2021_KT_set1_b4.12.filelist }
 DATASTREAM Kt_ds34 { filelist = ehtc2021_KT_set1_b4.34.filelist }
 DATASTREAM Spt_ds12 { filelist = ehtc2021_SPT_set1_b4.12.filelist }
 DATASTREAM Spt_ds34 { filelist = ehtc2021_SPT_set1_b4.34.filelist }
-DATASTREAM Pv_ds12 { filelist = ehtc2021_Pico_set1_b4.12.filelist }
-DATASTREAM Pv_ds34 { filelist = ehtc2021_Pico_set1_b4.34.filelist }
+DATASTREAM Pv_ds12 { filelist = ehtc2021_Pico_set1_b3.12.filelist } # Pv: 4-8G IF b4 data are on recorder3 (=5-9G IF "b3")
+DATASTREAM Pv_ds34 { filelist = ehtc2021_Pico_set1_b3.34.filelist }
 DATASTREAM SmaAphids_ds12 { filelist = ehtc2021_SMA_b4.12.filelist }
 DATASTREAM SmaAphids_ds34 { filelist = ehtc2021_SMA_b4.34.filelist }
 DATASTREAM Smt_ds12 { filelist = ehtc2021_SMT_b4.12.filelist }
