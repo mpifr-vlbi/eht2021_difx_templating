@@ -52,11 +52,11 @@ def Mg; * SMT
 enddef;
 *
 def Nn; * NOEMA
-  clock_early = 2021y098d23h52m00s: 0 usec: 2021y098d23h52m00s : -2.897e-15;
+  clock_early = 2021y098d23h52m00s : +12.7 usec : 2021y098d23h52m00s : -2.897e-15;
 enddef;
 *
 def Pv;
-  clock_early = 2021y098d23h52m00s: 0 usec: 2021y098d23h52m00s : 0;
+  clock_early = 2021y098d23h52m00s : +0.683 usec : 2021y098d23h52m00s : 0.0;
 enddef;
 *
 def Sz;
