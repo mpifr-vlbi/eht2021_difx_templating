@@ -40,7 +40,7 @@ def Gl;
 enddef;
 *
 def Kt;
-  clock_early = 2021y098d23h52m00s: 0 usec: 2021y098d23h52m00s : 0;
+  clock_early = 2021y098d23h52m00s: 0 usec: 2021y098d23h52m00s : -5.0834e-12;
 enddef;
 *
 def Mm; * JCMT
@@ -48,7 +48,7 @@ def Mm; * JCMT
 enddef;
 *
 def Mg; * SMT
-  clock_early = 2021y098d23h52m00s: 0 usec: 2021y098d23h52m00s : 0;
+  clock_early = 2021y098d23h52m00s: 0 usec: 2021y098d23h52m00s : -4.3196e-12;
 enddef;
 *
 def Nn; * NOEMA
