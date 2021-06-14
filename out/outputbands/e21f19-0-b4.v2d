@@ -1,0 +1,175 @@
+#==================================================================
+# Track e21f19 band 4
+# Notes:
+#  - Pico has 5-9G (rather than 4-8G) IF filters and shifted 1st LO by +1 GHz,
+#    hence Pico b1 b2 are fine, b3 is absent, and b4 is covered by
+#    the 5-9G IF "b3"-equivalent data found on recorder3
+
+#==================================================================
+
+vex = e21f19-0-b4.vex.obs
+
+dataBufferFactor = 24
+visBufferLength = 40
+startSeries = 1000
+exhaustiveAutocorrs = True
+minSubarray = 1
+singleScan = True
+singleSetup = True
+# maxReadSize = 67108864
+
+
+#==================================================================
+# ANTENNA DATA
+#==================================================================
+
+ANTENNA Aa {
+  datastreams = Aa_ds12,Aa_ds34
+  zoom = zooms58
+## TODO: LO offsets for 345 GHz are unknown? Nothing on eht-wiki.
+  ## Band 1
+  # loOffsets = -0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05
+  ## Band 2
+  # loOffsets = -0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05,-0.05
+  ## Band 3
+  # loOffsets = +0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05
+  ## Band 4
+  loOffsets = +0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05,+0.05
+}
+
+ANTENNA Ax { # did not observe e21f19
+  datastreams = Ax_ds12,Ax_ds34
+  zoom = zooms58
+}
+
+ANTENNA Gl {
+  datastreams = Glt_ds12,Glt_ds34
+  zoom = zooms58
+}
+
+ANTENNA Kt {
+  datastreams = Kt_ds12,Kt_ds34
+  zoom = zooms58
+}
+
+ANTENNA Mg { # SMT
+  datastreams = Smt_ds12,Smt_ds34
+  zoom = zooms58
+}
+
+ANTENNA Mm { # JCMT
+  datastreams = Jcmt_ds12,Jcmt_ds34
+  zoom = zooms58
+}
+
+ANTENNA Nn {
+  datastreams = Nn_rec3slot1,Nn_rec3slot2,Nn_rec3slot3,Nn_rec3slot4
+  zoom = zooms58
+}
+
+ANTENNA Pv {
+  datastreams = Pv_ds12,Pv_ds34
+  zoom = zooms58
+}
+
+ANTENNA Sw { # SMA APHIDS
+  datastreams = SmaAphids_ds12,SmaAphids_ds34
+  zoom = zooms58
+  deltaClock = 0 # SMA extra offsets
+}
+
+ANTENNA Sz { # SPT
+  datastreams = Spt_ds12,Spt_ds34
+  zoom = zooms58
+}
+DATASTREAM Aa_ds12 { filelist = ehtc2021_ALMA_set1_b4.12.filelist }
+DATASTREAM Aa_ds34 { filelist = ehtc2021_ALMA_set1_b4.34.filelist }
+DATASTREAM Ax_ds12 { filelist = ehtc2021_APEX_set1_b4.12.filelist }
+DATASTREAM Ax_ds34 { filelist = ehtc2021_APEX_set1_b4.34.filelist }
+DATASTREAM Glt_ds12 { filelist = ehtc2021_GLT_set1_b4.12.filelist }
+DATASTREAM Glt_ds34 { filelist = ehtc2021_GLT_set1_b4.34.filelist }
+DATASTREAM Jcmt_ds12 { filelist = ehtc2021_JCMT_set1_b4.12.filelist }
+DATASTREAM Jcmt_ds34 { filelist = ehtc2021_JCMT_set1_b4.34.filelist }
+DATASTREAM Kt_ds12 { filelist = ehtc2021_KT_set1_b4.12.filelist }
+DATASTREAM Kt_ds34 { filelist = ehtc2021_KT_set1_b4.34.filelist }
+DATASTREAM Spt_ds12 { filelist = ehtc2021_SPT_set1_b4.12.filelist }
+DATASTREAM Spt_ds34 { filelist = ehtc2021_SPT_set1_b4.34.filelist }
+DATASTREAM Pv_ds12 { filelist = ehtc2021_Pico_set1_b3.12.filelist } # Pv: 4-8G IF b4 data are on recorder3 (=5-9G IF "b3")
+DATASTREAM Pv_ds34 { filelist = ehtc2021_Pico_set1_b3.34.filelist }
+DATASTREAM SmaAphids_ds12 { filelist = ehtc2021_SMA_b4.12.filelist }
+DATASTREAM SmaAphids_ds34 { filelist = ehtc2021_SMA_b4.34.filelist }
+DATASTREAM Smt_ds12 { filelist = ehtc2021_SMT_b4.12.filelist }
+DATASTREAM Smt_ds34 { filelist = ehtc2021_SMT_b4.34.filelist }
+DATASTREAM Nn_rec3slot1 {
+  filelist = ehtc2021_pNOEMA_set1_rec3.1.filelist
+  format = INTERLACEDVDIF/4:5:6:7/8224/2
+}
+DATASTREAM Nn_rec3slot2 {
+  filelist = ehtc2021_pNOEMA_set1_rec3.2.filelist
+  format = INTERLACEDVDIF/0:1:2:3/8224/2
+}
+DATASTREAM Nn_rec3slot3 {
+  filelist = ehtc2021_pNOEMA_set1_rec3.3.filelist
+  format = INTERLACEDVDIF/0:1:2:3/8224/2
+}
+DATASTREAM Nn_rec3slot4 {
+  filelist = ehtc2021_pNOEMA_set1_rec3.4.filelist
+  format = INTERLACEDVDIF/4:5:6:7/8224/2
+}
+
+
+#==================================================================
+# CORRELATION CONFIG
+#==================================================================
+
+SETUP outputbandSetup {
+  numBufferedFFTs = 20
+  tInt = 0.400
+  subintNS =  3200000
+  FFTSpecRes = 0.015625
+  outputSpecRes = 0.5
+  xmacLength = 0
+  strideLength = 0
+  guardNS = 2000
+
+  # outputSpecRes = 0.0625 # fringe search, ~1000 ch over 58 MHz
+  # outputSpecRes = 0.0156250 # fringe search, ~4000 ch over 58 MHz
+
+  addOutputBand = freq@348662.796875/bw@58.0
+  addOutputBand = freq@348721.390625/bw@58.0
+  addOutputBand = freq@348779.984375/bw@58.0
+  addOutputBand = freq@348838.578125/bw@58.0
+  addOutputBand = freq@348897.171875/bw@58.0
+  addOutputBand = freq@348955.765625/bw@58.0
+  addOutputBand = freq@349014.359375/bw@58.0
+  addOutputBand = freq@349072.953125/bw@58.0
+  addOutputBand = freq@349131.546875/bw@58.0
+  addOutputBand = freq@349190.140625/bw@58.0
+  addOutputBand = freq@349248.734375/bw@58.0
+  addOutputBand = freq@349307.328125/bw@58.0
+  addOutputBand = freq@349365.921875/bw@58.0
+  addOutputBand = freq@349424.515625/bw@58.0
+  addOutputBand = freq@349483.109375/bw@58.0
+  addOutputBand = freq@349541.703125/bw@58.0
+  addOutputBand = freq@349600.296875/bw@58.0
+  addOutputBand = freq@349658.890625/bw@58.0
+  addOutputBand = freq@349717.484375/bw@58.0
+  addOutputBand = freq@349776.078125/bw@58.0
+  addOutputBand = freq@349834.671875/bw@58.0
+  addOutputBand = freq@349893.265625/bw@58.0
+  addOutputBand = freq@349951.859375/bw@58.0
+  addOutputBand = freq@350010.453125/bw@58.0
+  addOutputBand = freq@350069.046875/bw@58.0
+  addOutputBand = freq@350127.640625/bw@58.0
+  addOutputBand = freq@350186.234375/bw@58.0
+  addOutputBand = freq@350244.828125/bw@58.0
+  addOutputBand = freq@350303.421875/bw@58.0
+  addOutputBand = freq@350362.015625/bw@58.0
+  addOutputBand = freq@350420.609375/bw@58.0
+  addOutputBand = freq@350479.203125/bw@58.0
+}
+
+RULE defaultRule {
+  setup = outputbandSetup
+}
+
