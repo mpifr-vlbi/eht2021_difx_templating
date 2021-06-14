@@ -36,3 +36,46 @@ ZOOM zooms58 {
       addZoomFreq = freq@227920.609375/bw@58.0/noparent@true  #< 227978.609375
       addZoomFreq = freq@227979.203125/bw@58.0/noparent@true  #< 228037.203125
 }
+
+ZOOM zooms62
+{
+      # Nn rec4 slot1,2
+      addZoomFreq = freq@226764.0/bw@62.0/noparent@true
+      addZoomFreq = freq@226700.0/bw@62.0/noparent@true
+      addZoomFreq = freq@226636.0/bw@62.0/noparent@true
+      addZoomFreq = freq@226572.0/bw@62.0/noparent@true
+      addZoomFreq = freq@226508.0/bw@62.0/noparent@true
+      addZoomFreq = freq@226444.0/bw@62.0/noparent@true
+      addZoomFreq = freq@226380.0/bw@62.0/noparent@true
+      addZoomFreq = freq@226316.0/bw@62.0/noparent@true
+      addZoomFreq = freq@226252.0/bw@62.0/noparent@true
+      addZoomFreq = freq@226188.0/bw@62.0/noparent@true
+      addZoomFreq = freq@226124.0/bw@62.0/noparent@true
+      addZoomFreq = freq@226060.0/bw@62.0/noparent@true
+      addZoomFreq = freq@225996.0/bw@62.0/noparent@true
+      addZoomFreq = freq@225932.0/bw@62.0/noparent@true
+      addZoomFreq = freq@225868.0/bw@62.0/noparent@true
+      addZoomFreq = freq@225804.0/bw@62.0/noparent@true
+      # Nn rec4 slot3,4
+      addZoomFreq = freq@227788.0/bw@62.0/noparent@true
+      addZoomFreq = freq@227724.0/bw@62.0/noparent@true
+      addZoomFreq = freq@227660.0/bw@62.0/noparent@true
+      addZoomFreq = freq@227596.0/bw@62.0/noparent@true
+      addZoomFreq = freq@227532.0/bw@62.0/noparent@true
+      addZoomFreq = freq@227468.0/bw@62.0/noparent@true
+      addZoomFreq = freq@227404.0/bw@62.0/noparent@true
+      addZoomFreq = freq@227340.0/bw@62.0/noparent@true
+      addZoomFreq = freq@227276.0/bw@62.0/noparent@true
+      addZoomFreq = freq@227212.0/bw@62.0/noparent@true
+      addZoomFreq = freq@227148.0/bw@62.0/noparent@true
+      addZoomFreq = freq@227084.0/bw@62.0/noparent@true
+      addZoomFreq = freq@227020.0/bw@62.0/noparent@true
+      addZoomFreq = freq@226956.0/bw@62.0/noparent@true
+      addZoomFreq = freq@226892.0/bw@62.0/noparent@true
+      addZoomFreq = freq@226828.0/bw@62.0/noparent@true
+      # Nn rec3 slot1,4
+      addZoomFreq = freq@228044.0/bw@62.0/noparent@true
+      addZoomFreq = freq@227980.0/bw@62.0/noparent@true
+      addZoomFreq = freq@227916.0/bw@62.0/noparent@true
+      addZoomFreq = freq@227852.0/bw@62.0/noparent@true
+}
