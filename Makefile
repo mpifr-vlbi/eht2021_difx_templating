@@ -5,6 +5,8 @@ default: all
 
 prerequisites:
 	mkdir -p out
+	mkdir -p out/conventional/
+	mkdir -p out/outputbands/
 	. scripts/create_vex_EOPs.sh
 	. scripts/extract_vex_portions.sh
 	. scripts/make_initial_clocks.sh
@@ -42,21 +44,25 @@ EHT_2021_345GHz_all: EHT_2021_345GHz_b1 EHT_2021_345GHz_b2 EHT_2021_345GHz_b3 EH
 
 all: EHT_2021_230GHz_all EHT_2021_345GHz_all
 
-EHT_2021_230GHz_b1: e21b09_b1 e21e13_b1 e21a14_b1 e21d15_b1 e21a17_b1 e21e18_b1
+EHT_2021_230GHz_b1: e21b09_b1 e21e13_b1 e21a14_b1 e21d15_b1 e21a17_b1 e21e18_b1 \
+	e21b09_b1_ob e21e13_b1_ob e21a14_b1_ob e21d15_b1_ob e21a17_b1_ob e21e18_b1_ob
 
-EHT_2021_230GHz_b2: e21b09_b2 e21e13_b2 e21a14_b2 e21d15_b2 e21a17_b2 e21e18_b2
+EHT_2021_230GHz_b2: e21b09_b2 e21e13_b2 e21a14_b2 e21d15_b2 e21a17_b2 e21e18_b2 \
+	e21b09_b2_ob e21e13_b2_ob e21a14_b2_ob e21d15_b2_ob e21a17_b2_ob e21e18_b2_ob
 
-EHT_2021_230GHz_b3: e21b09_b3 e21e13_b3 e21a14_b3 e21d15_b3 e21a17_b3 e21e18_b3
+EHT_2021_230GHz_b3: e21b09_b3 e21e13_b3 e21a14_b3 e21d15_b3 e21a17_b3 e21e18_b3 \
+	e21b09_b3_ob e21e13_b3_ob e21a14_b3_ob e21d15_b3_ob e21a17_b3_ob e21e18_b3_ob
 
-EHT_2021_230GHz_b4: e21b09_b4 e21e13_b4 e21a14_b4 e21d15_b4 e21a17_b4 e21e18_b4
+EHT_2021_230GHz_b4: e21b09_b4 e21e13_b4 e21a14_b4 e21d15_b4 e21a17_b4 e21e18_b4 \
+	e21b09_b4_ob e21e13_b4_ob e21a14_b4_ob e21d15_b4_ob e21a17_b4_ob e21e18_b4_ob
 
-EHT_2021_345GHz_b1: e21f19_b1
+EHT_2021_345GHz_b1: e21f19_b1 e21f19_b1_ob
 
-EHT_2021_345GHz_b2: e21f19_b2
+EHT_2021_345GHz_b2: e21f19_b2 e21f19_b2_ob
 
-EHT_2021_345GHz_b3: e21f19_b3
+EHT_2021_345GHz_b3: e21f19_b3 e21f19_b3_ob
 
-EHT_2021_345GHz_b4: e21f19_b4
+EHT_2021_345GHz_b4: e21f19_b4 e21f19_b4_ob
 
 install: install_b1 install_b2 install_b3 install_b4
 
@@ -69,44 +75,81 @@ install: install_b1 install_b2 install_b3 install_b4
 b1: EHT_2021_230GHz_b1 EHT_2021_345GHz_b1
 
 e21b09_b1:
-	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21b09.vext out/e21b09-$(REL)-b1.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21b09.v2dt out/e21b09-$(REL)-b1.v2d
-	@ sed -i "s/vexfilename/e21b09-${REL}-b1.vex.obs/g" out/e21b09-$(REL)-b1.v2d
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21b09.vext out/conventional/e21b09-$(REL)-b1.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21b09.v2dt out/conventional/e21b09-$(REL)-b1.v2d
+	@ sed -i "s/vexfilename/e21b09-${REL}-b1.vex.obs/g" out/conventional/e21b09-$(REL)-b1.v2d
 
 e21e13_b1:
-	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21e13.vext out/e21e13-$(REL)-b1.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21e13.v2dt out/e21e13-$(REL)-b1.v2d
-	@ sed -i "s/vexfilename/e21e13-${REL}-b1.vex.obs/g" out/e21e13-$(REL)-b1.v2d
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21e13.vext out/conventional/e21e13-$(REL)-b1.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21e13.v2dt out/conventional/e21e13-$(REL)-b1.v2d
+	@ sed -i "s/vexfilename/e21e13-${REL}-b1.vex.obs/g" out/conventional/e21e13-$(REL)-b1.v2d
 
 e21a14_b1:
-	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21a14.vext out/e21a14-$(REL)-b1.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21a14.v2dt out/e21a14-$(REL)-b1.v2d
-	@ sed -i "s/vexfilename/e21a14-${REL}-b1.vex.obs/g" out/e21a14-$(REL)-b1.v2d
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21a14.vext out/conventional/e21a14-$(REL)-b1.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21a14.v2dt out/conventional/e21a14-$(REL)-b1.v2d
+	@ sed -i "s/vexfilename/e21a14-${REL}-b1.vex.obs/g" out/conventional/e21a14-$(REL)-b1.v2d
 
 e21d15_b1:
-	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21d15.vext out/e21d15-$(REL)-b1.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21d15.v2dt out/e21d15-$(REL)-b1.v2d
-	@ sed -i "s/vexfilename/e21d15-${REL}-b1.vex.obs/g" out/e21d15-$(REL)-b1.v2d
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21d15.vext out/conventional/e21d15-$(REL)-b1.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21d15.v2dt out/conventional/e21d15-$(REL)-b1.v2d
+	@ sed -i "s/vexfilename/e21d15-${REL}-b1.vex.obs/g" out/conventional/e21d15-$(REL)-b1.v2d
 
 e21a17_b1:
-	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21a17.vext out/e21a17-$(REL)-b1.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21a17.v2dt out/e21a17-$(REL)-b1.v2d
-	@ sed -i "s/vexfilename/e21a17-${REL}-b1.vex.obs/g" out/e21a17-$(REL)-b1.v2d
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21a17.vext out/conventional/e21a17-$(REL)-b1.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21a17.v2dt out/conventional/e21a17-$(REL)-b1.v2d
+	@ sed -i "s/vexfilename/e21a17-${REL}-b1.vex.obs/g" out/conventional/e21a17-$(REL)-b1.v2d
 
 e21e18_b1:
-	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21e18.vext out/e21e18-$(REL)-b1.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21e18.v2dt out/e21e18-$(REL)-b1.v2d
-	@ sed -i "s/vexfilename/e21e18-${REL}-b1.vex.obs/g" out/e21e18-$(REL)-b1.v2d
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21e18.vext out/conventional/e21e18-$(REL)-b1.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21e18.v2dt out/conventional/e21e18-$(REL)-b1.v2d
+	@ sed -i "s/vexfilename/e21e18-${REL}-b1.vex.obs/g" out/conventional/e21e18-$(REL)-b1.v2d
 
 e21f19_b1:
-	@ ./tvex2vex.py -I./templates/345G/band1/ -I./templates/common_sections/ templates/e21f19.vext out/e21f19-$(REL)-b1.vex.obs
-	@ ./tvex2vex.py -I./templates/345G/band1/ -I./templates/common_sections/ templates/e21f19.v2dt out/e21f19-$(REL)-b1.v2d
-	@ sed -i "s/vexfilename/e21f19-${REL}-b1.vex.obs/g" out/e21f19-$(REL)-b1.v2d
+	@ ./tvex2vex.py -I./templates/345G/band1/ -I./templates/common_sections/ templates/e21f19.vext out/conventional/e21f19-$(REL)-b1.vex.obs
+	@ ./tvex2vex.py -I./templates/345G/band1/ -I./templates/common_sections/ templates/e21f19.v2dt out/conventional/e21f19-$(REL)-b1.v2d
+	@ sed -i "s/vexfilename/e21f19-${REL}-b1.vex.obs/g" out/conventional/e21f19-$(REL)-b1.v2d
+
+e21b09_b1_ob:
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21b09.vext out/outputbands/e21b09-$(REL)-b1.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21b09_outputbands.v2dt out/outputbands/e21b09-$(REL)-b1.v2d
+	@ sed -i "s/vexfilename/e21b09-${REL}-b1.vex.obs/g" out/outputbands/e21b09-$(REL)-b1.v2d
+
+e21e13_b1_ob:
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21e13.vext out/outputbands/e21e13-$(REL)-b1.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21e13_outputbands.v2dt out/outputbands/e21e13-$(REL)-b1.v2d
+	@ sed -i "s/vexfilename/e21e13-${REL}-b1.vex.obs/g" out/outputbands/e21e13-$(REL)-b1.v2d
+
+e21a14_b1_ob:
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21a14.vext out/outputbands/e21a14-$(REL)-b1.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21a14_outputbands.v2dt out/outputbands/e21a14-$(REL)-b1.v2d
+	@ sed -i "s/vexfilename/e21a14-${REL}-b1.vex.obs/g" out/outputbands/e21a14-$(REL)-b1.v2d
+
+e21d15_b1_ob:
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21d15.vext out/outputbands/e21d15-$(REL)-b1.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21d15_outputbands.v2dt out/outputbands/e21d15-$(REL)-b1.v2d
+	@ sed -i "s/vexfilename/e21d15-${REL}-b1.vex.obs/g" out/outputbands/e21d15-$(REL)-b1.v2d
+
+e21a17_b1_ob:
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21a17.vext out/outputbands/e21a17-$(REL)-b1.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21a17_outputbands.v2dt out/outputbands/e21a17-$(REL)-b1.v2d
+	@ sed -i "s/vexfilename/e21a17-${REL}-b1.vex.obs/g" out/outputbands/e21a17-$(REL)-b1.v2d
+
+e21e18_b1_ob:
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21e18.vext out/outputbands/e21e18-$(REL)-b1.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band1/ -I./templates/common_sections/ templates/e21e18_outputbands.v2dt out/outputbands/e21e18-$(REL)-b1.v2d
+	@ sed -i "s/vexfilename/e21e18-${REL}-b1.vex.obs/g" out/outputbands/e21e18-$(REL)-b1.v2d
+
+e21f19_b1_ob:
+	@ ./tvex2vex.py -I./templates/345G/band1/ -I./templates/common_sections/ templates/e21f19.vext out/outputbands/e21f19-$(REL)-b1.vex.obs
+	@ ./tvex2vex.py -I./templates/345G/band1/ -I./templates/common_sections/ templates/e21f19_outputbands.v2dt out/outputbands/e21f19-$(REL)-b1.v2d
+	@ sed -i "s/vexfilename/e21f19-${REL}-b1.vex.obs/g" out/outputbands/e21f19-$(REL)-b1.v2d
 
 install_b1:
 	for exptname in e21b09 e21e13 e21a14 e21d15 e21a17 e21e18 e21f19; do \
 		mkdir -p $(EXPROOT)/$${exptname}/$(REV)/b1/ ; \
-		cp -av out/$${exptname}-${REL}-b1.{v2d,vex.obs} $(EXPROOT)/$${exptname}/$(REV)/b1/ ; \
+		mkdir -p $(EXPROOT)/$${exptname}/$(REV)/b1_outputbands/ ; \
+		cp -av out/conventional/$${exptname}-${REL}-b1.{v2d,vex.obs} $(EXPROOT)/$${exptname}/$(REV)/b1/ ; \
+		cp -av out/outputbands/$${exptname}-${REL}-b1.{v2d,vex.obs} $(EXPROOT)/$${exptname}/$(REV)/b1_outputbands/ ; \
 	done
 
 ####################################################################################
@@ -116,44 +159,81 @@ install_b1:
 b2: EHT_2021_230GHz_b2 EHT_2021_345GHz_b2
 
 e21b09_b2:
-	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21b09.vext out/e21b09-$(REL)-b2.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21b09.v2dt out/e21b09-$(REL)-b2.v2d
-	@ sed -i "s/vexfilename/e21b09-${REL}-b2.vex.obs/g" out/e21b09-$(REL)-b2.v2d
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21b09.vext out/conventional/e21b09-$(REL)-b2.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21b09.v2dt out/conventional/e21b09-$(REL)-b2.v2d
+	@ sed -i "s/vexfilename/e21b09-${REL}-b2.vex.obs/g" out/conventional/e21b09-$(REL)-b2.v2d
 
 e21e13_b2:
-	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21e13.vext out/e21e13-$(REL)-b2.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21e13.v2dt out/e21e13-$(REL)-b2.v2d
-	@ sed -i "s/vexfilename/e21e13-${REL}-b2.vex.obs/g" out/e21e13-$(REL)-b2.v2d
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21e13.vext out/conventional/e21e13-$(REL)-b2.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21e13.v2dt out/conventional/e21e13-$(REL)-b2.v2d
+	@ sed -i "s/vexfilename/e21e13-${REL}-b2.vex.obs/g" out/conventional/e21e13-$(REL)-b2.v2d
 
 e21a14_b2:
-	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21a14.vext out/e21a14-$(REL)-b2.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21a14.v2dt out/e21a14-$(REL)-b2.v2d
-	@ sed -i "s/vexfilename/e21a14-${REL}-b2.vex.obs/g" out/e21a14-$(REL)-b2.v2d
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21a14.vext out/conventional/e21a14-$(REL)-b2.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21a14.v2dt out/conventional/e21a14-$(REL)-b2.v2d
+	@ sed -i "s/vexfilename/e21a14-${REL}-b2.vex.obs/g" out/conventional/e21a14-$(REL)-b2.v2d
 
 e21d15_b2:
-	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21d15.vext out/e21d15-$(REL)-b2.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21d15.v2dt out/e21d15-$(REL)-b2.v2d
-	@ sed -i "s/vexfilename/e21d15-${REL}-b2.vex.obs/g" out/e21d15-$(REL)-b2.v2d
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21d15.vext out/conventional/e21d15-$(REL)-b2.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21d15.v2dt out/conventional/e21d15-$(REL)-b2.v2d
+	@ sed -i "s/vexfilename/e21d15-${REL}-b2.vex.obs/g" out/conventional/e21d15-$(REL)-b2.v2d
 
 e21a17_b2:
-	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21a17.vext out/e21a17-$(REL)-b2.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21a17.v2dt out/e21a17-$(REL)-b2.v2d
-	@ sed -i "s/vexfilename/e21a17-${REL}-b2.vex.obs/g" out/e21a17-$(REL)-b2.v2d
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21a17.vext out/conventional/e21a17-$(REL)-b2.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21a17.v2dt out/conventional/e21a17-$(REL)-b2.v2d
+	@ sed -i "s/vexfilename/e21a17-${REL}-b2.vex.obs/g" out/conventional/e21a17-$(REL)-b2.v2d
 
 e21e18_b2:
-	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21e18.vext out/e21e18-$(REL)-b2.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21e18.v2dt out/e21e18-$(REL)-b2.v2d
-	@ sed -i "s/vexfilename/e21e18-${REL}-b2.vex.obs/g" out/e21e18-$(REL)-b2.v2d
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21e18.vext out/conventional/e21e18-$(REL)-b2.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21e18.v2dt out/conventional/e21e18-$(REL)-b2.v2d
+	@ sed -i "s/vexfilename/e21e18-${REL}-b2.vex.obs/g" out/conventional/e21e18-$(REL)-b2.v2d
 
 e21f19_b2:
-	@ ./tvex2vex.py -I./templates/345G/band2/ -I./templates/common_sections/ templates/e21f19.vext out/e21f19-$(REL)-b2.vex.obs
-	@ ./tvex2vex.py -I./templates/345G/band2/ -I./templates/common_sections/ templates/e21f19.v2dt out/e21f19-$(REL)-b2.v2d
-	@ sed -i "s/vexfilename/e21f19-${REL}-b2.vex.obs/g" out/e21f19-$(REL)-b2.v2d
+	@ ./tvex2vex.py -I./templates/345G/band2/ -I./templates/common_sections/ templates/e21f19.vext out/conventional/e21f19-$(REL)-b2.vex.obs
+	@ ./tvex2vex.py -I./templates/345G/band2/ -I./templates/common_sections/ templates/e21f19.v2dt out/conventional/e21f19-$(REL)-b2.v2d
+	@ sed -i "s/vexfilename/e21f19-${REL}-b2.vex.obs/g" out/conventional/e21f19-$(REL)-b2.v2d
+
+e21b09_b2_ob:
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21b09.vext out/outputbands/e21b09-$(REL)-b2.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21b09_outputbands.v2dt out/outputbands/e21b09-$(REL)-b2.v2d
+	@ sed -i "s/vexfilename/e21b09-${REL}-b2.vex.obs/g" out/outputbands/e21b09-$(REL)-b2.v2d
+
+e21e13_b2_ob:
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21e13.vext out/outputbands/e21e13-$(REL)-b2.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21e13_outputbands.v2dt out/outputbands/e21e13-$(REL)-b2.v2d
+	@ sed -i "s/vexfilename/e21e13-${REL}-b2.vex.obs/g" out/outputbands/e21e13-$(REL)-b2.v2d
+
+e21a14_b2_ob:
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21a14.vext out/outputbands/e21a14-$(REL)-b2.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21a14_outputbands.v2dt out/outputbands/e21a14-$(REL)-b2.v2d
+	@ sed -i "s/vexfilename/e21a14-${REL}-b2.vex.obs/g" out/outputbands/e21a14-$(REL)-b2.v2d
+
+e21d15_b2_ob:
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21d15.vext out/outputbands/e21d15-$(REL)-b2.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21d15_outputbands.v2dt out/outputbands/e21d15-$(REL)-b2.v2d
+	@ sed -i "s/vexfilename/e21d15-${REL}-b2.vex.obs/g" out/outputbands/e21d15-$(REL)-b2.v2d
+
+e21a17_b2_ob:
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21a17.vext out/outputbands/e21a17-$(REL)-b2.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21a17_outputbands.v2dt out/outputbands/e21a17-$(REL)-b2.v2d
+	@ sed -i "s/vexfilename/e21a17-${REL}-b2.vex.obs/g" out/outputbands/e21a17-$(REL)-b2.v2d
+
+e21e18_b2_ob:
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21e18.vext out/outputbands/e21e18-$(REL)-b2.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band2/ -I./templates/common_sections/ templates/e21e18_outputbands.v2dt out/outputbands/e21e18-$(REL)-b2.v2d
+	@ sed -i "s/vexfilename/e21e18-${REL}-b2.vex.obs/g" out/outputbands/e21e18-$(REL)-b2.v2d
+
+e21f19_b2_ob:
+	@ ./tvex2vex.py -I./templates/345G/band2/ -I./templates/common_sections/ templates/e21f19.vext out/outputbands/e21f19-$(REL)-b2.vex.obs
+	@ ./tvex2vex.py -I./templates/345G/band2/ -I./templates/common_sections/ templates/e21f19_outputbands.v2dt out/outputbands/e21f19-$(REL)-b2.v2d
+	@ sed -i "s/vexfilename/e21f19-${REL}-b2.vex.obs/g" out/outputbands/e21f19-$(REL)-b2.v2d
 
 install_b2:
 	for exptname in e21b09 e21e13 e21a14 e21d15 e21a17 e21e18 e21f19; do \
 		mkdir -p $(EXPROOT)/$${exptname}/$(REV)/b2/ ; \
-		cp -av out/$${exptname}-${REL}-b2.{v2d,vex.obs} $(EXPROOT)/$${exptname}/$(REV)/b2/ ; \
+		mkdir -p $(EXPROOT)/$${exptname}/$(REV)/b2_outputbands/ ; \
+		cp -av out/conventional/$${exptname}-${REL}-b2.{v2d,vex.obs} $(EXPROOT)/$${exptname}/$(REV)/b2/ ; \
+		cp -av out/outputbands/$${exptname}-${REL}-b2.{v2d,vex.obs} $(EXPROOT)/$${exptname}/$(REV)/b2_outputbands/ ; \
 	done
 
 ####################################################################################
@@ -163,44 +243,81 @@ install_b2:
 b3: EHT_2021_230GHz_b3 EHT_2021_345GHz_b3
 
 e21b09_b3:
-	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21b09.vext out/e21b09-$(REL)-b3.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21b09.v2dt out/e21b09-$(REL)-b3.v2d
-	@ sed -i "s/vexfilename/e21b09-${REL}-b3.vex.obs/g" out/e21b09-$(REL)-b3.v2d
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21b09.vext out/conventional/e21b09-$(REL)-b3.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21b09.v2dt out/conventional/e21b09-$(REL)-b3.v2d
+	@ sed -i "s/vexfilename/e21b09-${REL}-b3.vex.obs/g" out/conventional/e21b09-$(REL)-b3.v2d
 
 e21e13_b3:
-	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21e13.vext out/e21e13-$(REL)-b3.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21e13.v2dt out/e21e13-$(REL)-b3.v2d
-	@ sed -i "s/vexfilename/e21e13-${REL}-b3.vex.obs/g" out/e21e13-$(REL)-b3.v2d
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21e13.vext out/conventional/e21e13-$(REL)-b3.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21e13.v2dt out/conventional/e21e13-$(REL)-b3.v2d
+	@ sed -i "s/vexfilename/e21e13-${REL}-b3.vex.obs/g" out/conventional/e21e13-$(REL)-b3.v2d
 
 e21a14_b3:
-	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21a14.vext out/e21a14-$(REL)-b3.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21a14.v2dt out/e21a14-$(REL)-b3.v2d
-	@ sed -i "s/vexfilename/e21a14-${REL}-b3.vex.obs/g" out/e21a14-$(REL)-b3.v2d
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21a14.vext out/conventional/e21a14-$(REL)-b3.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21a14.v2dt out/conventional/e21a14-$(REL)-b3.v2d
+	@ sed -i "s/vexfilename/e21a14-${REL}-b3.vex.obs/g" out/conventional/e21a14-$(REL)-b3.v2d
 
 e21d15_b3:
-	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21d15.vext out/e21d15-$(REL)-b3.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21d15.v2dt out/e21d15-$(REL)-b3.v2d
-	@ sed -i "s/vexfilename/e21d15-${REL}-b3.vex.obs/g" out/e21d15-$(REL)-b3.v2d
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21d15.vext out/conventional/e21d15-$(REL)-b3.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21d15.v2dt out/conventional/e21d15-$(REL)-b3.v2d
+	@ sed -i "s/vexfilename/e21d15-${REL}-b3.vex.obs/g" out/conventional/e21d15-$(REL)-b3.v2d
 
 e21a17_b3:
-	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21a17.vext out/e21a17-$(REL)-b3.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21a17.v2dt out/e21a17-$(REL)-b3.v2d
-	@ sed -i "s/vexfilename/e21a17-${REL}-b3.vex.obs/g" out/e21a17-$(REL)-b3.v2d
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21a17.vext out/conventional/e21a17-$(REL)-b3.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21a17.v2dt out/conventional/e21a17-$(REL)-b3.v2d
+	@ sed -i "s/vexfilename/e21a17-${REL}-b3.vex.obs/g" out/conventional/e21a17-$(REL)-b3.v2d
 
 e21e18_b3:
-	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21e18.vext out/e21e18-$(REL)-b3.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21e18.v2dt out/e21e18-$(REL)-b3.v2d
-	@ sed -i "s/vexfilename/e21e18-${REL}-b3.vex.obs/g" out/e21e18-$(REL)-b3.v2d
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21e18.vext out/conventional/e21e18-$(REL)-b3.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21e18.v2dt out/conventional/e21e18-$(REL)-b3.v2d
+	@ sed -i "s/vexfilename/e21e18-${REL}-b3.vex.obs/g" out/conventional/e21e18-$(REL)-b3.v2d
 
 e21f19_b3:
-	@ ./tvex2vex.py -I./templates/345G/band3/ -I./templates/common_sections/ templates/e21f19.vext out/e21f19-$(REL)-b3.vex.obs
-	@ ./tvex2vex.py -I./templates/345G/band3/ -I./templates/common_sections/ templates/e21f19.v2dt out/e21f19-$(REL)-b3.v2d
-	@ sed -i "s/vexfilename/e21f19-${REL}-b3.vex.obs/g" out/e21f19-$(REL)-b3.v2d
+	@ ./tvex2vex.py -I./templates/345G/band3/ -I./templates/common_sections/ templates/e21f19.vext out/conventional/e21f19-$(REL)-b3.vex.obs
+	@ ./tvex2vex.py -I./templates/345G/band3/ -I./templates/common_sections/ templates/e21f19.v2dt out/conventional/e21f19-$(REL)-b3.v2d
+	@ sed -i "s/vexfilename/e21f19-${REL}-b3.vex.obs/g" out/conventional/e21f19-$(REL)-b3.v2d
+
+e21b09_b3_ob:
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21b09.vext out/outputbands/e21b09-$(REL)-b3.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21b09.v2dt out/outputbands/e21b09-$(REL)-b3.v2d
+	@ sed -i "s/vexfilename/e21b09-${REL}-b3.vex.obs/g" out/outputbands/e21b09-$(REL)-b3.v2d
+
+e21e13_b3_ob:
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21e13.vext out/outputbands/e21e13-$(REL)-b3.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21e13_outputbands.v2dt out/outputbands/e21e13-$(REL)-b3.v2d
+	@ sed -i "s/vexfilename/e21e13-${REL}-b3.vex.obs/g" out/outputbands/e21e13-$(REL)-b3.v2d
+
+e21a14_b3_ob:
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21a14.vext out/outputbands/e21a14-$(REL)-b3.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21a14_outputbands.v2dt out/outputbands/e21a14-$(REL)-b3.v2d
+	@ sed -i "s/vexfilename/e21a14-${REL}-b3.vex.obs/g" out/outputbands/e21a14-$(REL)-b3.v2d
+
+e21d15_b3_ob:
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21d15.vext out/outputbands/e21d15-$(REL)-b3.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21d15_outputbands.v2dt out/outputbands/e21d15-$(REL)-b3.v2d
+	@ sed -i "s/vexfilename/e21d15-${REL}-b3.vex.obs/g" out/outputbands/e21d15-$(REL)-b3.v2d
+
+e21a17_b3_ob:
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21a17.vext out/outputbands/e21a17-$(REL)-b3.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21a17_outputbands.v2dt out/outputbands/e21a17-$(REL)-b3.v2d
+	@ sed -i "s/vexfilename/e21a17-${REL}-b3.vex.obs/g" out/outputbands/e21a17-$(REL)-b3.v2d
+
+e21e18_b3_ob:
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21e18.vext out/outputbands/e21e18-$(REL)-b3.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band3/ -I./templates/common_sections/ templates/e21e18_outputbands.v2dt out/outputbands/e21e18-$(REL)-b3.v2d
+	@ sed -i "s/vexfilename/e21e18-${REL}-b3.vex.obs/g" out/outputbands/e21e18-$(REL)-b3.v2d
+
+e21f19_b3_ob:
+	@ ./tvex2vex.py -I./templates/345G/band3/ -I./templates/common_sections/ templates/e21f19.vext out/outputbands/e21f19-$(REL)-b3.vex.obs
+	@ ./tvex2vex.py -I./templates/345G/band3/ -I./templates/common_sections/ templates/e21f19_outputbands.v2dt out/outputbands/e21f19-$(REL)-b3.v2d
+	@ sed -i "s/vexfilename/e21f19-${REL}-b3.vex.obs/g" out/outputbands/e21f19-$(REL)-b3.v2d
 
 install_b3:
 	for exptname in e21b09 e21e13 e21a14 e21d15 e21a17 e21e18 e21f19; do \
 		mkdir -p $(EXPROOT)/$${exptname}/$(REV)/b3/ ; \
-		cp -av out/$${exptname}-${REL}-b3.{v2d,vex.obs} $(EXPROOT)/$${exptname}/$(REV)/b3/ ; \
+		mkdir -p $(EXPROOT)/$${exptname}/$(REV)/b3_outputbands/ ; \
+		cp -av out/conventional/$${exptname}-${REL}-b3.{v2d,vex.obs} $(EXPROOT)/$${exptname}/$(REV)/b3/ ; \
+		cp -av out/outputbands/$${exptname}-${REL}-b3.{v2d,vex.obs} $(EXPROOT)/$${exptname}/$(REV)/b3_outputbands/ ; \
 	done
 
 ####################################################################################
@@ -210,42 +327,79 @@ install_b3:
 b4: EHT_2021_230GHz_b4 EHT_2021_345GHz_b4
 
 e21b09_b4:
-	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21b09.vext out/e21b09-$(REL)-b4.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21b09.v2dt out/e21b09-$(REL)-b4.v2d
-	@ sed -i "s/vexfilename/e21b09-${REL}-b4.vex.obs/g" out/e21b09-$(REL)-b4.v2d
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21b09.vext out/conventional/e21b09-$(REL)-b4.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21b09.v2dt out/conventional/e21b09-$(REL)-b4.v2d
+	@ sed -i "s/vexfilename/e21b09-${REL}-b4.vex.obs/g" out/conventional/e21b09-$(REL)-b4.v2d
 
 e21e13_b4:
-	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21e13.vext out/e21e13-$(REL)-b4.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21e13.v2dt out/e21e13-$(REL)-b4.v2d
-	@ sed -i "s/vexfilename/e21e13-${REL}-b4.vex.obs/g" out/e21e13-$(REL)-b4.v2d
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21e13.vext out/conventional/e21e13-$(REL)-b4.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21e13.v2dt out/conventional/e21e13-$(REL)-b4.v2d
+	@ sed -i "s/vexfilename/e21e13-${REL}-b4.vex.obs/g" out/conventional/e21e13-$(REL)-b4.v2d
 
 e21a14_b4:
-	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21a14.vext out/e21a14-$(REL)-b4.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21a14.v2dt out/e21a14-$(REL)-b4.v2d
-	@ sed -i "s/vexfilename/e21a14-${REL}-b4.vex.obs/g" out/e21a14-$(REL)-b4.v2d
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21a14.vext out/conventional/e21a14-$(REL)-b4.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21a14.v2dt out/conventional/e21a14-$(REL)-b4.v2d
+	@ sed -i "s/vexfilename/e21a14-${REL}-b4.vex.obs/g" out/conventional/e21a14-$(REL)-b4.v2d
 
 e21d15_b4:
-	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21d15.vext out/e21d15-$(REL)-b4.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21d15.v2dt out/e21d15-$(REL)-b4.v2d
-	@ sed -i "s/vexfilename/e21d15-${REL}-b4.vex.obs/g" out/e21d15-$(REL)-b4.v2d
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21d15.vext out/conventional/e21d15-$(REL)-b4.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21d15.v2dt out/conventional/e21d15-$(REL)-b4.v2d
+	@ sed -i "s/vexfilename/e21d15-${REL}-b4.vex.obs/g" out/conventional/e21d15-$(REL)-b4.v2d
 
 e21a17_b4:
-	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21a17.vext out/e21a17-$(REL)-b4.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21a17.v2dt out/e21a17-$(REL)-b4.v2d
-	@ sed -i "s/vexfilename/e21a17-${REL}-b4.vex.obs/g" out/e21a17-$(REL)-b4.v2d
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21a17.vext out/conventional/e21a17-$(REL)-b4.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21a17.v2dt out/conventional/e21a17-$(REL)-b4.v2d
+	@ sed -i "s/vexfilename/e21a17-${REL}-b4.vex.obs/g" out/conventional/e21a17-$(REL)-b4.v2d
 
 e21e18_b4:
-	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21e18.vext out/e21e18-$(REL)-b4.vex.obs
-	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21e18.v2dt out/e21e18-$(REL)-b4.v2d
-	@ sed -i "s/vexfilename/e21e18-${REL}-b4.vex.obs/g" out/e21e18-$(REL)-b4.v2d
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21e18.vext out/conventional/e21e18-$(REL)-b4.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21e18.v2dt out/conventional/e21e18-$(REL)-b4.v2d
+	@ sed -i "s/vexfilename/e21e18-${REL}-b4.vex.obs/g" out/conventional/e21e18-$(REL)-b4.v2d
 
 e21f19_b4:
-	@ ./tvex2vex.py -I./templates/345G/band4/ -I./templates/common_sections/ templates/e21f19.vext out/e21f19-$(REL)-b4.vex.obs
-	@ ./tvex2vex.py -I./templates/345G/band4/ -I./templates/common_sections/ templates/e21f19.v2dt out/e21f19-$(REL)-b4.v2d
-	@ sed -i "s/vexfilename/e21f19-${REL}-b4.vex.obs/g" out/e21f19-$(REL)-b4.v2d
+	@ ./tvex2vex.py -I./templates/345G/band4/ -I./templates/common_sections/ templates/e21f19.vext out/conventional/e21f19-$(REL)-b4.vex.obs
+	@ ./tvex2vex.py -I./templates/345G/band4/ -I./templates/common_sections/ templates/e21f19.v2dt out/conventional/e21f19-$(REL)-b4.v2d
+	@ sed -i "s/vexfilename/e21f19-${REL}-b4.vex.obs/g" out/conventional/e21f19-$(REL)-b4.v2d
+
+e21b09_b4_ob:
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21b09.vext out/outputbands/e21b09-$(REL)-b4.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21b09_outputbands.v2dt out/outputbands/e21b09-$(REL)-b4.v2d
+	@ sed -i "s/vexfilename/e21b09-${REL}-b4.vex.obs/g" out/outputbands/e21b09-$(REL)-b4.v2d
+
+e21e13_b4_ob:
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21e13.vext out/outputbands/e21e13-$(REL)-b4.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21e13_outputbands.v2dt out/outputbands/e21e13-$(REL)-b4.v2d
+	@ sed -i "s/vexfilename/e21e13-${REL}-b4.vex.obs/g" out/outputbands/e21e13-$(REL)-b4.v2d
+
+e21a14_b4_ob:
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21a14.vext out/outputbands/e21a14-$(REL)-b4.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21a14_outputbands.v2dt out/outputbands/e21a14-$(REL)-b4.v2d
+	@ sed -i "s/vexfilename/e21a14-${REL}-b4.vex.obs/g" out/outputbands/e21a14-$(REL)-b4.v2d
+
+e21d15_b4_ob:
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21d15.vext out/outputbands/e21d15-$(REL)-b4.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21d15_outputbands.v2dt out/outputbands/e21d15-$(REL)-b4.v2d
+	@ sed -i "s/vexfilename/e21d15-${REL}-b4.vex.obs/g" out/outputbands/e21d15-$(REL)-b4.v2d
+
+e21a17_b4_ob:
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21a17.vext out/outputbands/e21a17-$(REL)-b4.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21a17_outputbands.v2dt out/outputbands/e21a17-$(REL)-b4.v2d
+	@ sed -i "s/vexfilename/e21a17-${REL}-b4.vex.obs/g" out/outputbands/e21a17-$(REL)-b4.v2d
+
+e21e18_b4_ob:
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21e18.vext out/outputbands/e21e18-$(REL)-b4.vex.obs
+	@ ./tvex2vex.py -I./templates/230G/band4/ -I./templates/common_sections/ templates/e21e18_outputbands.v2dt out/outputbands/e21e18-$(REL)-b4.v2d
+	@ sed -i "s/vexfilename/e21e18-${REL}-b4.vex.obs/g" out/outputbands/e21e18-$(REL)-b4.v2d
+
+e21f19_b4_ob:
+	@ ./tvex2vex.py -I./templates/345G/band4/ -I./templates/common_sections/ templates/e21f19.vext out/outputbands/e21f19-$(REL)-b4.vex.obs
+	@ ./tvex2vex.py -I./templates/345G/band4/ -I./templates/common_sections/ templates/e21f19_outputbands.v2dt out/outputbands/e21f19-$(REL)-b4.v2d
+	@ sed -i "s/vexfilename/e21f19-${REL}-b4.vex.obs/g" out/outputbands/e21f19-$(REL)-b4.v2d
 
 install_b4:
 	for exptname in e21b09 e21e13 e21a14 e21d15 e21a17 e21e18 e21f19; do \
 		mkdir -p $(EXPROOT)/$${exptname}/$(REV)/b4/ ; \
-		cp -av out/$${exptname}-${REL}-b4.{v2d,vex.obs} $(EXPROOT)/$${exptname}/$(REV)/b4/ ; \
+		mkdir -p $(EXPROOT)/$${exptname}/$(REV)/b4_outputbands/ ; \
+		cp -av out/conventional/$${exptname}-${REL}-b4.{v2d,vex.obs} $(EXPROOT)/$${exptname}/$(REV)/b4/ ; \
+		cp -av out/outputbands/$${exptname}-${REL}-b4.{v2d,vex.obs} $(EXPROOT)/$${exptname}/$(REV)/b4_outputbands/ ; \
 	done
