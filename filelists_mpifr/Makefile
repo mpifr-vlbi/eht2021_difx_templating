@@ -6,7 +6,7 @@ all:
 
 mk6dir2filelist = sed -e 's/^/\/$(1)_fuse\/$(2)\//' $(M6DIRS)/$(3).filelist | cut -d' ' -f 1,2,3 | grep e21 > $(4)
 
-bonn: pv_b1 pv_b4 nn_b1 nn_b4 gl_b1 gl_b4 mg_b1 kt_b1
+bonn: pv_b1 pv_b4 nn_b1 nn_b4 gl_b1 gl_b4 mg_b1 kt_b1 aa_b1
 
 hays: pv_b2 pv_b3
 
@@ -59,6 +59,12 @@ mg_b1: # ALMA%045/46/47/48 ; Bonn mark6-09
 kt_b1: # SAO%0032/33/34/35 ; Bonn mark6-10
 	$(call mk6dir2filelist,mark6-10,12,SAO%0032,ehtc2021_KT_set1_b1.12.filelist)
 	$(call mk6dir2filelist,mark6-10,34,SAO%0034,ehtc2021_KT_set1_b1.34.filelist)
+
+## ALMA
+
+aa_b1: # ALMA%009/10/11/12 ; Bonn mark6-02
+	$(call mk6dir2filelist,mark6-02,12,ALMA%009,ehtc2021_ALMA_set1_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-02,34,ALMA%011,ehtc2021_ALMA_set1_b1.34.filelist)
 
 buglist:
 	# All scans that have unexpected time stamps
