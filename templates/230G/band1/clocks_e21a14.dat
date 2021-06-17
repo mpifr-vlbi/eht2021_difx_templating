@@ -2,3 +2,5 @@ CLOCK
 # Station ID    Delay (usec)    Rate (usec)
 Nn              +12.7           -2.897e-15
 Pv              +0.683          0.0
+Kt              -1.60           -5.0834e-12
+
