@@ -40,7 +40,7 @@ def Gl;
 enddef;
 *
 def Kt;
-  clock_early = 2021y098d23h52m00s: 0 usec: 2021y098d23h52m00s : -5.0834e-12;
+  clock_early = 2021y098d23h52m00s : -1.60 usec : 2021y098d23h52m00s : -5.0834e-12;
 enddef;
 *
 def Mm; * JCMT

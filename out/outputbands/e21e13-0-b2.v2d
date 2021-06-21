@@ -113,6 +113,14 @@ DATASTREAM Nn_rec2slot34 {
 # CORRELATION CONFIG
 #==================================================================
 
+ZOOM zooms58 {
+   # blank
+}
+
+ZOOM zooms62 {
+   # blank
+}
+
 SETUP outputbandSetup {
   numBufferedFFTs = 20
   tInt = 0.400
