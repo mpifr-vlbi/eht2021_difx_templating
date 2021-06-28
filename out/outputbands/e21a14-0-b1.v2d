@@ -5,6 +5,8 @@
 #
 # Coarse clock offsets determined via
 #   Pico - scan 103-2340 Nn-Pv
+#   Kt   - scan 104-0807 Aa-Kt, no Kt fringe in earlier scans it seems
+#   Nn   - scan 104-0624 Aa-Nn
 #==================================================================
 
 vex = e21a14-0-b1.vex.obs
