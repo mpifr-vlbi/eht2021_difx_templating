@@ -8,9 +8,16 @@ enddef;
 *
 def FREQ_DBBC3_PV;
      sample_rate =  4096.000 Ms/sec;
-     * 1st LO 343.6 GHz (vs EHT 342.6 GHz) to permit use of "IF 5-9" filters of EHT 230 GHz
+     * Old info:  1st LO 343.6 GHz (vs EHT 342.6 GHz) to permit use of "IF 5-9" filters of EHT 230 GHz
      * Rx USB 5-9G split into 348.552-350.600 (recorder3, 345G b4!) and 350.600-352.648 (recorder4, outside EHT)
      * --> 345G b3 was not recorded
+     *
+     * New info:  1st LO 343.5 GHz, same reason as above, additionally S.Sanchez' info "Since 343.6/3 gives
+     *            a non integer, we took the nearest 343.5 GHz as LO"
+     *    343.5 GHz + 9.048 GHz --> top edge 352.548 GHz
+     *   "b4" 352.548 to 352.548-2.048 = 352.548 to 350.500 net LSB - outside 345G EHT
+     *   "b3" 350.500 to 350.500-2.048 = 348.452 to 350.500 net USB - is 3455 EHT band 4
+     *
      * Dummy freq entry for Pico:
      chan_def = &B:350.600 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
      chan_def = &B:350.600 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
