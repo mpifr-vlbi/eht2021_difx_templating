@@ -1,5 +1,8 @@
 CLOCK
 # Station ID    Delay (usec)    Rate (usec)
-Nn              +12.7           -2.897e-15
-Pv              -0.32           +5.14e-13
+Aa              2107.147        0.019e-12
+Nn              13.24           -2.897e-15
+Pv              -0.075          +5.14e-13
 Gl              -1.08           0.0
+Mm              0.27            +1.313038e-15
+# note: Mm rate +1.313038e-15 is from SMA maser info, yet strangely -2.45e-13 would be a better fit
