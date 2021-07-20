@@ -1,7 +1,7 @@
 $CLOCK;
 *
 def Aa;
-  clock_early = 2021y098d23h52m00s: 2107.147 usec : 2021y098d23h52m00s : 0.019e-12;
+  clock_early = 2021y098d23h52m00s: 2107.167 usec : 2021y098d23h52m00s : -10e-15;
 enddef;
 *
 def Ax;
@@ -17,7 +17,7 @@ def Kt;
 enddef;
 *
 def Mm; * JCMT
-  clock_early = 2021y098d23h52m00s: 0 usec: 2021y098d23h52m00s : 0;
+  clock_early = 2021y098d23h52m00s: 0 usec: 2021y098d23h52m00s : +1.313038e-15;
 enddef;
 *
 def Mg; * SMT
@@ -29,7 +29,7 @@ def Nn; * NOEMA
 enddef;
 *
 def Pv;
-  clock_early = 2021y098d23h52m00s: 0 usec: 2021y098d23h52m00s : 0;
+  clock_early = 2021y098d23h52m00s: 0 usec: 2021y098d23h52m00s : +5.1042e-13;
 enddef;
 *
 def Sz;
