@@ -64,7 +64,7 @@ def Sz;
 enddef;
 *
 def Sw; * SMA APHIDS
-  clock_early = 2021y098d23h52m00s : +0.237 usec : 2021y098d23h52m00s : +1.313038e-15;
+  clock_early = 2021y098d23h52m00s : +0.412 usec : 2021y098d23h52m00s : +1.313038e-15;
   ** TODO
   ** ./vexdelay.py -f SMA_delays.csv.rx230.sbLSB.quad1.band1 -c 0.68031 \
   **               -r +1.313038e-15 -s Sw -g 0.0 \
