@@ -80,7 +80,8 @@ def 1mmlcp;
      ref $IF = IF_ALMA:Aa;
      ref $BBC = BBC_COMMON:Pv:Gl:Ax:Sz:Kt:Mg:Sw:Mm:Nn;
      ref $BBC = BBC_ALMA:Aa;
-     ref $FREQ = FREQ_COMMON:Gl:Sz:Kt:Mg:Sw:Mm;
+     ref $FREQ = FREQ_COMMON:Gl:Sz:Kt:Mg:Mm;
+     ref $FREQ = FREQ_SMA:Sw;
      ref $FREQ = FREQ_DBBC3_AX:Ax;
      ref $FREQ = FREQ_DBBC3_PV:Pv;
      ref $FREQ = FREQ_AA:Aa;
@@ -424,6 +425,11 @@ def FREQ_DBBC3_PV;
      chan_def = &B:212052.0 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
 enddef;
 *
+def FREQ_SMA;
+     sample_rate =  4096.000 Ms/sec;
+     chan_def = &B:212052.0 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
+     chan_def = &B:212052.0 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
+enddef;
 def FREQ_Nn; * derived for on lo1=221.100 lo2=7.744 GHz
    sample_rate = 128.0 Ms/sec;  * (2bits/sample)
    * Recorder 1, slot 1, LSB-Inner, RCP, subbands 0-15
