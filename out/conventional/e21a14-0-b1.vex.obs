@@ -64,19 +64,11 @@ def Sz;
 enddef;
 *
 def Sw; * SMA APHIDS
+  clock_early = 2021y098d23h52m00s : +0.237 usec : 2021y098d23h52m00s : +1.313038e-15;
   ** TODO
   ** ./vexdelay.py -f SMA_delays.csv.rx230.sbLSB.quad1.band1 -c 0.68031 \
-  **               -r +208.056e-15 -s Sw -g 0.0 \
-  **               2018y110d22h38m00s 2018y117d09h33m00s
-  clock_early=2018y111d03h48m00s : 0.964978 usec : 2018y111d03h48m00s : 2.08056e-13 ;
-  clock_early=2018y111d04h12m00s : 0.965955 usec : 2018y111d04h12m00s : 2.08056e-13 ;
-  clock_early=2018y111d04h20m00s : 0.967419 usec : 2018y111d04h20m00s : 2.08056e-13 ;
-  clock_early=2018y111d04h40m00s : 0.964490 usec : 2018y111d04h40m00s : 2.08056e-13 ;
-  clock_early=2018y111d04h48m00s : 0.964001 usec : 2018y111d04h48m00s : 2.08056e-13 ;
-  clock_early=2018y111d04h59m00s : 0.965955 usec : 2018y111d04h59m00s : 2.08056e-13 ;
-  clock_early=2018y111d05h12m00s : 0.964978 usec : 2018y111d05h12m00s : 2.08056e-13 ;
-  clock_early=2018y111d05h20m00s : 0.965222 usec : 2018y111d05h20m00s : 2.08056e-13 ;
-  clock_early=2018y111d05h30m00s : 0.963757 usec : 2018y111d05h30m00s : 2.08056e-13 ;
+  **               -r +1.313038e-15 -s Sw -g 0.0 \
+  **               2021y098d23h52m00s 2021y114d23h52m00s
 enddef;
 *------------------------------------------------------------------------------
 $MODE;
