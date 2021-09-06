@@ -11,8 +11,8 @@ vex = vexfilename
 # ANTENNA DATA
 #==================================================================
 
-#include <antennas.v2d>
-#include <datastreams_set1.v2d>
+#include <antennas_e21b09.v2d>
+#include <datastreams_set1_e21b09.v2d>
 
 
 #==================================================================

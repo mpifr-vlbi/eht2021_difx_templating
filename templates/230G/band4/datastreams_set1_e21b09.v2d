@@ -1,0 +1,34 @@
+DATASTREAM Aa_ds12 { filelist = ehtc2021_ALMA_set1_b4.12.filelist }
+DATASTREAM Aa_ds34 { filelist = ehtc2021_ALMA_set1_b4.34.filelist }
+DATASTREAM Ax_ds12 { filelist = ehtc2021_APEX_set1_b4.12.filelist }
+DATASTREAM Ax_ds34 { filelist = ehtc2021_APEX_set1_b4.34.filelist }
+DATASTREAM Glt_ds12 { filelist = ehtc2021_GLT_set1_b4.12.filelist }
+DATASTREAM Glt_ds34 { filelist = ehtc2021_GLT_set1_b4.34.filelist }
+DATASTREAM Jcmt_ds12 { filelist = ehtc2021_JCMT_set1_b4.12.filelist }
+DATASTREAM Jcmt_ds34 { filelist = ehtc2021_JCMT_set1_b4.34.filelist }
+DATASTREAM Kt_ds12 { filelist = ehtc2021_KT_set1_b4.12.filelist }
+DATASTREAM Kt_ds34 { filelist = ehtc2021_KT_set1_b4.34.filelist }
+DATASTREAM Spt_ds12 { filelist = ehtc2021_SPT_set1_b4.12.filelist }
+DATASTREAM Spt_ds34 { filelist = ehtc2021_SPT_set1_b4.34.filelist }
+DATASTREAM Pv_ds12 { filelist = ehtc2021_Pico_set1_b4.12.filelist }
+DATASTREAM Pv_ds34 { filelist = ehtc2021_Pico_set1_b4.34.filelist }
+DATASTREAM SmaAphids_ds12 { filelist = ehtc2021_SMA_b4.12.filelist }
+DATASTREAM SmaAphids_ds34 { filelist = ehtc2021_SMA_b4.34.filelist }
+DATASTREAM Smt_ds12 { filelist = ehtc2021_SMT_b4.12.filelist }
+DATASTREAM Smt_ds34 { filelist = ehtc2021_SMT_b4.34.filelist }
+DATASTREAM Nn_rec3slot1 {
+  filelist = ehtc2021_pNOEMA_set1_rec3.1.filelist
+  format = INTERLACEDVDIF/0:1:2:3/8224/2
+}
+DATASTREAM Nn_rec3slot2 {
+  filelist = ehtc2021_pNOEMA_set1_rec3.2.filelist
+  format = INTERLACEDVDIF/0:1:2:3/8224/2
+}
+DATASTREAM Nn_rec3slot3 {
+  filelist = ehtc2021_pNOEMA_set1_rec3.3.filelist
+  format = INTERLACEDVDIF/0:1:2:3/8224/2
+}
+DATASTREAM Nn_rec3slot4 {
+  filelist = ehtc2021_pNOEMA_set1_rec3.4.filelist
+  format = INTERLACEDVDIF/0:1:2:3/8224/2
+}

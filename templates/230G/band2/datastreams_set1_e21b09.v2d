@@ -16,24 +16,13 @@ DATASTREAM SmaAphids_ds12 { filelist = ehtc2021_SMA_b2.12.filelist }
 DATASTREAM SmaAphids_ds34 { filelist = ehtc2021_SMA_b2.34.filelist }
 DATASTREAM Smt_ds12 { filelist = ehtc2021_SMT_b2.12.filelist }
 DATASTREAM Smt_ds34 { filelist = ehtc2021_SMT_b2.34.filelist }
-DATASTREAM Nn_rec2slot1 {
-  filelist = ehtc2021_pNOEMA_set1_rec2.1.filelist
-  format = INTERLACEDVDIF/8:9:10:11/8224/2
-  nBand = 16
+DATASTREAM Nn_rec2slot12 {
+  filelist = ehtc2021_pNOEMA_set1_rec2.12.filelist
+  format = INTERLACEDVDIF/8:9:10:11:4:5:6:7/8224/2
+  nBand = 32
 }
-DATASTREAM Nn_rec2slot2 {
-  filelist = ehtc2021_pNOEMA_set1_rec2.2.filelist
-  format = INTERLACEDVDIF/4:5:6:7/8224/2
-  nBand = 16
+DATASTREAM Nn_rec2slot34 {
+  filelist = ehtc2021_pNOEMA_set1_rec2.34.filelist
+  format = INTERLACEDVDIF/4:5:6:7:8:9:10:11/8224/2
+  nBand = 32
 }
-DATASTREAM Nn_rec2slot3 {
-  filelist = ehtc2021_pNOEMA_set1_rec2.3.filelist
-  format = INTERLACEDVDIF/4:5:6:7/8224/2
-  nBand = 16
-}
-DATASTREAM Nn_rec2slot4 {
-  filelist = ehtc2021_pNOEMA_set1_rec2.4.filelist
-  format = INTERLACEDVDIF/8:9:10:11/8224/2
-  nBand = 16
-}
-
