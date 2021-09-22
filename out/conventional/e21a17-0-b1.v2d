@@ -183,7 +183,7 @@ ZOOM zooms62
       # Nn rec1 slot2
       addZoomFreq = freq@213260.0/bw@62.0/noparent@true
       addZoomFreq = freq@213196.0/bw@62.0/noparent@true
-      addZoomFreq = freq@213158.0/bw@62.0/noparent@true
+      addZoomFreq = freq@213132.0/bw@62.0/noparent@true
       addZoomFreq = freq@213068.0/bw@62.0/noparent@true
       addZoomFreq = freq@213004.0/bw@62.0/noparent@true
       addZoomFreq = freq@212940.0/bw@62.0/noparent@true
@@ -197,7 +197,7 @@ ZOOM zooms62
       addZoomFreq = freq@212428.0/bw@62.0/noparent@true
       addZoomFreq = freq@212364.0/bw@62.0/noparent@true
       # fake for redundant channel pair Ch01 Ch17
-      addZoomFreq = freq@293324.0/bw@24.0/noparent@true
+      addZoomFreq = freq@293324.0/bw@62.0/noparent@true
 }
 
 
