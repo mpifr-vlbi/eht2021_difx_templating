@@ -4,5 +4,5 @@ Aa              2107.167         -10e-15
 Nn              13.24           -2.897e-15
 Pv              -0.075          +5.14e-13
 Gl              -1.08           6.26e-14
-Mm              0.27            +1.313038e-15
+Mm              0.254           +1.313038e-15
 # note: Mm rate +1.313038e-15 is from SMA maser info, yet strangely -2.45e-13 would be a better fit
