@@ -1,7 +1,7 @@
 
 include Makefile.inc
 
-.NOTPARALLEL:
+# .NOTPARALLEL:  # note: quite slow build, commented out again; but be careful to do 'make all' and then 'make install' as separate steps, not 'make all install'
 
 default: all
 
