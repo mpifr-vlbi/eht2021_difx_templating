@@ -40,6 +40,10 @@ prerequisites:
 	./scripts/vexdelay.py -f ./templates/230G/band2/sma-delays.rx230.sbLSB.quad0.b2.csv -c 0.5126 -r +1.313038e-15 -s Sw -g 0.0 2021y098d23h50m00s 2021y109d06h10m00s > templates/230G/band2/clocks_SMA.vex # -c todo
 	./scripts/vexdelay.py -f ./templates/230G/band3/sma-delays.rx230.sbUSB.quad1.b3.csv -c 0.5126 -r +1.313038e-15 -s Sw -g 0.0 2021y098d23h50m00s 2021y109d06h10m00s > templates/230G/band3/clocks_SMA.vex # -c todo
 	./scripts/vexdelay.py -f ./templates/230G/band4/sma-delays.rx230.sbUSB.quad2.b4.csv -c 0.5126 -r +1.313038e-15 -s Sw -g 0.0 2021y098d23h50m00s 2021y109d06h10m00s > templates/230G/band4/clocks_SMA.vex # -c todo
+	cp -a templates/230G/band1/clocks_SMA.vex templates/345G/band1/clocks_SMA.vex
+	cp -a templates/230G/band2/clocks_SMA.vex templates/345G/band2/clocks_SMA.vex
+	cp -a templates/230G/band3/clocks_SMA.vex templates/345G/band3/clocks_SMA.vex
+	cp -a templates/230G/band4/clocks_SMA.vex templates/345G/band4/clocks_SMA.vex
 
 
 ####################################################################################
