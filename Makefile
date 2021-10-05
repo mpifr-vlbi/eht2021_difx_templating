@@ -1,6 +1,8 @@
 
 include Makefile.inc
 
+.NOTPARALLEL:
+
 default: all
 
 prerequisites:
