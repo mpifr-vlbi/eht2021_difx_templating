@@ -1,6 +1,11 @@
 $BBC;
 *
 def BBC_COMMON;
+     BBC_assign = &BBC01 : 1 : &IF_LCP;
+     BBC_assign = &BBC02 : 2 : &IF_RCP;
+enddef;
+*
+def BBC_POLSWAP;
      BBC_assign = &BBC01 : 1 : &IF_RCP;
      BBC_assign = &BBC02 : 2 : &IF_LCP;
 enddef;

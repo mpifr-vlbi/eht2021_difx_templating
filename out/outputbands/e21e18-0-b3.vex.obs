@@ -651,8 +651,8 @@ def VDIFILACED; track_frame_format = INTERLACEDVDIF; enddef;
 $IF;
 *
 def IF_NOMINAL;
-     if_def = &IF_RCP : A : R : 221100.000000 MHz : U : 0 MHz : 0 Hz;
-     if_def = &IF_LCP : B : L : 221100.000000 MHz : U : 0 MHz : 0 Hz;
+     if_def = &IF_LCP : A : L : 221100.000000 MHz : U : 0 MHz : 0 Hz;
+     if_def = &IF_RCP : B : R : 221100.000000 MHz : U : 0 MHz : 0 Hz;
 enddef;
 *
 def IF_APEX;
@@ -668,6 +668,11 @@ enddef;
 $BBC;
 *
 def BBC_COMMON;
+     BBC_assign = &BBC01 : 1 : &IF_LCP;
+     BBC_assign = &BBC02 : 2 : &IF_RCP;
+enddef;
+*
+def BBC_POLSWAP;
      BBC_assign = &BBC01 : 1 : &IF_RCP;
      BBC_assign = &BBC02 : 2 : &IF_LCP;
 enddef;
