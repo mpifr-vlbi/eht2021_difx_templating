@@ -28,7 +28,7 @@ enddef;
 $CLOCK;
 *
 def Aa;
-  clock_early = 2021y098d23h52m00s : 2107.147 usec : 2021y098d23h52m00s : 0.019e-12;
+  clock_early = 2021y098d23h52m00s : 2107.167 usec : 2021y098d23h52m00s : -10e-15;
 enddef;
 *
 def Ax;
@@ -36,7 +36,7 @@ def Ax;
 enddef;
 *
 def Gl;
-  clock_early = 2021y098d23h52m00s : -1.08 usec : 2021y098d23h52m00s : 0.0;
+  clock_early = 2021y098d23h52m00s : -1.08 usec : 2021y098d23h52m00s : 6.26e-14;
 enddef;
 *
 def Kt;
