@@ -29,12 +29,13 @@ prerequisites:
 	./scripts/noema-vex-defs.py -c "4-8" --lo1 342.600 --lo2 7.744 -r 2   > templates/345G/band2/freqs_NOEMA.vex
 	./scripts/noema-vex-defs.py -c "4-8" --lo1 342.600 --lo2 7.744 -r 4   > templates/345G/band3/freqs_NOEMA.vex
 	./scripts/noema-vex-defs.py -c "4-8" --lo1 342.600 --lo2 7.744 -r 3   > templates/345G/band4/freqs_NOEMA.vex
-	## ALMA 345G: $ehtc/alma-vex-defs.py would be more direct but chan_defs not useable as-is, vs ./scripts/alma-vex-defs.py usable but not 4-8/5-9 aware plus b2 offset trickyness
-	./scripts/alma-vex-defs.py --lo1 343.600 -r 1 > templates/345G/band1/freqs_ALMA.vex # equiv. to $ehtc/alma-vex-defs.py -f335600.00000 -w58.0 -sL -ralma
-	./scripts/alma-vex-defs.py --lo1 343.600 -r 2 > templates/345G/band2/freqs_ALMA_alt.vex # equiv. to $ehtc/alma-vex-defs.py -f337600.00000 -w58.0 -sL -ralma
+	## Note: DiFX $ehtc/alma-vex-defs.py would be more direct, but its chan_defs are not useable as-is,
+	##       vs own ./scripts/alma-vex-defs.py usable for that but is not 4-8/5-9 aware plus b2 offset trickyness
+	./scripts/alma-vex-defs.py --lo1 343.600 -r 1 > templates/345G/band1/freqs_ALMA.vex      # equiv. to $ehtc/alma-vex-defs.py -f335600.00000 -w58.0 -sL -ralma
+	./scripts/alma-vex-defs.py --lo1 343.600 -r 2 > templates/345G/band2/freqs_ALMA_alt.vex  # equiv. to $ehtc/alma-vex-defs.py -f337600.00000 -w58.0 -sL -ralma
 	./scripts/alma-vex-defs.py --lo1 343.54140625 -r 2 > templates/345G/band2/freqs_ALMA.vex # equiv. to $ehtc/alma-vex-defs.py -f337541.40625 -w58.0 -sL -ralma; shifted 58.59375 MHz
-	./scripts/alma-vex-defs.py --lo1 341.600 -r 3 > templates/345G/band3/freqs_ALMA.vex # equiv. to $ehtc/alma-vex-defs.py -f347600.00000 -w58.0 -sU -ralma
-	./scripts/alma-vex-defs.py --lo1 341.600 -r 4 > templates/345G/band4/freqs_ALMA.vex # equiv. to $ehtc/alma-vex-defs.py -f349600.00000 -w58.0 -sU -ralma
+	./scripts/alma-vex-defs.py --lo1 341.600 -r 3 > templates/345G/band3/freqs_ALMA.vex      # equiv. to $ehtc/alma-vex-defs.py -f347600.00000 -w58.0 -sU -ralma
+	./scripts/alma-vex-defs.py --lo1 341.600 -r 4 > templates/345G/band4/freqs_ALMA.vex      # equiv. to $ehtc/alma-vex-defs.py -f349600.00000 -w58.0 -sU -ralma
 	## SMA a priori clock CSV files
 	./scripts/vexdelay.py -f ./templates/230G/band1/sma-delays.rx230.sbLSB.quad1.b1.csv -c 0.5126 -r +1.313038e-15 -s Sw -g 0.0 2021y098d23h50m00s 2021y109d06h10m00s > templates/230G/band1/clocks_SMA.vex # e21a14 fringe
 	./scripts/vexdelay.py -f ./templates/230G/band2/sma-delays.rx230.sbLSB.quad0.b2.csv -c 0.5126 -r +1.313038e-15 -s Sw -g 0.0 2021y098d23h50m00s 2021y109d06h10m00s > templates/230G/band2/clocks_SMA.vex # -c todo
