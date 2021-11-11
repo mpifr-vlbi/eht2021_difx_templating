@@ -1,6 +1,6 @@
 def FREQ_Nn; * derived for on lo1=342.600 lo2=7.744 GHz
    sample_rate = 128.0 Ms/sec;  * (2bits/sample)
-   * Recorder 3, slot 1, USB-Lower/Inner PolyFiX 7 SFP+ 1, RCP, subbands 16-31
+   * Recorder 3, slot 1, USB-Lower/Inner PolyFiX 7 SFP+ 1, LCP, subbands 16-31
    chan_def = &B: 349352.00 MHz : L : 64.00 MHz : &CH01 : &BBC01 : &NoCal; * b4_0.8mm
    chan_def = &B: 349288.00 MHz : L : 64.00 MHz : &CH02 : &BBC01 : &NoCal; * b4_0.8mm
    chan_def = &B: 349224.00 MHz : L : 64.00 MHz : &CH03 : &BBC01 : &NoCal; * b4_0.8mm
@@ -17,7 +17,7 @@ def FREQ_Nn; * derived for on lo1=342.600 lo2=7.744 GHz
    chan_def = &B: 348520.00 MHz : L : 64.00 MHz : &CH14 : &BBC01 : &NoCal; * b3_0.8mm
    chan_def = &B: 348456.00 MHz : L : 64.00 MHz : &CH15 : &BBC01 : &NoCal; * b3_0.8mm
    chan_def = &B: 348392.00 MHz : L : 64.00 MHz : &CH16 : &BBC01 : &NoCal; * b3_0.8mm
-   * Recorder 3, slot 2, USB-Lower/Inner PolyFiX 7 SFP+ 0, RCP, subbands 0-15
+   * Recorder 3, slot 2, USB-Lower/Inner PolyFiX 7 SFP+ 0, LCP, subbands 0-15
    chan_def = &B: 350376.00 MHz : L : 64.00 MHz : &CH17 : &BBC01 : &NoCal; * b4_0.8mm
    chan_def = &B: 350312.00 MHz : L : 64.00 MHz : &CH18 : &BBC01 : &NoCal; * b4_0.8mm
    chan_def = &B: 350248.00 MHz : L : 64.00 MHz : &CH19 : &BBC01 : &NoCal; * b4_0.8mm
@@ -34,7 +34,7 @@ def FREQ_Nn; * derived for on lo1=342.600 lo2=7.744 GHz
    chan_def = &B: 349544.00 MHz : L : 64.00 MHz : &CH30 : &BBC01 : &NoCal; * b4_0.8mm
    chan_def = &B: 349480.00 MHz : L : 64.00 MHz : &CH31 : &BBC01 : &NoCal; * b4_0.8mm
    chan_def = &B: 349416.00 MHz : L : 64.00 MHz : &CH32 : &BBC01 : &NoCal; * b4_0.8mm
-   * Recorder 3, slot 3, USB-Lower/Inner PolyFiX 3 SFP+ 0, LCP, subbands 0-15
+   * Recorder 3, slot 3, USB-Lower/Inner PolyFiX 3 SFP+ 0, RCP, subbands 0-15
    chan_def = &B: 350376.00 MHz : L : 64.00 MHz : &CH33 : &BBC02 : &NoCal; * b4_0.8mm
    chan_def = &B: 350312.00 MHz : L : 64.00 MHz : &CH34 : &BBC02 : &NoCal; * b4_0.8mm
    chan_def = &B: 350248.00 MHz : L : 64.00 MHz : &CH35 : &BBC02 : &NoCal; * b4_0.8mm
@@ -51,7 +51,7 @@ def FREQ_Nn; * derived for on lo1=342.600 lo2=7.744 GHz
    chan_def = &B: 349544.00 MHz : L : 64.00 MHz : &CH46 : &BBC02 : &NoCal; * b4_0.8mm
    chan_def = &B: 349480.00 MHz : L : 64.00 MHz : &CH47 : &BBC02 : &NoCal; * b4_0.8mm
    chan_def = &B: 349416.00 MHz : L : 64.00 MHz : &CH48 : &BBC02 : &NoCal; * b4_0.8mm
-   * Recorder 3, slot 4, USB-Lower/Inner PolyFiX 3 SFP+ 1, LCP, subbands 16-31
+   * Recorder 3, slot 4, USB-Lower/Inner PolyFiX 3 SFP+ 1, RCP, subbands 16-31
    chan_def = &B: 349352.00 MHz : L : 64.00 MHz : &CH49 : &BBC02 : &NoCal; * b4_0.8mm
    chan_def = &B: 349288.00 MHz : L : 64.00 MHz : &CH50 : &BBC02 : &NoCal; * b4_0.8mm
    chan_def = &B: 349224.00 MHz : L : 64.00 MHz : &CH51 : &BBC02 : &NoCal; * b4_0.8mm

@@ -1,6 +1,6 @@
 def FREQ_Nn; * derived for on lo1=221.100 lo2=7.744 GHz
    sample_rate = 128.0 Ms/sec;  * (2bits/sample)
-   * Recorder 2, slot 1, LSB-Inner, RCP, subbands 32-47
+   * Recorder 2, slot 1, LSB-Inner, LCP, subbands 32-47
    chan_def = &B: 215372.00 MHz : U : 64.00 MHz : &CH01 : &BBC01 : &NoCal; * b2
    chan_def = &B: 215436.00 MHz : U : 64.00 MHz : &CH02 : &BBC01 : &NoCal; * b2
    chan_def = &B: 215500.00 MHz : U : 64.00 MHz : &CH03 : &BBC01 : &NoCal; * b2
@@ -17,7 +17,7 @@ def FREQ_Nn; * derived for on lo1=221.100 lo2=7.744 GHz
    chan_def = &B: 216204.00 MHz : U : 64.00 MHz : &CH14 : &BBC01 : &NoCal;
    chan_def = &B: 216268.00 MHz : U : 64.00 MHz : &CH15 : &BBC01 : &NoCal;
    chan_def = &B: 216332.00 MHz : U : 64.00 MHz : &CH16 : &BBC01 : &NoCal;
-   * Recorder 2, slot 2, LSB-Inner, RCP, subbands 16-31
+   * Recorder 2, slot 2, LSB-Inner, LCP, subbands 16-31
    chan_def = &B: 214348.00 MHz : U : 64.00 MHz : &CH17 : &BBC01 : &NoCal; * b2
    chan_def = &B: 214412.00 MHz : U : 64.00 MHz : &CH18 : &BBC01 : &NoCal; * b2
    chan_def = &B: 214476.00 MHz : U : 64.00 MHz : &CH19 : &BBC01 : &NoCal; * b2
@@ -34,7 +34,7 @@ def FREQ_Nn; * derived for on lo1=221.100 lo2=7.744 GHz
    chan_def = &B: 215180.00 MHz : U : 64.00 MHz : &CH30 : &BBC01 : &NoCal; * b2
    chan_def = &B: 215244.00 MHz : U : 64.00 MHz : &CH31 : &BBC01 : &NoCal; * b2
    chan_def = &B: 215308.00 MHz : U : 64.00 MHz : &CH32 : &BBC01 : &NoCal; * b2
-   * Recorder 2, slot 3, LSB-Inner, LCP, subbands 16-31
+   * Recorder 2, slot 3, LSB-Inner, RCP, subbands 16-31
    chan_def = &B: 214348.00 MHz : U : 64.00 MHz : &CH33 : &BBC02 : &NoCal; * b2
    chan_def = &B: 214412.00 MHz : U : 64.00 MHz : &CH34 : &BBC02 : &NoCal; * b2
    chan_def = &B: 214476.00 MHz : U : 64.00 MHz : &CH35 : &BBC02 : &NoCal; * b2
@@ -51,7 +51,7 @@ def FREQ_Nn; * derived for on lo1=221.100 lo2=7.744 GHz
    chan_def = &B: 215180.00 MHz : U : 64.00 MHz : &CH46 : &BBC02 : &NoCal; * b2
    chan_def = &B: 215244.00 MHz : U : 64.00 MHz : &CH47 : &BBC02 : &NoCal; * b2
    chan_def = &B: 215308.00 MHz : U : 64.00 MHz : &CH48 : &BBC02 : &NoCal; * b2
-   * Recorder 2, slot 4, LSB-Inner, LCP, subbands 32-47
+   * Recorder 2, slot 4, LSB-Inner, RCP, subbands 32-47
    chan_def = &B: 215372.00 MHz : U : 64.00 MHz : &CH49 : &BBC02 : &NoCal; * b2
    chan_def = &B: 215436.00 MHz : U : 64.00 MHz : &CH50 : &BBC02 : &NoCal; * b2
    chan_def = &B: 215500.00 MHz : U : 64.00 MHz : &CH51 : &BBC02 : &NoCal; * b2
