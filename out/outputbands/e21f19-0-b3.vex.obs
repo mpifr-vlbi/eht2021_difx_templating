@@ -685,8 +685,8 @@ $FREQ;
 *
 def FREQ_COMMON;
      sample_rate =  4096.000 Ms/sec;
-     chan_def = &B:348600.000 MHz : L :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
-     chan_def = &B:348600.000 MHz : L :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
+     chan_def = &B:348600.000 MHz : L :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
+     chan_def = &B:348600.000 MHz : L :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
 enddef;
 *
 def FREQ_DBBC3_PV;
@@ -702,19 +702,19 @@ def FREQ_DBBC3_PV;
      *   "b3" 350.500 to 350.500-2.048 = 348.452 to 350.500 net USB - is 3455 EHT band 4
      *
      * Dummy freq entry for Pico:
-     chan_def = &B:350.600 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
-     chan_def = &B:350.600 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
+     chan_def = &B:350.600 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
+     chan_def = &B:350.600 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
 enddef;
 *
 def FREQ_SMA;
      sample_rate =  4096.000 Ms/sec;
-     chan_def = &B:348600.000 MHz : L :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
-     chan_def = &B:348600.000 MHz : L :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
+     chan_def = &B:348600.000 MHz : L :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
+     chan_def = &B:348600.000 MHz : L :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
 enddef;
 *
 def FREQ_Nn; * derived for on lo1=342.600 lo2=7.744 GHz
    sample_rate = 128.0 Ms/sec;  * (2bits/sample)
-   * Recorder 4, slot 1, USB-Lower/Inner PolyFiX 7 SFP+ 3, RCP, subbands 48-63
+   * Recorder 4, slot 1, USB-Lower/Inner PolyFiX 7 SFP+ 3, LCP, subbands 48-63
    chan_def = &B: 347304.00 MHz : L : 64.00 MHz : &CH01 : &BBC01 : &NoCal; * b3_0.8mm
    chan_def = &B: 347240.00 MHz : L : 64.00 MHz : &CH02 : &BBC01 : &NoCal; * b3_0.8mm
    chan_def = &B: 347176.00 MHz : L : 64.00 MHz : &CH03 : &BBC01 : &NoCal; * b3_0.8mm
@@ -731,7 +731,7 @@ def FREQ_Nn; * derived for on lo1=342.600 lo2=7.744 GHz
    chan_def = &B: 346472.00 MHz : L : 64.00 MHz : &CH14 : &BBC01 : &NoCal;
    chan_def = &B: 346408.00 MHz : L : 64.00 MHz : &CH15 : &BBC01 : &NoCal;
    chan_def = &B: 346344.00 MHz : L : 64.00 MHz : &CH16 : &BBC01 : &NoCal;
-   * Recorder 4, slot 2, USB-Lower/Inner PolyFiX 7 SFP+ 2, RCP, subbands 32-47
+   * Recorder 4, slot 2, USB-Lower/Inner PolyFiX 7 SFP+ 2, LCP, subbands 32-47
    chan_def = &B: 348328.00 MHz : L : 64.00 MHz : &CH17 : &BBC01 : &NoCal; * b3_0.8mm
    chan_def = &B: 348264.00 MHz : L : 64.00 MHz : &CH18 : &BBC01 : &NoCal; * b3_0.8mm
    chan_def = &B: 348200.00 MHz : L : 64.00 MHz : &CH19 : &BBC01 : &NoCal; * b3_0.8mm
@@ -748,7 +748,7 @@ def FREQ_Nn; * derived for on lo1=342.600 lo2=7.744 GHz
    chan_def = &B: 347496.00 MHz : L : 64.00 MHz : &CH30 : &BBC01 : &NoCal; * b3_0.8mm
    chan_def = &B: 347432.00 MHz : L : 64.00 MHz : &CH31 : &BBC01 : &NoCal; * b3_0.8mm
    chan_def = &B: 347368.00 MHz : L : 64.00 MHz : &CH32 : &BBC01 : &NoCal; * b3_0.8mm
-   * Recorder 4, slot 4, USB-Lower/Inner PolyFiX 3 SFP+ 2, LCP, subbands 32-47
+   * Recorder 4, slot 4, USB-Lower/Inner PolyFiX 3 SFP+ 2, RCP, subbands 32-47
    chan_def = &B: 348328.00 MHz : L : 64.00 MHz : &CH33 : &BBC02 : &NoCal; * b3_0.8mm
    chan_def = &B: 348264.00 MHz : L : 64.00 MHz : &CH34 : &BBC02 : &NoCal; * b3_0.8mm
    chan_def = &B: 348200.00 MHz : L : 64.00 MHz : &CH35 : &BBC02 : &NoCal; * b3_0.8mm
@@ -765,7 +765,7 @@ def FREQ_Nn; * derived for on lo1=342.600 lo2=7.744 GHz
    chan_def = &B: 347496.00 MHz : L : 64.00 MHz : &CH46 : &BBC02 : &NoCal; * b3_0.8mm
    chan_def = &B: 347432.00 MHz : L : 64.00 MHz : &CH47 : &BBC02 : &NoCal; * b3_0.8mm
    chan_def = &B: 347368.00 MHz : L : 64.00 MHz : &CH48 : &BBC02 : &NoCal; * b3_0.8mm
-   * Recorder 4, slot 3, USB-Lower/Inner PolyFiX 3 SFP+ 3, LCP, subbands 48-63
+   * Recorder 4, slot 3, USB-Lower/Inner PolyFiX 3 SFP+ 3, RCP, subbands 48-63
    chan_def = &B: 347304.00 MHz : L : 64.00 MHz : &CH49 : &BBC02 : &NoCal; * b3_0.8mm
    chan_def = &B: 347240.00 MHz : L : 64.00 MHz : &CH50 : &BBC02 : &NoCal; * b3_0.8mm
    chan_def = &B: 347176.00 MHz : L : 64.00 MHz : &CH51 : &BBC02 : &NoCal; * b3_0.8mm

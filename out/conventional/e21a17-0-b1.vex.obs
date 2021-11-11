@@ -675,30 +675,30 @@ $FREQ;
 *
 def FREQ_COMMON;
      sample_rate =  4096.000 Ms/sec;
-     chan_def = &B:214100.000 MHz : L :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
-     chan_def = &B:214100.000 MHz : L :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
+     chan_def = &B:214100.000 MHz : L :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
+     chan_def = &B:214100.000 MHz : L :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
 enddef;
 *
 def FREQ_DBBC3_AX;
      sample_rate =  4096.000 Ms/sec;
-     chan_def = &B:212055.0 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
-     chan_def = &B:212055.0 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
+     chan_def = &B:212055.0 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
+     chan_def = &B:212055.0 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
 enddef;
 *
 def FREQ_DBBC3_PV;
      sample_rate =  4096.000 Ms/sec;
-     chan_def = &B:212052.0 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
-     chan_def = &B:212052.0 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
+     chan_def = &B:212052.0 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
+     chan_def = &B:212052.0 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
 enddef;
 *
 def FREQ_SMA;
      sample_rate =  4096.000 Ms/sec;
-     chan_def = &B:212052.0 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
-     chan_def = &B:212052.0 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
+     chan_def = &B:212052.0 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
+     chan_def = &B:212052.0 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
 enddef;
 def FREQ_Nn; * derived for on lo1=221.100 lo2=7.744 GHz
    sample_rate = 128.0 Ms/sec;  * (2bits/sample)
-   * Recorder 1, slot 1, LSB-Inner, RCP, subbands 0-15
+   * Recorder 1, slot 1, LSB-Inner, LCP, subbands 0-15
    **chan_def = &B: 213324.00 MHz : U : 64.00 MHz : &CH01 : &BBC01 : &NoCal; * b1
    chan_def = &B: 293324.00 MHz : U : 64.00 MHz : &CH01 : &BBC01 : &NoCal; * b1; redundant with ch17; fake the freq
    chan_def = &B: 213388.00 MHz : U : 64.00 MHz : &CH02 : &BBC01 : &NoCal; * b1
@@ -716,7 +716,7 @@ def FREQ_Nn; * derived for on lo1=221.100 lo2=7.744 GHz
    chan_def = &B: 214156.00 MHz : U : 64.00 MHz : &CH14 : &BBC01 : &NoCal; * b2
    chan_def = &B: 214220.00 MHz : U : 64.00 MHz : &CH15 : &BBC01 : &NoCal; * b2
    chan_def = &B: 214284.00 MHz : U : 64.00 MHz : &CH16 : &BBC01 : &NoCal; * b2
-   * Recorder 1, slot 2, LSB-Outer, RCP, subbands 0-15
+   * Recorder 1, slot 2, LSB-Outer, LCP, subbands 0-15
    chan_def = &B: 213388.00 MHz : L : 64.00 MHz : &CH17 : &BBC01 : &NoCal; * b1
    chan_def = &B: 213324.00 MHz : L : 64.00 MHz : &CH18 : &BBC01 : &NoCal; * b1
    chan_def = &B: 213260.00 MHz : L : 64.00 MHz : &CH19 : &BBC01 : &NoCal; * b1
@@ -733,7 +733,7 @@ def FREQ_Nn; * derived for on lo1=221.100 lo2=7.744 GHz
    chan_def = &B: 212556.00 MHz : L : 64.00 MHz : &CH30 : &BBC01 : &NoCal; * b1
    chan_def = &B: 212492.00 MHz : L : 64.00 MHz : &CH31 : &BBC01 : &NoCal; * b1
    chan_def = &B: 212428.00 MHz : L : 64.00 MHz : &CH32 : &BBC01 : &NoCal; * b1
-   * Recorder 1, slot 3, LSB-Outer, LCP, subbands 0-15
+   * Recorder 1, slot 3, LSB-Outer, RCP, subbands 0-15
    chan_def = &B: 213388.00 MHz : L : 64.00 MHz : &CH33 : &BBC02 : &NoCal; * b1
    chan_def = &B: 213324.00 MHz : L : 64.00 MHz : &CH34 : &BBC02 : &NoCal; * b1
    chan_def = &B: 213260.00 MHz : L : 64.00 MHz : &CH35 : &BBC02 : &NoCal; * b1
@@ -750,7 +750,7 @@ def FREQ_Nn; * derived for on lo1=221.100 lo2=7.744 GHz
    chan_def = &B: 212556.00 MHz : L : 64.00 MHz : &CH46 : &BBC02 : &NoCal; * b1
    chan_def = &B: 212492.00 MHz : L : 64.00 MHz : &CH47 : &BBC02 : &NoCal; * b1
    chan_def = &B: 212428.00 MHz : L : 64.00 MHz : &CH48 : &BBC02 : &NoCal; * b1
-   * Recorder 1, slot 4, LSB-Inner, LCP, subbands 0-15
+   * Recorder 1, slot 4, LSB-Inner, RCP, subbands 0-15
    **chan_def = &B: 213324.00 MHz : U : 64.00 MHz : &CH49 : &BBC02 : &NoCal; * b1
    chan_def = &B: 293324.00 MHz : U : 64.00 MHz : &CH49 : &BBC02 : &NoCal; * b1; redundant with ch33, fake the freq
    chan_def = &B: 213388.00 MHz : U : 64.00 MHz : &CH50 : &BBC02 : &NoCal; * b1

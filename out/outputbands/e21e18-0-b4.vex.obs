@@ -676,25 +676,25 @@ $FREQ;
 *
 def FREQ_COMMON;
      sample_rate =  4096.000 Ms/sec;
-     chan_def = &B:228100.000 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
-     chan_def = &B:228100.000 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
+     chan_def = &B:228100.000 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
+     chan_def = &B:228100.000 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
 enddef;
 *
 def FREQ_DBBC3_AX;
      sample_rate =  4096.000 Ms/sec;
-     chan_def = &B:230151.0 MHz : L :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
-     chan_def = &B:230151.0 MHz : L :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
+     chan_def = &B:230151.0 MHz : L :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
+     chan_def = &B:230151.0 MHz : L :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
 enddef;
 *
 def FREQ_DBBC3_PV;
      sample_rate =  4096.000 Ms/sec;
-     chan_def = &B:230148.0 MHz : L :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
-     chan_def = &B:230148.0 MHz : L :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
+     chan_def = &B:230148.0 MHz : L :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
+     chan_def = &B:230148.0 MHz : L :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
 enddef;
 *
 def FREQ_Nn; * derived for on lo1=221.100 lo2=7.744 GHz
    sample_rate = 128.0 Ms/sec;  * (2bits/sample)
-   * Recorder 3, slot 1, USB-Inner, RCP, subbands 0-15
+   * Recorder 3, slot 1, USB-Inner, LCP, subbands 0-15
    chan_def = &B: 228876.00 MHz : L : 64.00 MHz : &CH01 : &BBC01 : &NoCal; * b4
    chan_def = &B: 228812.00 MHz : L : 64.00 MHz : &CH02 : &BBC01 : &NoCal; * b4
    chan_def = &B: 228748.00 MHz : L : 64.00 MHz : &CH03 : &BBC01 : &NoCal; * b4
@@ -711,7 +711,7 @@ def FREQ_Nn; * derived for on lo1=221.100 lo2=7.744 GHz
    chan_def = &B: 228044.00 MHz : L : 64.00 MHz : &CH14 : &BBC01 : &NoCal; * b3
    chan_def = &B: 227980.00 MHz : L : 64.00 MHz : &CH15 : &BBC01 : &NoCal; * b3
    chan_def = &B: 227916.00 MHz : L : 64.00 MHz : &CH16 : &BBC01 : &NoCal; * b3
-   * Recorder 3, slot 2, USB-Outer, RCP, subbands 0-15
+   * Recorder 3, slot 2, USB-Outer, LCP, subbands 0-15
    chan_def = &B: 228812.00 MHz : U : 64.00 MHz : &CH17 : &BBC01 : &NoCal; * b4
    chan_def = &B: 228876.00 MHz : U : 64.00 MHz : &CH18 : &BBC01 : &NoCal; * b4
    chan_def = &B: 228940.00 MHz : U : 64.00 MHz : &CH19 : &BBC01 : &NoCal; * b4
@@ -728,7 +728,7 @@ def FREQ_Nn; * derived for on lo1=221.100 lo2=7.744 GHz
    chan_def = &B: 229644.00 MHz : U : 64.00 MHz : &CH30 : &BBC01 : &NoCal; * b4
    chan_def = &B: 229708.00 MHz : U : 64.00 MHz : &CH31 : &BBC01 : &NoCal; * b4
    chan_def = &B: 229772.00 MHz : U : 64.00 MHz : &CH32 : &BBC01 : &NoCal; * b4
-   * Recorder 3, slot 3, USB-Outer, LCP, subbands 0-15
+   * Recorder 3, slot 3, USB-Outer, RCP, subbands 0-15
    chan_def = &B: 228812.00 MHz : U : 64.00 MHz : &CH33 : &BBC02 : &NoCal; * b4
    chan_def = &B: 228876.00 MHz : U : 64.00 MHz : &CH34 : &BBC02 : &NoCal; * b4
    chan_def = &B: 228940.00 MHz : U : 64.00 MHz : &CH35 : &BBC02 : &NoCal; * b4
@@ -745,7 +745,7 @@ def FREQ_Nn; * derived for on lo1=221.100 lo2=7.744 GHz
    chan_def = &B: 229644.00 MHz : U : 64.00 MHz : &CH46 : &BBC02 : &NoCal; * b4
    chan_def = &B: 229708.00 MHz : U : 64.00 MHz : &CH47 : &BBC02 : &NoCal; * b4
    chan_def = &B: 229772.00 MHz : U : 64.00 MHz : &CH48 : &BBC02 : &NoCal; * b4
-   * Recorder 3, slot 4, USB-Inner, LCP, subbands 0-15
+   * Recorder 3, slot 4, USB-Inner, RCP, subbands 0-15
    chan_def = &B: 228876.00 MHz : L : 64.00 MHz : &CH49 : &BBC02 : &NoCal; * b4
    chan_def = &B: 228812.00 MHz : L : 64.00 MHz : &CH50 : &BBC02 : &NoCal; * b4
    chan_def = &B: 228748.00 MHz : L : 64.00 MHz : &CH51 : &BBC02 : &NoCal; * b4

@@ -669,30 +669,30 @@ $FREQ;
 *
 def FREQ_COMMON;
      sample_rate =  4096.000 Ms/sec;
-     chan_def = &B:336600.000 MHz : L :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
-     chan_def = &B:336600.000 MHz : L :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
+     chan_def = &B:336600.000 MHz : L :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
+     chan_def = &B:336600.000 MHz : L :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
 enddef;
 *
 def FREQ_DBBC3_PV;
      sample_rate =  4096.000 Ms/sec;
      * Old info:  1st LO 343.6 GHz (vs EHT 342.6 GHz) to permit use of "IF 5-9" filters of EHT 230 GHz
-     * chan_def = &B:334552.000 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
-     * chan_def = &B:334552.000 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
+     * chan_def = &B:334552.000 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
+     * chan_def = &B:334552.000 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
      * New info:  1st LO 343.5 GHz, same reason as above, additionally S.Sanchez' info "Since 343.6/3 gives
      *            a non integer, we took the nearest 343.5 GHz as LO"
-     chan_def = &B:334452.000 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
-     chan_def = &B:334452.000 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
+     chan_def = &B:334452.000 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
+     chan_def = &B:334452.000 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
 enddef;
 *
 def FREQ_SMA;
      sample_rate =  4096.000 Ms/sec;
-     chan_def = &B:334552.000 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * RCP
-     chan_def = &B:334552.000 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * LCP
+     chan_def = &B:334552.000 MHz : U :2048.00 MHz : &CH01 : &BBC01 : &NoCal; * LCP
+     chan_def = &B:334552.000 MHz : U :2048.00 MHz : &CH02 : &BBC02 : &NoCal; * RCP
 enddef;
 *
 def FREQ_Nn; * derived for on lo1=342.600 lo2=7.744 GHz
    sample_rate = 128.0 Ms/sec;  * (2bits/sample)
-   * Recorder 1, slot 1, LSB-Lower/Inner PolyFiX 6 SFP+ 1, RCP, subbands 16-31
+   * Recorder 1, slot 1, LSB-Lower/Inner PolyFiX 6 SFP+ 1, LCP, subbands 16-31
    chan_def = &B: 335848.00 MHz : U : 64.00 MHz : &CH01 : &BBC01 : &NoCal; * b1_0.8mm
    chan_def = &B: 335912.00 MHz : U : 64.00 MHz : &CH02 : &BBC01 : &NoCal; * b1_0.8mm
    chan_def = &B: 335976.00 MHz : U : 64.00 MHz : &CH03 : &BBC01 : &NoCal; * b1_0.8mm
@@ -709,7 +709,7 @@ def FREQ_Nn; * derived for on lo1=342.600 lo2=7.744 GHz
    chan_def = &B: 336680.00 MHz : U : 64.00 MHz : &CH14 : &BBC01 : &NoCal; * b2_0.8mm
    chan_def = &B: 336744.00 MHz : U : 64.00 MHz : &CH15 : &BBC01 : &NoCal; * b2_0.8mm
    chan_def = &B: 336808.00 MHz : U : 64.00 MHz : &CH16 : &BBC01 : &NoCal; * b2_0.8mm
-   * Recorder 1, slot 2, LSB-Lower/Inner PolyFiX 6 SFP+ 0, RCP, subbands 0-15
+   * Recorder 1, slot 2, LSB-Lower/Inner PolyFiX 6 SFP+ 0, LCP, subbands 0-15
    chan_def = &B: 334824.00 MHz : U : 64.00 MHz : &CH17 : &BBC01 : &NoCal; * b1_0.8mm
    chan_def = &B: 334888.00 MHz : U : 64.00 MHz : &CH18 : &BBC01 : &NoCal; * b1_0.8mm
    chan_def = &B: 334952.00 MHz : U : 64.00 MHz : &CH19 : &BBC01 : &NoCal; * b1_0.8mm
@@ -726,7 +726,7 @@ def FREQ_Nn; * derived for on lo1=342.600 lo2=7.744 GHz
    chan_def = &B: 335656.00 MHz : U : 64.00 MHz : &CH30 : &BBC01 : &NoCal; * b1_0.8mm
    chan_def = &B: 335720.00 MHz : U : 64.00 MHz : &CH31 : &BBC01 : &NoCal; * b1_0.8mm
    chan_def = &B: 335784.00 MHz : U : 64.00 MHz : &CH32 : &BBC01 : &NoCal; * b1_0.8mm
-   * Recorder 1, slot 3, LSB-Lower/Inner PolyFiX 2 SFP+ 0, LCP, subbands 0-15
+   * Recorder 1, slot 3, LSB-Lower/Inner PolyFiX 2 SFP+ 0, RCP, subbands 0-15
    chan_def = &B: 334824.00 MHz : U : 64.00 MHz : &CH33 : &BBC02 : &NoCal; * b1_0.8mm
    chan_def = &B: 334888.00 MHz : U : 64.00 MHz : &CH34 : &BBC02 : &NoCal; * b1_0.8mm
    chan_def = &B: 334952.00 MHz : U : 64.00 MHz : &CH35 : &BBC02 : &NoCal; * b1_0.8mm
@@ -743,7 +743,7 @@ def FREQ_Nn; * derived for on lo1=342.600 lo2=7.744 GHz
    chan_def = &B: 335656.00 MHz : U : 64.00 MHz : &CH46 : &BBC02 : &NoCal; * b1_0.8mm
    chan_def = &B: 335720.00 MHz : U : 64.00 MHz : &CH47 : &BBC02 : &NoCal; * b1_0.8mm
    chan_def = &B: 335784.00 MHz : U : 64.00 MHz : &CH48 : &BBC02 : &NoCal; * b1_0.8mm
-   * Recorder 1, slot 4, LSB-Lower/Inner PolyFiX 2 SFP+ 1, LCP, subbands 16-31
+   * Recorder 1, slot 4, LSB-Lower/Inner PolyFiX 2 SFP+ 1, RCP, subbands 16-31
    chan_def = &B: 335848.00 MHz : U : 64.00 MHz : &CH49 : &BBC02 : &NoCal; * b1_0.8mm
    chan_def = &B: 335912.00 MHz : U : 64.00 MHz : &CH50 : &BBC02 : &NoCal; * b1_0.8mm
    chan_def = &B: 335976.00 MHz : U : 64.00 MHz : &CH51 : &BBC02 : &NoCal; * b1_0.8mm
