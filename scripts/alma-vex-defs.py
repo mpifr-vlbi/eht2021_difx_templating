@@ -168,7 +168,7 @@ class ALMAVexFreqGenerator:
 		if 4 in recorders:
 
 			print('%s* Recorder 4, slots 1+2, USB around LO1 + 8 GHz, X-pol, subbands 0-31' % (self.indent))
-			subblock(lo1_GHz + 8.0, True, range(32), 'Y')
+			subblock(lo1_GHz + 8.0, True, range(32), 'X')
 			print('%s* Recorder 4, slots 3+4, USB around LO1 + 8 GHz, Y-pol, subbands 0-31' % (self.indent))
 			subblock(lo1_GHz + 8.0, True, range(32), 'Y')
 
