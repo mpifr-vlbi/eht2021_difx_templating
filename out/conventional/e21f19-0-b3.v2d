@@ -17,6 +17,7 @@ singleScan = True
 singleSetup = True
 # maxReadSize = 67108864
 
+antennas = Aa,Ax,Pv,Sz,Gl,Kt,Mg,Mm,Sw
 
 #==================================================================
 # ANTENNA DATA

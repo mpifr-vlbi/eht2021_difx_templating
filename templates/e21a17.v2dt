@@ -6,6 +6,7 @@ vex = vexfilename
 
 #include <globals.v2d>
 
+antennas = Aa,Ax,Pv,Sz,Gl,Kt,Mg,Mm,Sw
 
 #==================================================================
 # ANTENNA DATA
