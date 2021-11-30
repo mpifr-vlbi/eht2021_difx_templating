@@ -12,7 +12,7 @@ $GLOBAL;
 *------------------------------------------------------------------------------
 $EXPER;
 def e21a17;
-     exper_num = 1234;
+     exper_num = 3767;
      exper_name = e21a17;
      exper_description = "ALMA+EHT VLBI April 2021";
      PI_name = "EHTC";
