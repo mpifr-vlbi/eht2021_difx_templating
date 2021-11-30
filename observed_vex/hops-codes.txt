@@ -1,0 +1,10 @@
+
+exper_num--Track---Time UT-----------------Stations---------------Label--------------
+     3762  e21b09  AM 08-09APR21(098-099)  NnPvGlSzAxAaKtMgSwMm   1mm EHT Night 1
+     3763  e21e13  AM 12-13APR21(102-103)  NnPvGlSzAxAaKtMgSwMm   1mm EHT Night 5
+     3764  e21a14  AM 13-14APR21(103-104)  NnPvGlSzAxAaKtMgSwMm   1mm EHT Night 6
+     3765  e21d15  AM 14-15APR21(104-105)  NnPvGlSzAxAaKtMgSwMm   1mm EHT Night 7
+     3766  e21a16  AM 15-16APR21(105-106)  NnPvGlSzAxAaKtMgSwMm   1mm EHT Night 8
+     3767  e21a17  AM 16-17APR21(106-107)  NnPvGlSzAxAaKtMgSwMm   1mm EHT Night 9
+     3768  e21e18  AM 17-18APR21(107-108)  NnPvGlSzAxAaKtMgSwMm   1mm EHT Night 10
+     3769  e21f19  AM 19APR21(109)         NnPvGlAxAaMgSwMm       0.8mm EHT Night 11
