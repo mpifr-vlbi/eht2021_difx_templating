@@ -10,7 +10,7 @@ With no arguments, all entries in the database for the
 currently known EHT VLBI tracks are printed out.
 
 When a specific track is given, such as e21a17, the
-coordinates are shown in VEX $ANTENNA section format.
+coordinates are shown in VEX $SITE section format.
 '''
 from __future__ import print_function
 import datetime
