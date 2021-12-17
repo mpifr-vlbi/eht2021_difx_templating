@@ -229,6 +229,9 @@ def generateVex(tvexfile, includepaths, vexname=None):
 
     # Load and process
     tvex = loadFileLines(tvexfile)
+    if len(tvex) < 1:
+        print('No data in %s' % (tvexfile))
+        sys.exit(1)
     vex = expandIncludes(tvex, options.includepaths)
     vex = populateData(vex, options.includepaths)
 
