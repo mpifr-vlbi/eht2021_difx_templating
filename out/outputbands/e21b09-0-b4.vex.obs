@@ -615,23 +615,15 @@ def SMAP;
 enddef;
 
 def NOEMA;
-     site_type = fixed;
      site_name = NOEMA;
      site_ID = Nn;
-     * Expt    Pad  Position for pad according to 2010burepos.pl
-     * e21n07  W05  4523996.400 m: 468003.700 m: 4460308.000 m;
-     * e21b09  N09  4523948.290 m: 468035.507 m: 4460364.945 m;
-     * e21e13  N09  4523948.290 m: 468035.507 m: 4460364.945 m;
-     * e21a14  W05  4523996.400 m: 468003.700 m: 4460308.000 m;
-     * e21d15  N09  4523948.290 m: 468035.507 m: 4460364.945 m;
-     * e21a17  W05  4523996.400 m: 468003.700 m: 4460308.000 m;
-     * e21e18  N09  4523948.290 m: 468035.507 m: 4460364.945 m;
-     * e21f19  W12  4523993.370 m: 467949.123 m: 4460328.525 m;
-     site_position = 4523948.290 m: 468035.507 m: 4460364.945 m;
-     site_velocity =  0.000000   m/yr:  0.000000   m/yr:  0.000000  m/yr;
-     site_position_epoch =       0;
+     site_type = fixed;
+     site_velocity =  0.0 m/yr : 0.0 m/yr : 0.0 m/yr;
+     site_position_epoch = 0;
+     site_position = 4523948.2896 m : 468035.5071 m : 4460364.9448 m;   * e21b09 pad N09, 10 phased
+     * site_position = 4523948.2896 m : 468035.5071 m : 4460364.9448 m; * e21b09 pad N09, 7 phased
+     * site_position = 4523948.2896 m : 468035.5071 m : 4460364.9448 m; * e21b09 pad N09, 10 phased
 enddef;
-
 $TRACKS;
 *
 def VDIF8032;   track_frame_format = VDIF/8032/2;    enddef;
