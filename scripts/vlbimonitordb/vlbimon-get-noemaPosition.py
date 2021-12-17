@@ -39,6 +39,8 @@ def list_positions(session, timebracket, trackname, sites, doVex=False):
 			phasedIDs, numphased, refantID, padname = values
 			vlbipos = noemapads.getPadCoordsECEF(padname)
 			tpretty = datetime.datetime.utcfromtimestamp(int(t))
+			if padname == None:
+				continue
 			if doVex:
 				if count==0:
 					print('     site_position = %.4f m : %.4f m : %.4f m;   * %s pad %s, %s phased' % (vlbipos[0],vlbipos[1],vlbipos[2],trackname,padname,numphased))
