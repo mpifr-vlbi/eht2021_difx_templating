@@ -6,7 +6,7 @@ all:
 
 mk6dir2filelist = sed -e 's/^/\/$(1)_fuse\/$(2)\//' $(M6DIRS)/$(3).filelist | cut -d' ' -f 1,2,3 | grep e21 > $(4)
 
-bonn: pv_b1 pv_b4 nn_b1 nn_b4 gl_b1 gl_b4 mg_b1 kt_b1 aa_b1 sw_b1 sw_b4 sz_b1 ax_b1
+bonn: pv_b1 pv_b4 nn_b1 nn_b4 gl_b1 gl_b4 mg_b1 kt_b1 aa_b1 sw_b1 sw_b4 sz_b1 ax_b1 ax_b4
 
 hays: pv_b2 pv_b3
 
@@ -88,6 +88,10 @@ sz_b1: # ALMA%041/42/43/44 ; Bonn mark6-09
 ax_b1: # MPI%8042/43/44/45 ; Bonn mark6-04
 	$(call mk6dir2filelist,mark6-04,12,MPI%8042,ehtc2021_APEX_set1_b1.12.filelist)
 	$(call mk6dir2filelist,mark6-04,34,MPI%8044,ehtc2021_APEX_set1_b1.34.filelist)
+
+ax_b4: # MPI%8046/47/49/50 ; Bonn mark6-04
+	$(call mk6dir2filelist,mark6-04,12,MPI%8046,ehtc2021_APEX_set1_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-04,34,MPI%8049,ehtc2021_APEX_set1_b4.34.filelist)
 
 ## CHECKING
 
