@@ -60,7 +60,7 @@ def Pv;
 enddef;
 *
 def Sz;
-  clock_early = 2021y098d23h52m00s: 0 usec: 2021y098d23h52m00s : 0;
+  clock_early = 2021y098d23h52m00s: 0 usec: 2021y098d23h52m00s : -0.187e-12;
 enddef;
 *
 def Sw;
@@ -563,8 +563,11 @@ def SPT;
      site_type = fixed;
      site_name = SPT;
      site_ID = Sz;
-* updated position for Apr 2018 dress rehearsal from Pedro Elosegui - epoch 20180420
-     site_position =     817.83940 m:    -823.57030 m: -6359568.49310 m;
+     * Note: site (ice shelf) drifts ~10 meters per year
+     * position for Apr 2018 dress rehearsal from Pedro Elosegui - epoch 20180420
+     * site_position =     817.83940 m:    -823.57030 m: -6359568.49310 m;
+     * position for Apr 2021, epoch 20210415, by M. Titus and V. Fish
+     site_position =     840.90160 m:    -842.71670 m: -6359567.87550 m;
      site_velocity =  0.000000   m/yr:  0.000000   m/yr:  0.000000  m/yr;
      site_position_epoch =   54466;
 enddef;
