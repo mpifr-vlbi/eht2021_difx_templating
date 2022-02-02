@@ -6,7 +6,7 @@ all:
 
 mk6dir2filelist = sed -e 's/^/\/$(1)_fuse\/$(2)\//' $(M6DIRS)/$(3).filelist | cut -d' ' -f 1,2,3 | grep e21 > $(4)
 
-bonn: pv_b1 pv_b4 nn_b1 nn_b4 gl_b1 gl_b4 mg_b1 kt_b1 aa_b1 sw_b1 sw_b4 sz_b1 ax_b1 ax_b4
+bonn: pv_b1 pv_b4 nn_b1 nn_b4 gl_b1 gl_b4 mg_b1 kt_b1 aa_b1 sw_b1 sw_b4 sz_b1 ax_b1 ax_b4 mm_b1 mm_b4
 
 hays: pv_b2 pv_b3
 
@@ -96,6 +96,16 @@ ax_b4: # MPI%8046/47/49/50 set 1 ; BHC%0030/31/32/MPIH%034 set 2 a17 e18
 	$(call mk6dir2filelist,mark6-04,34,MPI%8049,ehtc2021_APEX_set1_b4.34.filelist)
 	$(call mk6dir2filelist,mark6-04,12,BHC%0030,ehtc2021_APEX_set2_b4.12.filelist)
 	$(call mk6dir2filelist,mark6-04,34,BHC%0032,ehtc2021_APEX_set2_b4.34.filelist)
+
+## JCMT
+
+mm_b1:  # BHC%0069/BHC%0067/BHC%0043/BHC%0049
+	$(call mk6dir2filelist,mark6-01,12,BHC%0069,ehtc2021_JCMT_set1_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-01,34,BHC%0043,ehtc2021_JCMT_set1_b1.34.filelist)
+
+mm_b4:  # BHC%0068/BHC%0088/BHC%0042/BHC%0064
+	$(call mk6dir2filelist,mark6-01,12,BHC%0068,ehtc2021_JCMT_set1_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-01,34,BHC%0042,ehtc2021_JCMT_set1_b4.34.filelist)
 
 ## CHECKING
 
