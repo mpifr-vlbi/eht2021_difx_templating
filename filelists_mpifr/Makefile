@@ -57,8 +57,8 @@ mg_b1: # ALMA%045/46/47/48 ; Bonn mark6-09
 	$(call mk6dir2filelist,mark6-09,34,ALMA%047,ehtc2021_SMT_set1_b1.34.filelist)
 
 mg_b4: # SHAO%023/24/25/26 ; Bonn mark6-02
-	$(call mk6dir2filelist,mark6-09,12,SHAO%023,ehtc2021_SMT_b4.12.filelist)
-	$(call mk6dir2filelist,mark6-09,34,SHAO%025,ehtc2021_SMT_b4.34.filelist)
+	$(call mk6dir2filelist,mark6-02,12,SHAO%023,ehtc2021_SMT_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-02,34,SHAO%025,ehtc2021_SMT_b4.34.filelist)
 
 ## Kitt Peak
 
