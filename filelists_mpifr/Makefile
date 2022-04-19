@@ -46,9 +46,9 @@ gl_b1: # BHC%0172/173/174/175 recorder=?? ; Bonn mark6-11
 	$(call mk6dir2filelist,mark6-11,12,BHC%0172,ehtc2021_GLT_set1_b1.12.filelist)
 	$(call mk6dir2filelist,mark6-11,34,BHC%0174,ehtc2021_GLT_set1_b1.34.filelist)
 
-gl_b4: # BHC%0164/165/166/167 recorder=?? ; Bonn mark6-11
-	$(call mk6dir2filelist,mark6-11,12,BHC%0164,ehtc2021_GLT_set1_b4.12.filelist)
-	$(call mk6dir2filelist,mark6-11,34,BHC%0166,ehtc2021_GLT_set1_b4.34.filelist)
+gl_b4: # BHC%0164/165/166/167 recorder=?? ; Bonn mark6-03
+	$(call mk6dir2filelist,mark6-03,12,BHC%0164,ehtc2021_GLT_set1_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-03,34,BHC%0166,ehtc2021_GLT_set1_b4.34.filelist)
 
 ## SMT
 
@@ -109,10 +109,10 @@ ax_b1: # MPI%8042/43/44/45 set 1 ; BHC%0027/BHC%0027/BHC%0029/MPIH%029 set 2 a17
 	$(call mk6dir2filelist,mark6-04,34,BHC%0029,ehtc2021_APEX_set2_b1.34.filelist)
 
 ax_b4: # MPI%8046/47/49/50 set 1 ; BHC%0030/31/32/MPIH%034 set 2 a17 e18
-	$(call mk6dir2filelist,mark6-04,12,MPI%8046,ehtc2021_APEX_set1_b4.12.filelist)
-	$(call mk6dir2filelist,mark6-04,34,MPI%8049,ehtc2021_APEX_set1_b4.34.filelist)
-	$(call mk6dir2filelist,mark6-04,12,BHC%0030,ehtc2021_APEX_set2_b4.12.filelist)
-	$(call mk6dir2filelist,mark6-04,34,BHC%0032,ehtc2021_APEX_set2_b4.34.filelist)
+	$(call mk6dir2filelist,mark6-08,12,MPI%8046,ehtc2021_APEX_set1_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-08,34,MPI%8049,ehtc2021_APEX_set1_b4.34.filelist)
+	$(call mk6dir2filelist,mark6-08,12,BHC%0030,ehtc2021_APEX_set2_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-08,34,BHC%0032,ehtc2021_APEX_set2_b4.34.filelist)
 
 ## JCMT
 
