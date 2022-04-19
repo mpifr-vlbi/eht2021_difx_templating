@@ -57,8 +57,8 @@ mg_b1: # ALMA%045/46/47/48 ; Bonn mark6-09
 	$(call mk6dir2filelist,mark6-09,34,ALMA%047,ehtc2021_SMT_set1_b1.34.filelist)
 
 mg_b4: # SHAO%023/24/25/26 ; Bonn mark6-02
-	$(call mk6dir2filelist,mark6-09,12,SHAO%023,ehtc2021_SMT_set1_b4.12.filelist)
-	$(call mk6dir2filelist,mark6-09,34,SHAO%025,ehtc2021_SMT_set1_b4.34.filelist)
+	$(call mk6dir2filelist,mark6-09,12,SHAO%023,ehtc2021_SMT_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-09,34,SHAO%025,ehtc2021_SMT_b4.34.filelist)
 
 ## Kitt Peak
 
@@ -87,8 +87,8 @@ sw_b1: # GLT%0017/17/19/20 ; Bonn mark6-??
 	$(call mk6dir2filelist,mark6-06,34,GLT%0019,ehtc2021_SMA_set1_b1.34.filelist)
 
 sw_b4: # PERI%039/40/41/42 ; Bonn mark6-??
-	$(call mk6dir2filelist,mark6-06,12,PERI%039,ehtc2021_SMA_set1_b4.12.filelist)
-	$(call mk6dir2filelist,mark6-06,34,PERI%041,ehtc2021_SMA_set1_b4.34.filelist)
+	$(call mk6dir2filelist,mark6-06,12,PERI%039,ehtc2021_SMA_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-06,34,PERI%041,ehtc2021_SMA_b4.34.filelist)
 
 ## SPT
 
