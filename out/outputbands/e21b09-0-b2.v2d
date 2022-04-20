@@ -1,6 +1,7 @@
 #==================================================================
 # Track e21b09 band 2
-# Notes: ...
+# Notes: Aa, Pv did not observe
+#        Ax was linear-pol and had wobbler on
 #==================================================================
 
 vex = e21b09-0-b2.vex.obs
