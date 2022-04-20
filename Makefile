@@ -206,3 +206,4 @@ install: b1_install b2_install b3_install b4_install
 
 sma_clocks:
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = +0.085 # SMA extra offsets/g" out/*/e21b09-?-b4.v2d
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -0.100 # SMA extra offsets/g" out/*/e21e13-?-b4.v2d
