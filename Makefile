@@ -61,10 +61,10 @@ prerequisites:
 	./scripts/alma-vex-defs.py --lo1 341.600 -r 3 > templates/345G/band3/freqs_ALMA.vex      # equiv. to $ehtc/alma-vex-defs.py -f347600.00000 -w58.0 -sU -ralma
 	./scripts/alma-vex-defs.py --lo1 341.600 -r 4 > templates/345G/band4/freqs_ALMA.vex      # equiv. to $ehtc/alma-vex-defs.py -f349600.00000 -w58.0 -sU -ralma
 	## SMA a priori clock CSV files
-	./scripts/vexdelay.py -f ./templates/230G/band1/sma-delays.rx230.sbLSB.quad1.b1.csv -c 0.5126 -r +1.313038e-15 -s Sw -g 0.0 2021y098d23h50m00s 2021y109d06h10m00s > templates/230G/band1/clocks_SMA.vex # e21a14 fringe
-	./scripts/vexdelay.py -f ./templates/230G/band2/sma-delays.rx230.sbLSB.quad0.b2.csv -c 0.5126 -r +1.313038e-15 -s Sw -g 0.0 2021y098d23h50m00s 2021y109d06h10m00s > templates/230G/band2/clocks_SMA.vex # -c todo
-	./scripts/vexdelay.py -f ./templates/230G/band3/sma-delays.rx230.sbUSB.quad1.b3.csv -c 0.5126 -r +1.313038e-15 -s Sw -g 0.0 2021y098d23h50m00s 2021y109d06h10m00s > templates/230G/band3/clocks_SMA.vex # -c todo
-	./scripts/vexdelay.py -f ./templates/230G/band4/sma-delays.rx230.sbUSB.quad2.b4.csv -c 0.5126 -r +1.313038e-15 -s Sw -g 0.0 2021y098d23h50m00s 2021y109d06h10m00s > templates/230G/band4/clocks_SMA.vex # -c todo
+	./scripts/vexdelay.py -f ./templates/230G/band1/sma-delays.rx230.sbLSB.quad1.b1.csv -c 0.5126 -r +1.313038e-15 -s Sw -g 0.0 2021y098d23h50m00s 2021y109d06h10m00s > templates/230G/band1/clocks_SMA.vex
+	./scripts/vexdelay.py -f ./templates/230G/band2/sma-delays.rx230.sbLSB.quad0.b2.csv -c 0.5126 -r +1.313038e-15 -s Sw -g 0.0 2021y098d23h50m00s 2021y109d06h10m00s > templates/230G/band2/clocks_SMA.vex
+	./scripts/vexdelay.py -f ./templates/230G/band3/sma-delays.rx230.sbUSB.quad1.b3.csv -c 0.5126 -r +1.313038e-15 -s Sw -g 0.0 2021y098d23h50m00s 2021y109d06h10m00s > templates/230G/band3/clocks_SMA.vex
+	./scripts/vexdelay.py -f ./templates/230G/band4/sma-delays.rx230.sbUSB.quad2.b4.csv -c 0.5126 -r +1.313038e-15 -s Sw -g 0.0 2021y098d23h50m00s 2021y109d06h10m00s > templates/230G/band4/clocks_SMA.vex
 	cp -a templates/230G/band1/clocks_SMA.vex templates/345G/band1/clocks_SMA.vex
 	cp -a templates/230G/band2/clocks_SMA.vex templates/345G/band2/clocks_SMA.vex
 	cp -a templates/230G/band3/clocks_SMA.vex templates/345G/band3/clocks_SMA.vex
@@ -197,5 +197,12 @@ install: b1_install b2_install b3_install b4_install
 	@ ./tvex2vex.py -I./templates/345G/band4/ -I./templates/common_sections/ templates/$*_outputbands.v2dt out/outputbands/$*-$(REL)-b4.v2d
 	@ sed -i "s/vexfilename/$*-${REL}-b4.vex.obs/g" out/outputbands/$*-$(REL)-b4.v2d
 
-# Custom-fiddled band 3 builds
+# Custom-fiddled band 4 builds
 # (none)
+
+####################################################################################
+## EHT 2021 -- SMA Clock Delta Offsets
+####################################################################################
+
+sma_clocks:
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = +0.085 # SMA extra offsets/g" out/*/e21b09-$(REL)-b4.v2d

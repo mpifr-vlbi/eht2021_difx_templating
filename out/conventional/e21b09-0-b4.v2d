@@ -1,6 +1,7 @@
 #==================================================================
 # Track e21b09 band 4
-# Notes: ...
+# Notes: Aa, Pv did not observe
+
 #==================================================================
 
 vex = e21b09-0-b4.vex.obs
@@ -72,7 +73,7 @@ ANTENNA Pv {
 ANTENNA Sw { # SMA APHIDS
   datastreams = SmaAphids_ds12,SmaAphids_ds34
   zoom = zooms58
-  deltaClock = 0 # SMA extra offsets
+  deltaClock = +0.085 # SMA extra offsets
 }
 
 ANTENNA Sz { # SPT
