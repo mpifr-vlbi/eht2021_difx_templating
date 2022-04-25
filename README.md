@@ -13,6 +13,9 @@ make all
 make install
 ```
 
+Note:
+- ALMA Cycle 7+ used CALC 11, need DIFX_CALC_PROGRAM=difxcalc
+
 TODO:
 - [ ] Generate file lists for all bands and stations
 - [ ] New branch for developments, 'main' only for releases
