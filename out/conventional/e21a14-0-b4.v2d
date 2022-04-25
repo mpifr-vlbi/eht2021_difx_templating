@@ -158,43 +158,68 @@ ZOOM zooms58 {
       addZoomFreq = freq@229979.203125/bw@58.0/noparent@true  #< 230037.203125
 }
 
-ZOOM zooms62
+# In case of non-ALMA tracks, got possibility to correlate in standard zoom mode,
+# but with better zoom bands wrt NOEMA:
+ZOOM zooms64nn
 {
+      # Zoom definitions for station Nn
       # Nn rec3 slot1,4 net LSB
-      addZoomFreq = freq@228812.0/bw@62.0/noparent@true
-      addZoomFreq = freq@228748.0/bw@62.0/noparent@true
-      addZoomFreq = freq@228684.0/bw@62.0/noparent@true
-      addZoomFreq = freq@228620.0/bw@62.0/noparent@true
-      addZoomFreq = freq@228556.0/bw@62.0/noparent@true
-      addZoomFreq = freq@228492.0/bw@62.0/noparent@true
-      addZoomFreq = freq@228428.0/bw@62.0/noparent@true
-      addZoomFreq = freq@228364.0/bw@62.0/noparent@true
-      addZoomFreq = freq@228300.0/bw@62.0/noparent@true
-      addZoomFreq = freq@228236.0/bw@62.0/noparent@true
-      addZoomFreq = freq@228172.0/bw@62.0/noparent@true
-      addZoomFreq = freq@228108.0/bw@62.0/noparent@true
-      addZoomFreq = freq@228044.0/bw@62.0/noparent@true
-      addZoomFreq = freq@227980.0/bw@62.0/noparent@true
-      addZoomFreq = freq@227916.0/bw@62.0/noparent@true
-      addZoomFreq = freq@227852.0/bw@62.0/noparent@true
-      # Nn rec3 slot2,3 net USB
-      addZoomFreq = freq@228812.0/bw@62.0/noparent@true
-      addZoomFreq = freq@228876.0/bw@62.0/noparent@true
-      addZoomFreq = freq@228940.0/bw@62.0/noparent@true
-      addZoomFreq = freq@229004.0/bw@62.0/noparent@true
-      addZoomFreq = freq@229068.0/bw@62.0/noparent@true
-      addZoomFreq = freq@229132.0/bw@62.0/noparent@true
-      addZoomFreq = freq@229196.0/bw@62.0/noparent@true
-      addZoomFreq = freq@229260.0/bw@62.0/noparent@true
-      addZoomFreq = freq@229324.0/bw@62.0/noparent@true
-      addZoomFreq = freq@229388.0/bw@62.0/noparent@true
-      addZoomFreq = freq@229452.0/bw@62.0/noparent@true
-      addZoomFreq = freq@229516.0/bw@62.0/noparent@true
-      addZoomFreq = freq@229580.0/bw@62.0/noparent@true
-      addZoomFreq = freq@229644.0/bw@62.0/noparent@true
-      addZoomFreq = freq@229708.0/bw@62.0/noparent@true
-      addZoomFreq = freq@229772.0/bw@62.0/noparent@true
+      #addZoomFreq = freq@228812.0/bw@64.0/noparent@true # redundant, USB band exists
+      addZoomFreq = freq@228748.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228684.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228620.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228556.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228492.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228428.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228364.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228300.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228236.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228172.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228108.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228044.0/bw@64.0/noparent@true
+      addZoomFreq = freq@227980.0/bw@64.0/noparent@true
+      addZoomFreq = freq@227916.0/bw@64.0/noparent@true
+      addZoomFreq = freq@227852.0/bw@64.0/noparent@true
 }
+ZOOM zooms64
+{
+      # Zoom definitions for R2DBE/DBBC3/APHIDS wideband stations
+      # Nn rec3 slot1,4 net LSB
+      #addZoomFreq = freq@228812.0/bw@64.0/noparent@true # redundant
+      addZoomFreq = freq@228748.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228684.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228620.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228556.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228492.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228428.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228364.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228300.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228236.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228172.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228108.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228044.0/bw@64.0/noparent@true
+      addZoomFreq = freq@227980.0/bw@64.0/noparent@true
+      addZoomFreq = freq@227916.0/bw@64.0/noparent@true
+      addZoomFreq = freq@227852.0/bw@64.0/noparent@true
+      # Nn rec3 slot2,3 net USB
+      addZoomFreq = freq@228812.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228876.0/bw@64.0/noparent@true
+      addZoomFreq = freq@228940.0/bw@64.0/noparent@true
+      addZoomFreq = freq@229004.0/bw@64.0/noparent@true
+      addZoomFreq = freq@229068.0/bw@64.0/noparent@true
+      addZoomFreq = freq@229132.0/bw@64.0/noparent@true
+      addZoomFreq = freq@229196.0/bw@64.0/noparent@true
+      addZoomFreq = freq@229260.0/bw@64.0/noparent@true
+      addZoomFreq = freq@229324.0/bw@64.0/noparent@true
+      addZoomFreq = freq@229388.0/bw@64.0/noparent@true
+      addZoomFreq = freq@229452.0/bw@64.0/noparent@true
+      addZoomFreq = freq@229516.0/bw@64.0/noparent@true
+      addZoomFreq = freq@229580.0/bw@64.0/noparent@true
+      addZoomFreq = freq@229644.0/bw@64.0/noparent@true
+      addZoomFreq = freq@229708.0/bw@64.0/noparent@true
+      addZoomFreq = freq@229772.0/bw@64.0/noparent@true
+}
+
 
 SETUP zoomSetup {
   numBufferedFFTs = 20
