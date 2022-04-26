@@ -1,7 +1,9 @@
 #==================================================================
 # Track e21e13 band 4
-# Notes: GLT clk on 103-0029
-#        SPT has a +0.10 usec clock jump sometime before 103-0630; Aa-Sz (AY) dly is set on 103-0630
+# Notes:
+#  - GLT clk on 103-0029
+#  - SPT has a +0.10 usec clock jump sometime before 103-0630; Aa-Sz (AY) dly is set on 103-0630
+#  - Nn did not observe e21e13
 #==================================================================
 
 vex = e21e13-0-b4.vex.obs
