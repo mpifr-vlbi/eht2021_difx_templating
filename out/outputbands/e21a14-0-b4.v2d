@@ -1,6 +1,6 @@
 #==================================================================
 # Track e21a14 band 4
-# Notes: ...
+# Notes: Nn-Pv-Ax clk on 104-0159, Aa-Ax-...(no_Pv/Nn) clk on 104-1101
 #==================================================================
 
 vex = e21a14-0-b4.vex.obs
@@ -74,7 +74,7 @@ ANTENNA Pv {
 ANTENNA Sw { # SMA APHIDS
   datastreams = SmaAphids_ds12,SmaAphids_ds34
   zoom = zooms58
-  deltaClock = 0 # SMA extra offsets
+  deltaClock = -0.106 # SMA extra offsets
 }
 
 ANTENNA Sz { # SPT
