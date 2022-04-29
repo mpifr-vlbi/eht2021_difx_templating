@@ -124,6 +124,58 @@ mm_b4:  # BHC%0068/BHC%0088/BHC%0042/BHC%0064
 	$(call mk6dir2filelist,mark6-07,12,BHC%0068,ehtc2021_JCMT_set1_b4.12.filelist)
 	$(call mk6dir2filelist,mark6-07,34,BHC%0042,ehtc2021_JCMT_set1_b4.34.filelist)
 
+## Bonn Beegfs
+
+beegfs:
+	vsum -s /data/e21f19/Aa/rec1/12/*.vdif > ehtc2021_ALMA_set1_b1.12.filelist-beegfs
+	vsum -s /data/e21f19/Aa/rec1/34/*.vdif > ehtc2021_ALMA_set1_b1.34.filelist-beegfs
+	vsum -s /data/e21f19/Aa/rec4/12/*.vdif > ehtc2021_ALMA_set1_b4.12.filelist-beegfs
+	vsum -s /data/e21f19/Aa/rec4/34/*.vdif > ehtc2021_ALMA_set1_b4.34.filelist-beegfs
+	#
+	vsum -s /data/e21f19/Gl/BHC%0172-b1/12/*.vdif > ehtc2021_GLT_set1_b1.12.filelist-beegfs
+	vsum -s /data/e21f19/Gl/BHC%0172-b1/34/*.vdif > ehtc2021_GLT_set1_b1.34.filelist-beegfs
+	vsum -s /data/e21f19/Gl/BHC%0164-b4/12/*.vdif > ehtc2021_GLT_set1_b4.12.filelist-beegfs
+	vsum -s /data/e21f19/Gl/BHC%0164-b4/34/*.vdif > ehtc2021_GLT_set1_b4.34.filelist-beegfs
+	#
+	vsum -s /data/e21f19/Mm/b1/12/*.vdif > ehtc2021_JCMT_set1_b1.12.filelist-beegfs
+	vsum -s /data/e21f19/Mm/b1/34/*.vdif > ehtc2021_JCMT_set1_b1.34.filelist-beegfs
+	vsum -s /data/e21f19/Mm/b4/12/*.vdif > ehtc2021_JCMT_set1_b4.12.filelist-beegfs
+	vsum -s /data/e21f19/Mm/b4/34/*.vdif > ehtc2021_JCMT_set1_b4.34.filelist-beegfs
+	#
+	vsum -s /data/e21f19/Pv/rec1/12/*.vdif > ehtc2021_Pico_set1_b1.12.filelist-beegfs
+	vsum -s /data/e21f19/Pv/rec1/34/*.vdif > ehtc2021_Pico_set1_b1.34.filelist-beegfs
+	vsum -s /data/e21f19/Pv/rec3hays/12/*.vdif > ehtc2021_Pico_set1_b4.12.filelist-beegfs
+	vsum -s /data/e21f19/Pv/rec3hays/34/*.vdif > ehtc2021_Pico_set1_b4.34.filelist-beegfs
+	#
+	vsum -s /data/e21f19/SMA/b1/12/*.vdif > ehtc2021_SMA_b1.12.filelist-beegfs
+	vsum -s /data/e21f19/SMA/b1/34/*.vdif > ehtc2021_SMA_b1.34.filelist-beegfs
+	vsum -s /data/e21f19/SMA/b4/12/*.vdif > ehtc2021_SMA_b4.12.filelist-beegfs
+	vsum -s /data/e21f19/SMA/b4/34/*.vdif > ehtc2021_SMA_b4.34.filelist-beegfs
+	#
+	vsum -s /data/e21f19/Smt/ALMA%045-b1/12/*.vdif > ehtc2021_SMT_b1.12.filelist-beegfs
+	vsum -s /data/e21f19/Smt/ALMA%045-b1/34/*.vdif > ehtc2021_SMT_b1.34.filelist-beegfs
+	vsum -s /data/e21f19/Smt/SHAO%023-b4/12/*.vdif > ehtc2021_SMT_b4.12.filelist-beegfs
+	vsum -s /data/e21f19/Smt/SHAO%023-b4/34/*.vdif > ehtc2021_SMT_b4.34.filelist-beegfs
+	#
+	vsum -s /data/e21f19/Nn/rec1/1/*.vdif > ehtc2021_pNOEMA_set1_rec1.1.filelist-beegfs
+	vsum -s /data/e21f19/Nn/rec1/2/*.vdif > ehtc2021_pNOEMA_set1_rec1.2.filelist-beegfs
+	vsum -s /data/e21f19/Nn/rec1/3/*.vdif > ehtc2021_pNOEMA_set1_rec1.3.filelist-beegfs
+	vsum -s /data/e21f19/Nn/rec1/4/*.vdif > ehtc2021_pNOEMA_set1_rec1.4.filelist-beegfs
+	# Nn: b4 345G not recorded
+	#
+	touch ehtc2021_APEX_set1_b1.12.filelist-beegfs
+	touch ehtc2021_APEX_set1_b1.34.filelist-beegfs
+	touch ehtc2021_APEX_set1_b4.12.filelist-beegfs
+	touch ehtc2021_APEX_set1_b4.34.filelist-beegfs
+	touch ehtc2021_KT_set1_b1.12.filelist-beegfs
+	touch ehtc2021_KT_set1_b1.34.filelist-beegfs
+	touch ehtc2021_KT_set1_b4.12.filelist-beegfs
+	touch ehtc2021_KT_set1_b4.34.filelist-beegfs
+	touch ehtc2021_SPT_set1_b1.12.filelist-beegfs
+	touch ehtc2021_SPT_set1_b1.34.filelist-beegfs
+	touch ehtc2021_SPT_set1_b4.12.filelist-beegfs
+	touch ehtc2021_SPT_set1_b4.34.filelist-beegfs
+
 ## CHECKING
 
 buglist:
