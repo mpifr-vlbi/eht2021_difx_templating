@@ -3,4 +3,4 @@
 #  - Pico has 5-9G (rather than 4-8G) IF filters and shifted 1st LO by +1 GHz,
 #    hence Pico b1 b2 are fine, b3 is absent, and b4 is covered by
 #    the 5-9G IF "b3"-equivalent data found on recorder3
-
+#  - NOEMA b4 module (rec3) contained no recordings from e21f29, got b1 only
