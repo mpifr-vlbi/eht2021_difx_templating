@@ -5,6 +5,8 @@
 #    hence Pico b1 b2 are fine, b3 is absent, and b4 is covered by
 #    the 5-9G IF "b3"-equivalent data found on recorder3
 #  - NOEMA b4 module (rec3) contained no recordings from e21f29, got b1 only
+#  - Clk scans ALMA-Pico 109-0219, ALMA-SMTO 109-0450, ALMA-JCMT 109-0555
+#  - No fringes in b4 to GLT nor SMA, not even SMA-JCMT
 #==================================================================
 
 vex = e21f19-0-b4.vex.obs
