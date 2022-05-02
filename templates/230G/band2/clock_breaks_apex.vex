@@ -1,0 +1,9 @@
+def Ax;
+  * Clock breaks from backend resets
+  * During E21D15
+  clock_early = 2021y104d23h28m00s : -0.274 usec : 2021y104d23h28m00s : +0.605e-12;
+  clock_early = 2021y105d04h55m00s : 0.020 usec : 2021y105d04h55m00s : +0.605e-12;
+  clock_early = 2021y105d05h10m00s : 0.114 usec : 2021y105d05h10m00s : +0.605e-12;
+  * During <other>:
+enddef;
+*

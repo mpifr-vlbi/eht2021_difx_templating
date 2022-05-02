@@ -25,7 +25,8 @@ def e21d15;
      target_correlator = difx;
 enddef;
 *------------------------------------------------------------------------------
-** include <clocks_initial.vex>
+** include <clocks_initial_noApex.vex>
+** include <clock_breaks_apex.vex>
 ** include <clocks_SMA.vex>
 ** include <mode_proc_das.vex>
 ** include <stations.vex>
