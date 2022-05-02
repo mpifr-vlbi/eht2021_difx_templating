@@ -1,7 +1,7 @@
 CLOCK
 # Station ID    Delay (usec)    Rate (s/s)
 # Ax            -0.59           +0.605e-12 # commented out: has clock breaks
-Nn              +12.7           -3.085e-15
+Nn              +12.895         -3.085e-15
 Pv              +0.134          +5.1042e-13
 Gl              -0.715          -0.251e-12
 Kt              -1.385          -5.1464e-12
