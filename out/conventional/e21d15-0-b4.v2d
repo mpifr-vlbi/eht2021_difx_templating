@@ -1,6 +1,9 @@
 #==================================================================
 # Track e21d15 band 4
-# Notes: ...
+# Notes:
+#  105-0424 clocks Aa x Sz,Mg,Kt
+#  105-0527 clocks Aa x Gt,Mm,Sw
+#  105-0448, 105-0456, 105-0511 for Ax with clock breaks
 #==================================================================
 
 vex = e21d15-0-b4.vex.obs
@@ -75,7 +78,7 @@ ANTENNA Pv {
 ANTENNA Sw { # SMA APHIDS
   datastreams = SmaAphids_ds12,SmaAphids_ds34
   zoom = zooms58
-  deltaClock = 0 # SMA extra offsets
+  deltaClock = -0.107 # SMA extra offsets
 }
 
 ANTENNA Sz { # SPT

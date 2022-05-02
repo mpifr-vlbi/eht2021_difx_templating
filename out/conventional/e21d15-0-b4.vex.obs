@@ -31,20 +31,16 @@ def Aa;
   clock_early = 2021y098d23h52m00s: 2107.167 usec : 2021y098d23h52m00s : +7e-15;
 enddef;
 *
-def Ax;
-  clock_early = 2021y098d23h52m00s : -0.77 usec : 2021y098d23h52m00s : +0.605e-12;
-enddef;
-*
 def Gl;
-  clock_early = 2021y098d23h52m00s : -0.90 usec : 2021y098d23h52m00s : -0.251e-12;
+  clock_early = 2021y098d23h52m00s : -0.715 usec : 2021y098d23h52m00s : -0.251e-12;
 enddef;
 *
 def Kt;
-  clock_early = 2021y098d23h52m00s : -1.44 usec : 2021y098d23h52m00s : -5.1464e-12;
+  clock_early = 2021y098d23h52m00s : -1.385 usec : 2021y098d23h52m00s : -5.1464e-12;
 enddef;
 *
 def Mm; * JCMT
-  clock_early = 2021y098d23h52m00s : +0.237 usec : 2021y098d23h52m00s : -0.183e-12;
+  clock_early = 2021y098d23h52m00s : +0.317 usec : 2021y098d23h52m00s : -0.183e-12;
 enddef;
 *
 def Mg; * SMT
@@ -60,7 +56,16 @@ def Pv;
 enddef;
 *
 def Sz;
-  clock_early = 2021y098d23h52m00s : +0.58 usec : 2021y098d23h52m00s : -0.187e-12;
+  clock_early = 2021y098d23h52m00s : +0.57 usec : 2021y098d23h52m00s : -0.187e-12;
+enddef;
+*
+def Ax;
+  * Clock breaks from backend resets
+  * During E21D15
+  clock_early = 2021y104d23h28m00s : -0.274 usec : 2021y104d23h28m00s : +0.605e-12;
+  clock_early = 2021y105d04h55m00s : 0.020 usec : 2021y105d04h55m00s : +0.605e-12;
+  clock_early = 2021y105d05h10m00s : 0.114 usec : 2021y105d05h10m00s : +0.605e-12;
+  * During <other>:
 enddef;
 *
 def Sw;
