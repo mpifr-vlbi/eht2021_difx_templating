@@ -163,18 +163,12 @@ beegfs:
 	vsum -s /data/e21f19/Nn/rec1/4/*.vdif > ehtc2021_pNOEMA_set1_rec1.4.filelist-beegfs
 	# Nn: b4 345G not recorded
 	#
-	touch ehtc2021_APEX_set1_b1.12.filelist-beegfs
-	touch ehtc2021_APEX_set1_b1.34.filelist-beegfs
-	touch ehtc2021_APEX_set1_b4.12.filelist-beegfs
-	touch ehtc2021_APEX_set1_b4.34.filelist-beegfs
-	touch ehtc2021_KT_set1_b1.12.filelist-beegfs
-	touch ehtc2021_KT_set1_b1.34.filelist-beegfs
-	touch ehtc2021_KT_set1_b4.12.filelist-beegfs
-	touch ehtc2021_KT_set1_b4.34.filelist-beegfs
-	touch ehtc2021_SPT_set1_b1.12.filelist-beegfs
-	touch ehtc2021_SPT_set1_b1.34.filelist-beegfs
-	touch ehtc2021_SPT_set1_b4.12.filelist-beegfs
-	touch ehtc2021_SPT_set1_b4.34.filelist-beegfs
+	touch ehtc2021_APEX_set1_b1.12.filelist-beegfs ehtc2021_APEX_set1_b1.34.filelist-beegfs
+	touch ehtc2021_APEX_set1_b4.12.filelist-beegfs ehtc2021_APEX_set1_b4.34.filelist-beegfs
+	touch ehtc2021_KT_set1_b1.12.filelist-beegfs ehtc2021_KT_set1_b1.34.filelist-beegfs
+	touch ehtc2021_KT_set1_b4.12.filelist-beegfs ehtc2021_KT_set1_b4.34.filelist-beegfs
+	touch ehtc2021_SPT_set1_b1.12.filelist-beegfs ehtc2021_SPT_set1_b1.34.filelist-beegfs
+	touch ehtc2021_SPT_set1_b4.12.filelist-beegfs ehtc2021_SPT_set1_b4.34.filelist-beegfs
 
 ## CHECKING
 
