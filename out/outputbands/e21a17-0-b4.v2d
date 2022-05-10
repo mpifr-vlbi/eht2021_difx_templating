@@ -83,8 +83,8 @@ ANTENNA Sz { # SPT
 }
 DATASTREAM Aa_ds12 { filelist = ehtc2021_ALMA_set1_b4.12.filelist }
 DATASTREAM Aa_ds34 { filelist = ehtc2021_ALMA_set1_b4.34.filelist }
-DATASTREAM Ax_ds12 { filelist = ehtc2021_APEX_set1_b4.12.filelist }
-DATASTREAM Ax_ds34 { filelist = ehtc2021_APEX_set1_b4.34.filelist }
+DATASTREAM Ax_ds12 { filelist = ehtc2021_APEX_set2_b4.12.filelist }
+DATASTREAM Ax_ds34 { filelist = ehtc2021_APEX_set2_b4.34.filelist }
 DATASTREAM Glt_ds12 { filelist = ehtc2021_GLT_set1_b4.12.filelist }
 DATASTREAM Glt_ds34 { filelist = ehtc2021_GLT_set1_b4.34.filelist }
 DATASTREAM Jcmt_ds12 { filelist = ehtc2021_JCMT_set1_b4.12.filelist }
