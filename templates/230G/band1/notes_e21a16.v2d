@@ -1,2 +1,5 @@
 # Track e21a16 band 1
-# Notes: initial clocks taken from e21a17
+# Notes:
+# - observed at Mm, Sw, Mg, Sz, Kt
+# - clk Mm Mg Kt from 106-1053; Sw as reference
+# - clk Sz from 106-1318; Sw as reference
