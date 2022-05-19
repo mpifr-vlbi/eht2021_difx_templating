@@ -861,6 +861,10 @@ def SGRA;
      source_name = SGRA;
 *    this source had calibrator code:  
      ra = 17h45m40.0409000s; dec = -29d00'28.118000"; ref_coord_frame = J2000;
+     * Note: https://eventhorizontelescope.teamwork.com/#/notebooks/236462
+     * Extrapolation of proper motion finds (so far not yet used) position of
+     * ra = 17h45m40.03698s; dec = -29d00'28.237"; ref_coord_frame = J2000;
+*
 *    ra = 17h42m29.3099269s; dec = -28d59'18.533323"; ref_coord_frame = B1950;
 *    ra = 17h47m00.5827105s; dec = -29d00'54.615913"; ref_coord_frame = Date;
 enddef;
