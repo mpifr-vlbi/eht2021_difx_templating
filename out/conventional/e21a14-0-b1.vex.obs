@@ -537,7 +537,13 @@ def KITTPEAK;
      site_type = fixed;
      site_name = KITTPEAK;
      site_ID = Kt;
-     site_position = -1995957.62800 m:-5037394.44600 m: 3357047.27400 m;
+* Original a priori position, EHT 2020 tests:
+*    site_position = -1995957.62800 m:-5037394.44600 m: 3357047.27400 m;
+* New position based on residuals from Geoff Crew email 22 Nov 2021
+* Subject: Kitt Peak position
+*    site_position = -1995957.143556 m:-5037391.902649 m: 3357046.086518 m;
+* Then revised again without SgrA*
+     site_position = -1995957.256267 m:-5037391.224871 m: 3357045.200233 m;
      site_velocity =  0.000000   m/yr:  0.000000   m/yr:  0.000000  m/yr;
      site_position_epoch =   55646;
 enddef;
@@ -860,13 +866,12 @@ $SOURCE;
 def SGRA;
      source_name = SGRA;
 *    this source had calibrator code:  
-     ra = 17h45m40.0409000s; dec = -29d00'28.118000"; ref_coord_frame = J2000;
-     * Note: https://eventhorizontelescope.teamwork.com/#/notebooks/236462
-     * Extrapolation of proper motion finds (so far not yet used) position of
-     * ra = 17h45m40.03698s; dec = -29d00'28.237"; ref_coord_frame = J2000;
-*
-*    ra = 17h42m29.3099269s; dec = -28d59'18.533323"; ref_coord_frame = B1950;
-*    ra = 17h47m00.5827105s; dec = -29d00'54.615913"; ref_coord_frame = Date;
+* Original as scheduled:
+*    ra = 17h45m40.0409000s; dec = -29d00'28.118000"; ref_coord_frame = J2000;
+* Revised position from Lynn Matthews on 12/06/2021 email Subject:
+* Re: revised revised SgrA* position for 2021
+* and see also https://eventhorizontelescope.teamwork.com/#/notebooks/236462
+    ra = 17h45m40.0369800s; dec = -29d00'28.237000"; ref_coord_frame = J2000;
 enddef;
 *
 def VXSGR;
