@@ -1,0 +1,24 @@
+
+rev0
+
+Slack #mpifr-l1
+7 June 2022 12:52 CET [Sebastiano von Fellenberg] @Jan Wagner here is a short summary of what we discussed in the meeting today:
+e21e13:
+ - KT band has something weird going on in a central band (2.291e5MHz) both in phase
+   and in amplitude of the RR correlation. The amplitude drops, and the phase is wrapped 180 degrees.
+ - AX has a weird linear drop in amplitude of RR and LL in the two left most bands,
+   the phases as well as AXAX autocorrelation are not affected.
+   I showed it to Alan Roy, but he did not know any obvious reason.
+   His best hunch was that the digital OCT-filter might cause a roll-off filtering.
+   Michael found that  in the 2017 data, AX showed a similar slope, but it only affected one of the correlations (RR).
+ - SW has some residual phase slopes, probably due to poor bandpass calibration.
+   To confirm that I am running the pipeline again without bandpass calibration (takes time).
+   The report in 3C273_scan68_plots.ps shows all three effects.
+ - Overall calibration looks  okay (delay, rates and data quality), see SUMMARY_delay,* pdf.
+ - GL baselines are however fairly poor, large phase noise see the attached screen shot from difmap
+   'GL 4 spw with poorly calibrated delay, symptom: RL, LR cross hands have large wraps in outcorrleation.'
+
+  Attachments: https://owncloud.mpifr-bonn.mpg.de/index.php/s/8LKJDmYpRA5Wj3H
+
+Consolidated "2021 Data Issues"
+https://eventhorizontelescope.teamwork.com/#/notebooks/235062
