@@ -1,0 +1,44 @@
+== Consolidated "2021 Data Issues" ==
+
+https://eventhorizontelescope.teamwork.com/#/notebooks/235062
+
+
+== rev0 Slack #mpifr-l1 ==
+
+9 June 2022 15:53 CET [Sebastiano von Fellenberg] e21a14 is now done
+you can find the products here: l1/software-dev/products_e21a14/
+
+things i noticed when looking through the diagnostics:
+
+SCAN22_3C279:  <JanW note: 104-0255>
+ - KT-KT has RR 2.921e5 MHz band problem, drop in amplitude and phase warp - same as in e21e13
+ - NN-NN has RR 2.288e5 MHz band problem, drop in amplitude and phase warp - same symptom as KT-KT
+ - unlike in e21e13, AX does not have the linear drop-off
+SCAN81_J1924-2914:
+ - KT-KT same problem
+ - overall not too great SNR, AA-AX ~ 10-20 degree phase noise
+SCAN66_J1924-2914:
+ - KT-KT same problem
+ - SNR better, AA-AX ~1-5 degree phase noise, detection on other baselines as well
+SCAN48_J1743-0350:
+ - KT-KT same problem
+ - NN-NN same problem
+SCAN70-SGRA:
+ - SZ-SZ has linear slopes in amplitudes in the edge bands in LL (lowest band), RR (highest band)
+   (phase seems poorly calibrated: MG-AA, KT-MG)
+ - in all scans with KT-KT which I eyeballed, KT-KT seems have a slightly disturbed amplitudes in
+   the highest frequency band. We attributed this to RFI in e21e13, but given that it is reoccurring probably not?
+
+For SGRA scans data looks quite good already.
+The KT "amplitude and phase problem" from e21e13 reappeared.
+Similar symptom spotted in NT, but in different band.
+
+  Attachments: https://owncloud.mpifr-bonn.mpg.de/index.php/s/ADXQxYgYyBZsd4z
+
+19:15 CET [Jan Wagner] The e21a14 "SCAN22_3C279" is probably 104-0255?
+Erratic L-R amplitude  Kt-Kt from ~229.100 GHz, HOPS channel q,
+   " fourfit -ptx -bKK -m1 -PRR 104-0255 set freqs q "
+there is indeed a curious spike there.
+
+  Attachments: https://owncloud.mpifr-bonn.mpg.de/index.php/s/ADXQxYgYyBZsd4z
+
