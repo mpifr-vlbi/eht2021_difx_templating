@@ -1,8 +1,24 @@
 
-rev0
+== Consolidated "2021 Data Issues" ==
 
-Slack #mpifr-l1
-7 June 2022 12:52 CET [Sebastiano von Fellenberg] @Jan Wagner here is a short summary of what we discussed in the meeting today:
+https://eventhorizontelescope.teamwork.com/#/notebooks/235062
+
+
+== rev0 Slack #mpifr-l1 ==
+
+4 June 2022 11:37 CET [Sebastiano von Fellenberg] Michael and I looked briefly on the e21e13 data on friday:
+a central band of the KT RR correlations seems to faulty.
+A similar problem for KT is observed  on e21a14, but for that one I am rerunning the reduction.
+
+4 June 2022 11:51 CET [mjanssen] I think overall e21e13 looked quite good.
+I think Noema had a similar problem as KT near the center of the band. Sebastiano can soon provide the details.
+Once we have the issues clearly identified, we should add them to https://eventhorizontelescope.teamwork.com/#/notebooks/235062.
+Maybe we can go over this in our call at the usual time next Tuesday?
+Afterwards we will enter the vacation + conferences period where we will skip our zoom meetings unless something urgent comes up.
+
+7 June 2022 12:52 CET [Sebastiano von Fellenberg] @Jan Wagner here is a short summary of what we
+discussed in the meeting today:
+
 e21e13:
  - KT band has something weird going on in a central band (2.291e5MHz) both in phase
    and in amplitude of the RR correlation. The amplitude drops, and the phase is wrapped 180 degrees.
@@ -20,5 +36,4 @@ e21e13:
 
   Attachments: https://owncloud.mpifr-bonn.mpg.de/index.php/s/8LKJDmYpRA5Wj3H
 
-Consolidated "2021 Data Issues"
-https://eventhorizontelescope.teamwork.com/#/notebooks/235062
+
