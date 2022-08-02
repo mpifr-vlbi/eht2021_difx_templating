@@ -343,7 +343,7 @@ def 1mmlcp;
      ref $BBC = BBC_COMMON:Pv:Gl:Ax:Sz:Kt:Mg:Sw:Nn;
      ref $BBC = BBC_POLSWAP:Mm;
      ref $BBC = BBC_ALMA:Aa;
-     ref $FREQ = FREQ_COMMON:Gl:Sz:Kt:Mg:Sw:Mm:Ax;
+     ref $FREQ = FREQ_COMMON:Gl:Sz:Kt:Mg:Mm:Ax;
      ref $FREQ = FREQ_DBBC3_PV:Pv;
      ref $FREQ = FREQ_AA:Aa;
      ref $FREQ = FREQ_Nn:Nn;
