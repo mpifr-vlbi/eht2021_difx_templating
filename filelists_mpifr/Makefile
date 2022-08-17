@@ -23,28 +23,28 @@ pv_b2:
 pv_b3:
 
 pv_b4: # SAO%0046 SAO%0018, SAO%0047 SAO%0049 ; Bonn mark6-10
-	$(call mk6dir2filelist,mark6-10,12,SAO%0046,ehtc2021_Pico_set1_b4.12.filelist)
-	$(call mk6dir2filelist,mark6-10,34,SAO%0047,ehtc2021_Pico_set1_b4.34.filelist)
+	$(call mk6dir2filelist,mark6-09,12,SAO%0046,ehtc2021_Pico_set1_b4.12.filelist)
+	$(call mk6dir2filelist,mark6-09,34,SAO%0047,ehtc2021_Pico_set1_b4.34.filelist)
 
 ## NOEMA
 	
 nn_b1: # IRAM%009 %010 %011 %012 recorder1=b1
-	$(call mk6dir2filelist,mark6-04,1,IRAM%009,ehtc2021_pNOEMA_set1_rec1.1.filelist)
-	$(call mk6dir2filelist,mark6-04,2,IRAM%010,ehtc2021_pNOEMA_set1_rec1.2.filelist)
-	$(call mk6dir2filelist,mark6-04,3,IRAM%011,ehtc2021_pNOEMA_set1_rec1.3.filelist)
-	$(call mk6dir2filelist,mark6-04,4,IRAM%012,ehtc2021_pNOEMA_set1_rec1.4.filelist)
+	$(call mk6dir2filelist,mark6-01,1,IRAM%009,ehtc2021_pNOEMA_set1_rec1.1.filelist)
+	$(call mk6dir2filelist,mark6-01,2,IRAM%010,ehtc2021_pNOEMA_set1_rec1.2.filelist)
+	$(call mk6dir2filelist,mark6-01,3,IRAM%011,ehtc2021_pNOEMA_set1_rec1.3.filelist)
+	$(call mk6dir2filelist,mark6-01,4,IRAM%012,ehtc2021_pNOEMA_set1_rec1.4.filelist)
 
 nn_b4: # IRAM%013 %014 %015 %016 recorder3(!)=b4
-	$(call mk6dir2filelist,mark6-09,1,IRAM%013,ehtc2021_pNOEMA_set1_rec3.1.filelist)
-	$(call mk6dir2filelist,mark6-09,2,IRAM%014,ehtc2021_pNOEMA_set1_rec3.2.filelist)
-	$(call mk6dir2filelist,mark6-09,3,IRAM%015,ehtc2021_pNOEMA_set1_rec3.3.filelist)
-	$(call mk6dir2filelist,mark6-09,4,IRAM%016,ehtc2021_pNOEMA_set1_rec3.4.filelist)
+	$(call mk6dir2filelist,mark6-01,1,IRAM%013,ehtc2021_pNOEMA_set1_rec3.1.filelist)
+	$(call mk6dir2filelist,mark6-01,2,IRAM%014,ehtc2021_pNOEMA_set1_rec3.2.filelist)
+	$(call mk6dir2filelist,mark6-01,3,IRAM%015,ehtc2021_pNOEMA_set1_rec3.3.filelist)
+	$(call mk6dir2filelist,mark6-01,4,IRAM%016,ehtc2021_pNOEMA_set1_rec3.4.filelist)
 
 ## GLT
 
 gl_b1: # BHC%0172/173/174/175 recorder=?? ; Bonn mark6-11
-	$(call mk6dir2filelist,mark6-11,12,BHC%0172,ehtc2021_GLT_set1_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-11,34,BHC%0174,ehtc2021_GLT_set1_b1.34.filelist)
+	$(call mk6dir2filelist,mark6-03,12,BHC%0172,ehtc2021_GLT_set1_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-03,34,BHC%0174,ehtc2021_GLT_set1_b1.34.filelist)
 
 gl_b4: # BHC%0164/165/166/167 recorder=?? ; Bonn mark6-03
 	$(call mk6dir2filelist,mark6-03,12,BHC%0164,ehtc2021_GLT_set1_b4.12.filelist)
@@ -53,8 +53,8 @@ gl_b4: # BHC%0164/165/166/167 recorder=?? ; Bonn mark6-03
 ## SMT
 
 mg_b1: # ALMA%045/46/47/48 ; Bonn mark6-09
-	$(call mk6dir2filelist,mark6-09,12,ALMA%045,ehtc2021_SMT_set1_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-09,34,ALMA%047,ehtc2021_SMT_set1_b1.34.filelist)
+	$(call mk6dir2filelist,mark6-02,12,ALMA%045,ehtc2021_SMT_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-02,34,ALMA%047,ehtc2021_SMT_b1.34.filelist)
 
 mg_b4: # SHAO%023/24/25/26 ; Bonn mark6-02
 	$(call mk6dir2filelist,mark6-02,12,SHAO%023,ehtc2021_SMT_b4.12.filelist)
@@ -63,8 +63,8 @@ mg_b4: # SHAO%023/24/25/26 ; Bonn mark6-02
 ## Kitt Peak
 
 kt_b1: # SAO%0032/33/34/35 ; Bonn mark6-10
-	$(call mk6dir2filelist,mark6-10,12,SAO%0032,ehtc2021_KT_set1_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-10,34,SAO%0034,ehtc2021_KT_set1_b1.34.filelist)
+	$(call mk6dir2filelist,mark6-11,12,SAO%0032,ehtc2021_KT_set1_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-11,34,SAO%0034,ehtc2021_KT_set1_b1.34.filelist)
 
 kt_b4: # SHAO%044/45/46/48 ; Bonn mark6-11
 	$(call mk6dir2filelist,mark6-11,12,SHAO%044,ehtc2021_KT_set1_b4.12.filelist)
@@ -73,8 +73,8 @@ kt_b4: # SHAO%044/45/46/48 ; Bonn mark6-11
 ## ALMA
 
 aa_b1: # ALMA%009/10/11/12 ; Bonn mark6-02
-	$(call mk6dir2filelist,mark6-02,12,ALMA%009,ehtc2021_ALMA_set1_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-02,34,ALMA%011,ehtc2021_ALMA_set1_b1.34.filelist)
+	$(call mk6dir2filelist,mark6-04,12,ALMA%009,ehtc2021_ALMA_set1_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-04,34,ALMA%011,ehtc2021_ALMA_set1_b1.34.filelist)
 
 aa_b4: # ALMA%021/22/23/24 ; Bonn mark6-04
 	$(call mk6dir2filelist,mark6-04,12,ALMA%021,ehtc2021_ALMA_set1_b4.12.filelist)
@@ -83,8 +83,8 @@ aa_b4: # ALMA%021/22/23/24 ; Bonn mark6-04
 ## SMA APHIDS
 
 sw_b1: # GLT%0017/17/19/20 ; Bonn mark6-??
-	$(call mk6dir2filelist,mark6-06,12,GLT%0017,ehtc2021_SMA_set1_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-06,34,GLT%0019,ehtc2021_SMA_set1_b1.34.filelist)
+	$(call mk6dir2filelist,mark6-06,12,GLT%0017,ehtc2021_SMA_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-06,34,GLT%0019,ehtc2021_SMA_b1.34.filelist)
 
 sw_b4: # PERI%039/40/41/42 ; Bonn mark6-??
 	$(call mk6dir2filelist,mark6-06,12,PERI%039,ehtc2021_SMA_b4.12.filelist)
@@ -103,10 +103,10 @@ sz_b4: # ALMA%033/34/35/36 ; Bonn mark6-05
 ## APEX
 
 ax_b1: # MPI%8042/43/44/45 set 1 ; BHC%0027/BHC%0027/BHC%0029/MPIH%029 set 2 a17 e18
-	$(call mk6dir2filelist,mark6-04,12,MPI%8042,ehtc2021_APEX_set1_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-04,34,MPI%8044,ehtc2021_APEX_set1_b1.34.filelist)
-	$(call mk6dir2filelist,mark6-04,12,BHC%0027,ehtc2021_APEX_set2_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-04,34,BHC%0029,ehtc2021_APEX_set2_b1.34.filelist)
+	$(call mk6dir2filelist,mark6-08,12,MPI%8042,ehtc2021_APEX_set1_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-08,34,MPI%8044,ehtc2021_APEX_set1_b1.34.filelist)
+	$(call mk6dir2filelist,mark6-08,12,BHC%0027,ehtc2021_APEX_set2_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-08,34,BHC%0029,ehtc2021_APEX_set2_b1.34.filelist)
 
 ax_b4: # MPI%8046/47/49/50 set 1 ; BHC%0030/31/32/MPIH%034 set 2 a17 e18
 	$(call mk6dir2filelist,mark6-08,12,MPI%8046,ehtc2021_APEX_set1_b4.12.filelist)
@@ -117,8 +117,8 @@ ax_b4: # MPI%8046/47/49/50 set 1 ; BHC%0030/31/32/MPIH%034 set 2 a17 e18
 ## JCMT
 
 mm_b1:  # BHC%0069/BHC%0067/BHC%0043/BHC%0049
-	$(call mk6dir2filelist,mark6-01,12,BHC%0069,ehtc2021_JCMT_set1_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-01,34,BHC%0043,ehtc2021_JCMT_set1_b1.34.filelist)
+	$(call mk6dir2filelist,mark6-07,12,BHC%0069,ehtc2021_JCMT_set1_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-07,34,BHC%0043,ehtc2021_JCMT_set1_b1.34.filelist)
 
 mm_b4:  # BHC%0068/BHC%0088/BHC%0042/BHC%0064
 	$(call mk6dir2filelist,mark6-07,12,BHC%0068,ehtc2021_JCMT_set1_b4.12.filelist)
@@ -187,4 +187,14 @@ install_b4:
 	cp -a *b4* *rec3* /Exps/e21a16/$(REV)/b4/ ; cp -a *b4* *rec3* /Exps/e21a16/$(REV)/b4_outputbands/
 	cp -a *b4* *rec3* /Exps/e21a17/$(REV)/b4/ ; cp -a *b4* *rec3* /Exps/e21a17/$(REV)/b4_outputbands/
 	cp -a *b4* *rec3* /Exps/e21e18/$(REV)/b4/ ; cp -a *b4* *rec3* /Exps/e21e18/$(REV)/b4_outputbands/
+
+install_b1:
+	cp -a *b1* *rec3* /Exps/e21b09/$(REV)/b1/ ; cp -a *b1* *rec3* /Exps/e21b09/$(REV)/b1_outputbands/
+	# cp -a *b1* *rec3* /Exps/e21c11/$(REV)/b1/ ; cp -a *b1* *rec3* /Exps/e21c11/$(REV)/b1_outputbands/
+	cp -a *b1* *rec3* /Exps/e21e13/$(REV)/b1/ ; cp -a *b1* *rec3* /Exps/e21e13/$(REV)/b1_outputbands/
+	cp -a *b1* *rec3* /Exps/e21a14/$(REV)/b1/ ; cp -a *b1* *rec3* /Exps/e21a14/$(REV)/b1_outputbands/
+	cp -a *b1* *rec3* /Exps/e21d15/$(REV)/b1/ ; cp -a *b1* *rec3* /Exps/e21d15/$(REV)/b1_outputbands/
+	cp -a *b1* *rec3* /Exps/e21a16/$(REV)/b1/ ; cp -a *b1* *rec3* /Exps/e21a16/$(REV)/b1_outputbands/
+	cp -a *b1* *rec3* /Exps/e21a17/$(REV)/b1/ ; cp -a *b1* *rec3* /Exps/e21a17/$(REV)/b1_outputbands/
+	cp -a *b1* *rec3* /Exps/e21e18/$(REV)/b1/ ; cp -a *b1* *rec3* /Exps/e21e18/$(REV)/b1_outputbands/
 
