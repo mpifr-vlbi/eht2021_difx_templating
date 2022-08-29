@@ -189,12 +189,12 @@ install_b4:
 	cp -a *b4* *rec3* /Exps/e21e18/$(REV)/b4/ ; cp -a *b4* *rec3* /Exps/e21e18/$(REV)/b4_outputbands/
 
 install_b1:
-	cp -a *b1* *rec3* /Exps/e21b09/$(REV)/b1/ ; cp -a *b1* *rec3* /Exps/e21b09/$(REV)/b1_outputbands/
-	# cp -a *b1* *rec3* /Exps/e21c11/$(REV)/b1/ ; cp -a *b1* *rec3* /Exps/e21c11/$(REV)/b1_outputbands/
-	cp -a *b1* *rec3* /Exps/e21e13/$(REV)/b1/ ; cp -a *b1* *rec3* /Exps/e21e13/$(REV)/b1_outputbands/
-	cp -a *b1* *rec3* /Exps/e21a14/$(REV)/b1/ ; cp -a *b1* *rec3* /Exps/e21a14/$(REV)/b1_outputbands/
-	cp -a *b1* *rec3* /Exps/e21d15/$(REV)/b1/ ; cp -a *b1* *rec3* /Exps/e21d15/$(REV)/b1_outputbands/
-	cp -a *b1* *rec3* /Exps/e21a16/$(REV)/b1/ ; cp -a *b1* *rec3* /Exps/e21a16/$(REV)/b1_outputbands/
-	cp -a *b1* *rec3* /Exps/e21a17/$(REV)/b1/ ; cp -a *b1* *rec3* /Exps/e21a17/$(REV)/b1_outputbands/
-	cp -a *b1* *rec3* /Exps/e21e18/$(REV)/b1/ ; cp -a *b1* *rec3* /Exps/e21e18/$(REV)/b1_outputbands/
+	cp -a *b1* *rec1* /Exps/e21b09/$(REV)/b1/ ; cp -a *b1* *rec1* /Exps/e21b09/$(REV)/b1_outputbands/
+	# cp -a *b1* *rec1* /Exps/e21c11/$(REV)/b1/ ; cp -a *b1* *rec1* /Exps/e21c11/$(REV)/b1_outputbands/
+	cp -a *b1* *rec1* /Exps/e21e13/$(REV)/b1/ ; cp -a *b1* *rec1* /Exps/e21e13/$(REV)/b1_outputbands/
+	cp -a *b1* *rec1* /Exps/e21a14/$(REV)/b1/ ; cp -a *b1* *rec1* /Exps/e21a14/$(REV)/b1_outputbands/
+	cp -a *b1* *rec1* /Exps/e21d15/$(REV)/b1/ ; cp -a *b1* *rec1* /Exps/e21d15/$(REV)/b1_outputbands/
+	cp -a *b1* *rec1* /Exps/e21a16/$(REV)/b1/ ; cp -a *b1* *rec1* /Exps/e21a16/$(REV)/b1_outputbands/
+	cp -a *b1* *rec1* /Exps/e21a17/$(REV)/b1/ ; cp -a *b1* *rec1* /Exps/e21a17/$(REV)/b1_outputbands/
+	cp -a *b1* *rec1* /Exps/e21e18/$(REV)/b1/ ; cp -a *b1* *rec1* /Exps/e21e18/$(REV)/b1_outputbands/
 
