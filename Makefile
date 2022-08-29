@@ -7,9 +7,9 @@ TRACKS := e21b09 e21e13 e21a14 e21d15 e21a16 e21a17 e21e18
 TRACKS_345G := e21f19
 
 ## Derived set of v2d,vex in both conventional zoom setup and outputband setup
-DIFX_TARGETS_ZOOM := $(addsuffix _b1,$(TRACKS)) $(addsuffix _b2,$(TRACKS)) $(addsuffix _b3,$(TRACKS)) $(addsuffix _b4,$(TRACKS))
+DIFX_TARGETS_ZOOM := $(addsuffix _b1,$(TRACKS)) $(addsuffix _b2,$(TRACKS)) $(addsuffix _b3,$(TRACKS)) # $(addsuffix _b4,$(TRACKS))
 DIFX_TARGETS_OUTPUTBAND := $(addsuffix _ob,$(DIFX_TARGETS_ZOOM))
-DIFX_TARGETS_345G_ZOOM := $(addsuffix _b1_345,$(TRACKS_345G)) $(addsuffix _b2_345,$(TRACKS_345G)) $(addsuffix _b3_345,$(TRACKS_345G)) $(addsuffix _b4_345,$(TRACKS_345G))
+DIFX_TARGETS_345G_ZOOM := $(addsuffix _b1_345,$(TRACKS_345G)) $(addsuffix _b2_345,$(TRACKS_345G)) $(addsuffix _b3_345,$(TRACKS_345G)) # $(addsuffix _b4_345,$(TRACKS_345G))
 DIFX_TARGETS_345G_OUTPUTBAND := $(addsuffix _ob,$(DIFX_TARGETS_345G_ZOOM))
 DIFX_TARGETS := $(DIFX_TARGETS_ZOOM) $(DIFX_TARGETS_OUTPUTBAND) $(DIFX_TARGETS_345G_ZOOM) $(DIFX_TARGETS_345G_OUTPUTBAND)
 
