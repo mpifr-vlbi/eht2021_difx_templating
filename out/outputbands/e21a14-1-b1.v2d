@@ -91,8 +91,8 @@ DATASTREAM Aa_ds12 { filelist = ehtc2021_ALMA_set1_b1.12.filelist }
 DATASTREAM Aa_ds34 { filelist = ehtc2021_ALMA_set1_b1.34.filelist }
 DATASTREAM Ax_ds12 { filelist = ehtc2021_APEX_set1_b1.12.filelist }
 DATASTREAM Ax_ds34 { filelist = ehtc2021_APEX_set1_b1.34.filelist }
-DATASTREAM Glt_ds12 { filelist = ehtc2021_GLT_set1_b1.12.filelist }
-DATASTREAM Glt_ds34 { filelist = ehtc2021_GLT_set1_b1.34.filelist }
+DATASTREAM Glt_ds12 { filelist = ehtc2021_GLT_set1_b1.12.filelist-beegfs }
+DATASTREAM Glt_ds34 { filelist = ehtc2021_GLT_set1_b1.34.filelist-beegfs }
 DATASTREAM Jcmt_ds12 { filelist = ehtc2021_JCMT_set1_b1.12.filelist }
 DATASTREAM Jcmt_ds34 { filelist = ehtc2021_JCMT_set1_b1.34.filelist }
 DATASTREAM Kt_ds12 { filelist = ehtc2021_KT_set1_b1.12.filelist }
@@ -106,19 +106,19 @@ DATASTREAM SmaAphids_ds34 { filelist = ehtc2021_SMA_b1.34.filelist }
 DATASTREAM Smt_ds12 { filelist = ehtc2021_SMT_b1.12.filelist }
 DATASTREAM Smt_ds34 { filelist = ehtc2021_SMT_b1.34.filelist }
 DATASTREAM Nn_rec1slot1 {
-  filelist = ehtc2021_pNOEMA_set1_rec1.1.filelist
+  filelist = ehtc2021_pNOEMA_set1_rec1.1.filelist-beegfs
   format = INTERLACEDVDIF/0:1:2:3/8224/2
 }
 DATASTREAM Nn_rec1slot2 {
-  filelist = ehtc2021_pNOEMA_set1_rec1.2.filelist
+  filelist = ehtc2021_pNOEMA_set1_rec1.2.filelist-beegfs
   format = INTERLACEDVDIF/0:1:2:3/8224/2
 }
 DATASTREAM Nn_rec1slot3 {
-  filelist = ehtc2021_pNOEMA_set1_rec1.3.filelist
+  filelist = ehtc2021_pNOEMA_set1_rec1.3.filelist-beegfs
   format = INTERLACEDVDIF/0:1:2:3/8224/2
 }
 DATASTREAM Nn_rec1slot4 {
-  filelist = ehtc2021_pNOEMA_set1_rec1.4.filelist
+  filelist = ehtc2021_pNOEMA_set1_rec1.4.filelist-beegfs
   format = INTERLACEDVDIF/0:1:2:3/8224/2
 }
 
