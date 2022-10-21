@@ -117,8 +117,8 @@ ax_b4: # MPI%8046/47/49/50 set 1 ; BHC%0030/31/32/MPIH%034 set 2 a17 e18
 ## JCMT
 
 mm_b1:  # BHC%0069/BHC%0067/BHC%0043/BHC%0049
-	$(call mk6dir2filelist,mark6-06,12,BHC%0069,ehtc2021_JCMT_set1_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-06,34,BHC%0043,ehtc2021_JCMT_set1_b1.34.filelist)
+	$(call mk6dir2filelist,mark6-07,12,BHC%0069,ehtc2021_JCMT_set1_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-07,34,BHC%0043,ehtc2021_JCMT_set1_b1.34.filelist)
 
 mm_b4:  # BHC%0068/BHC%0088/BHC%0042/BHC%0064
 	$(call mk6dir2filelist,mark6-07,12,BHC%0068,ehtc2021_JCMT_set1_b4.12.filelist)
