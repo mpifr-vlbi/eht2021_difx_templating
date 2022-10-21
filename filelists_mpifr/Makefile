@@ -62,7 +62,7 @@ mg_b4: # SHAO%023/24/25/26 ; Bonn mark6-02
 
 ## Kitt Peak
 
-kt_b1: # SAO%0032/33/34/35 ; Bonn mark6-10
+kt_b1: # SAO%0032/33/34/35 ; Bonn mark6-11
 	$(call mk6dir2filelist,mark6-11,12,SAO%0032,ehtc2021_KT_set1_b1.12.filelist)
 	$(call mk6dir2filelist,mark6-11,34,SAO%0034,ehtc2021_KT_set1_b1.34.filelist)
 
@@ -103,10 +103,10 @@ sz_b4: # ALMA%033/34/35/36 ; Bonn mark6-05
 ## APEX
 
 ax_b1: # MPI%8042/43/44/45 set 1 ; BHC%0027/BHC%0027/BHC%0029/MPIH%029 set 2 a17 e18
-	$(call mk6dir2filelist,mark6-08,12,MPI%8042,ehtc2021_APEX_set1_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-08,34,MPI%8044,ehtc2021_APEX_set1_b1.34.filelist)
-	$(call mk6dir2filelist,mark6-08,12,BHC%0027,ehtc2021_APEX_set2_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-08,34,BHC%0029,ehtc2021_APEX_set2_b1.34.filelist)
+	$(call mk6dir2filelist,mark6-01,12,MPI%8042,ehtc2021_APEX_set1_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-01,34,MPI%8044,ehtc2021_APEX_set1_b1.34.filelist)
+	$(call mk6dir2filelist,mark6-01,12,BHC%0027,ehtc2021_APEX_set2_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-01,34,BHC%0029,ehtc2021_APEX_set2_b1.34.filelist)
 
 ax_b4: # MPI%8046/47/49/50 set 1 ; BHC%0030/31/32/MPIH%034 set 2 a17 e18
 	$(call mk6dir2filelist,mark6-08,12,MPI%8046,ehtc2021_APEX_set1_b4.12.filelist)
@@ -117,8 +117,8 @@ ax_b4: # MPI%8046/47/49/50 set 1 ; BHC%0030/31/32/MPIH%034 set 2 a17 e18
 ## JCMT
 
 mm_b1:  # BHC%0069/BHC%0067/BHC%0043/BHC%0049
-	$(call mk6dir2filelist,mark6-07,12,BHC%0069,ehtc2021_JCMT_set1_b1.12.filelist)
-	$(call mk6dir2filelist,mark6-07,34,BHC%0043,ehtc2021_JCMT_set1_b1.34.filelist)
+	$(call mk6dir2filelist,mark6-06,12,BHC%0069,ehtc2021_JCMT_set1_b1.12.filelist)
+	$(call mk6dir2filelist,mark6-06,34,BHC%0043,ehtc2021_JCMT_set1_b1.34.filelist)
 
 mm_b4:  # BHC%0068/BHC%0088/BHC%0042/BHC%0064
 	$(call mk6dir2filelist,mark6-07,12,BHC%0068,ehtc2021_JCMT_set1_b4.12.filelist)
