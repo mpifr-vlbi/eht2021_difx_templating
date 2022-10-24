@@ -205,6 +205,10 @@ install: b1_install b2_install b3_install b4_install
 ####################################################################################
 
 sma_clocks:
+	# band 1
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = +0.159 # SMA extra offsets/g" out/*/e21b09-?-b1.v2d
+
+	# band 4
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = +0.085 # SMA extra offsets/g" out/*/e21b09-?-b4.v2d
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -0.107 # SMA extra offsets/g" out/*/e21e13-?-b4.v2d
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -0.106 # SMA extra offsets/g" out/*/e21a14-?-b4.v2d
@@ -212,5 +216,6 @@ sma_clocks:
 	#
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -0.120 # SMA extra offsets/g" out/*/e21a17-?-b4.v2d
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -0.122 # SMA extra offsets/g" out/*/e21e18-?-b4.v2d
+
 
 sma: sma_clocks
