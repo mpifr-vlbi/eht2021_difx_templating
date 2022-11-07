@@ -3,3 +3,4 @@
 #  - Pv clock on 103-0057
 #  - Mm large clock offset from VDIF headers and 103-0630
 #  - Nn did not observe e21e13
+#  - Sz clock break at 103-0442 but by only +0.10 usec, not modeled
