@@ -34,5 +34,7 @@ enddef;
 *
 def Sz;
   clock_early = 2021y098d23h52m00s: 0 usec: 2021y098d23h52m00s : -0.187e-12;
+  * e21e13 103-0442 break - refine this manually for each band:
+  * clock_early = 2021y103d04h41m00s : 0.0 usec : 2021y103d04h41m00s : -0.187e-12;
 enddef;
 *
