@@ -75,7 +75,7 @@ ANTENNA Pv {
 ANTENNA Sw { # SMA APHIDS
   datastreams = SmaAphids_ds12,SmaAphids_ds34
   zoom = zooms58
-  deltaClock = 0 # SMA extra offsets
+  deltaClock = -0.023 # SMA extra offsets
 }
 
 ANTENNA Sz { # SPT
