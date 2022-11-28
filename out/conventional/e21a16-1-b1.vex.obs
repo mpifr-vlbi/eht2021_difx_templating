@@ -44,7 +44,7 @@ def Kt;
 enddef;
 *
 def Mm; * JCMT
-  clock_early = 2021y098d23h52m00s : 0.255 usec : 2021y098d23h52m00s : -0.183e-12;
+  clock_early = 2021y098d23h52m00s : 0.350 usec : 2021y098d23h52m00s : -0.183e-12;
 enddef;
 *
 def Mg; * SMT
@@ -60,9 +60,8 @@ def Pv;
 enddef;
 *
 def Sz;
-  clock_early = 2021y098d23h52m00s: 0 usec: 2021y098d23h52m00s : -0.187e-12;
-  * e21e13 103-0442 break - refine this manually for each band:
-  * clock_early = 2021y103d04h41m00s : 0.0 usec : 2021y103d04h41m00s : -0.187e-12;
+  clock_early = 2021y098d23h52m00s : 0 usec: 2021y098d23h52m00s : -0.187e-12;
+  clock_early = 2021y103d04h41m00s : 0.503 usec : 2021y103d04h41m00s : -0.187e-12;
 enddef;
 *
 def Sw;
