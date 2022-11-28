@@ -1,10 +1,10 @@
 #==================================================================
 # Track e21a17 band 1
-# Notes: ...
+# Notes:
 # Kt clock from 107-0147
 # Nn, Pv clocks from 107-0216
 # Mm clock from 107-0936
-
+# Gl clock from 107-0243
 #==================================================================
 
 vex = e21a17-1-b1.vex.obs
@@ -78,7 +78,7 @@ ANTENNA Pv {
 ANTENNA Sw { # SMA APHIDS
   datastreams = SmaAphids_ds12,SmaAphids_ds34
   zoom = zooms58
-  deltaClock = 0 # SMA extra offsets
+  deltaClock = -0.038 # SMA extra offsets
 }
 
 ANTENNA Sz { # SPT

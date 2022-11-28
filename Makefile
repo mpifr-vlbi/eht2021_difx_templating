@@ -210,6 +210,8 @@ sma_clocks:
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -0.020 # SMA extra offsets/g" out/*/e21e13-?-b1.v2d
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -0.020 # SMA extra offsets/g" out/*/e21a14-?-b1.v2d
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -0.023 # SMA extra offsets/g" out/*/e21d15-?-b1.v2d
+	#
+	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = -0.038 # SMA extra offsets/g" out/*/e21a17-?-b1.v2d
 
 	# band 4
 	sed -i "s/deltaClock = 0 # SMA extra offsets/deltaClock = +0.085 # SMA extra offsets/g" out/*/e21b09-?-b4.v2d
